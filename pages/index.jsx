@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import Navbar from '@/components/Navbar'
 
 export default function index() {
+  <Navbar />
   return (
     <div className='flex '>
       {/* <Link className='' href="/"><Image
@@ -12,10 +14,7 @@ export default function index() {
         quality={100}
         className=''>
       </Image></Link> */}
-      <Link className='flex' href="/about">About Us</Link>
-      <Link className='flex' href="/project">Projects</Link>
-      <Link className='flex' href="/fundraising">Fundraising</Link>
-      <Link className='flex' href="/news-and-memories">News And Memories</Link>
+      
     </div >
   )
 }

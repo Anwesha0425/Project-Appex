@@ -45,5 +45,30 @@ export const card_data = [
         link: '/project/old-age-home',
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis inventore a earum ratione mollitia, eveniet nemo qui aliquam aliquid quos beatae nam soluta, sed atque. Necessitatibus soluta corporis temporibus perspiciatis!"
     },
+    {
+        name: 'Women Empowerment',
+        link: '/project/women-empowerment',
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?"
+    },
+    {
+        name: 'Child Development',
+        link: '/project/child-development',
+         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?"
+    },
+    {
+        name: 'Agriculture',
+        link: '/project/agriculture',
+         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?"
+    },
+    {
+        name: 'Health',
+        link: '/project/health',
+         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?"
+    },
+    {
+        name: 'Sanitization',
+        link: '/project/sanitization',
+         text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?"
+    },
 ];
 
