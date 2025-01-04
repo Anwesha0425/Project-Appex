@@ -1,6 +1,6 @@
 export default {
     reactStrictMode: true,
     images: {
-        domains: ['res.cloudinary.com', "img.playbook.com"],
+        domains: ['res.cloudinary.com', "img.playbook.com", "images.pexels.com"],
     },
 };

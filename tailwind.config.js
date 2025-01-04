@@ -9,6 +9,12 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  whitelist: [
+    'bg-amber-700',
+    'bg-emerald-700',
+    'bg-sky-200',
+    'text-sky-200',
+  ],
   theme: {
     extend: {},
     screens: {
