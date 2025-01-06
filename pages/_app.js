@@ -1,25 +1,21 @@
-import Footer from '@/components/Data/Footer'
-import Navbar from '@/components/Navbar'
-import '@/styles/globals.css'
+import Footer from "@/components/Data/Footer";
+import Navbar from "@/components/Navbar";
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  
-    return (
-        <>
-       <div className="flex flex-col min-h-screen">
+  return (
+    <div className="flex flex-col ">
       {/* Navbar */}
-      <header className="bg-gray-100">
-        <Navbar/>
-      </header>
+
+      <Navbar />
 
       {/* Main Content */}
-      <main className="flex-grow">
+      <main >
         <Component {...pageProps} />
       </main>
 
       {/* Footer */}
       <Footer />
     </div>
-        </>
-    )
+  );
 }

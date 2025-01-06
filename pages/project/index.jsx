@@ -1,16 +1,26 @@
 import React from 'react'
 import { card_data } from './../../components/Data/DataBase';
+import Image from 'next/image';
 import Link from 'next/link';
 
 
-function Cards({ name, link, text, index }) {
+function Cards({ name, link, text, ImageURL }) {
   // console.log(name);
   return (
     <>
-      <div className='border-black border-4 rounded-md h-[150px] w-[150px] p-10'>
-        <div className=''>{name.text}</div>
+      <div className='border-black border-4 rounded-md p-4 aspect-video m-4 flex flex-col items-center shadow-2xl'>
+        <Image
+                  src={name.ImageURL}
+                  alt={'Image Not Found!'}
+                  height={2500}
+                  width={2500}
+                  data-aos="flip-left" data-aos-duration="3000"
+                  className='border-1 border-solid border-[black] flex justify-center items-center w-[90%] aspect-auto rounded-md'
+                />
+        <div className='text-2xl font-bold'>{name.name}</div>
+        <div className=''>{name.text.substring(0, 100)}</div>
         <Link href={name.link}>
-          <div className='max-w-[100%] p-2 border-4 rounded-md'>Learn More</div>
+          <div className='max-w-[100%] p-2 border-4 rounded-md bg-[#A0D9D6] hover:bg-[#00796B]'>Learn More</div>
         </Link>
       </div>
     </>
@@ -21,9 +31,9 @@ function Cards({ name, link, text, index }) {
 
 export default function index() {
   return (
-    <div className='grid grid-flow-col row-auto gap-4'>
-      {card_data.map((name, link, text, index) => (
-        <Cards key={index} name={name} link={link} text={text} />
+    <div className='grid grid-cols-2'>
+      {card_data.map((name, link,ImageURL, text, index) => (
+        <Cards key={index} name={name} link={link} ImageURL={ImageURL} text={text} />
       ))}
     </div>
   )

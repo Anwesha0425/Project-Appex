@@ -1,7 +1,9 @@
-import React from 'react'
+import { prolonged } from "@/components/Data/DataBase";
+import React from "react";
 // import ImageCarousel from './../../../components/Carousel/Carousel';
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 import { HiOutlinePlusSm } from "react-icons/hi";
+import { MdOutlineArrowDropDownCircle } from "react-icons/md";
 
 const images = [
   {
@@ -50,50 +52,98 @@ const images = [
 
 function Figures({ count, text }) {
   return (
-    <div className='text-[white] xl:w-1/4 lg:w-1/4 flex flex-col items-center rounded-md bg-[black] mx-2'>
-      <div className='text-6xl flex'>
-        <CountUp end={count} duration={6} /> <span className='flex items-start '><HiOutlinePlusSm size={25} /></span>
+    <div className="text-[white] xl:w-1/4 lg:w-1/4 flex flex-col items-center rounded-md bg-[black] mx-2">
+      <div className="text-6xl flex">
+        <CountUp end={count} duration={6} />{" "}
+        <span className="flex items-start ">
+          <HiOutlinePlusSm size={25} />
+        </span>
       </div>
-      <div className='xl:text-xl lg:text-xl md:text-lg sm:text-base'>
+      <div className="xl:text-xl lg:text-xl md:text-lg sm:text-base">
         {text}
       </div>
     </div>
   );
 }
 
+function Dropdown(props) {
+  console.log(props.title.color);
+  return (
+    <>
+      <div className= {"flex flex-row m-2 p-2 items-center rounded-md" + `bg-[${props.title.color}]`}>
+        <div className="mr-2">
+          <MdOutlineArrowDropDownCircle />
+        </div>
+        <div className="text-2xl font-bold mr-2 ">{props.title.title}</div>
+      </div>
+    </>
+  );
+}
+
 const index = () => {
   return (
     <>
-      <div >
-        <span className='text-5xl font-bold drop-shadow-2xl '> EDUCATION IS EMPOWERMENT</span>
+      <div>
+        <span className="text-5xl font-bold drop-shadow-2xl ">
+          {" "}
+          EDUCATION IS EMPOWERMENT
+        </span>
       </div>
       {/* <ImageCarousel images={images} /> */}
-      <div className='bg-[#FFFFFF] p-4'>
-        <h1 className='font-bold text-4xl mb-2 '>Why Agriculture? </h1>
-        <div className='text-lg'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta nihil illo a iure asperiores quos modi quam suscipit perspiciatis numquam quaerat doloribus, libero reprehenderit aspernatur molestias ipsam hic labore nulla esse dicta exercitationem dignissimos? Dolores, cupiditate, adipisci assumenda aut aperiam ea magnam nostrum ut porro a veritatis non vel.
+      <div className="bg-[#FFFFFF] p-4">
+        <h1 className="font-bold text-4xl mb-2 ">Why Agriculture? </h1>
+        <div className="text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta
+          nihil illo a iure asperiores quos modi quam suscipit perspiciatis
+          numquam quaerat doloribus, libero reprehenderit aspernatur molestias
+          ipsam hic labore nulla esse dicta exercitationem dignissimos? Dolores,
+          cupiditate, adipisci assumenda aut aperiam ea magnam nostrum ut porro
+          a veritatis non vel.
         </div>
       </div>
-      <div className='bg-[#A1D9D6] p-4'>
-        <h1 className='font-bold text-4xl mb-2 '>Why Agriculture? </h1>
-        <div className='text-lg'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta nihil illo a iure asperiores quos modi quam suscipit perspiciatis numquam quaerat doloribus, libero reprehenderit aspernatur molestias ipsam hic labore nulla esse dicta exercitationem dignissimos? Dolores, cupiditate, adipisci assumenda aut aperiam ea magnam nostrum ut porro a veritatis non vel.
+      <div className="bg-[#A1D9D6] p-4">
+        <h1 className="font-bold text-4xl mb-2 ">Why Agriculture? </h1>
+        <div className="text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta
+          nihil illo a iure asperiores quos modi quam suscipit perspiciatis
+          numquam quaerat doloribus, libero reprehenderit aspernatur molestias
+          ipsam hic labore nulla esse dicta exercitationem dignissimos? Dolores,
+          cupiditate, adipisci assumenda aut aperiam ea magnam nostrum ut porro
+          a veritatis non vel.
         </div>
       </div>
-      <div className='bg-[#FFFFFF] p-4'>
-        <h1 className='font-bold text-4xl mb-2 '>Why Agriculture? </h1>
-        <div className='text-lg'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta nihil illo a iure asperiores quos modi quam suscipit perspiciatis numquam quaerat doloribus, libero reprehenderit aspernatur molestias ipsam hic labore nulla esse dicta exercitationem dignissimos? Dolores, cupiditate, adipisci assumenda aut aperiam ea magnam nostrum ut porro a veritatis non vel.
+      <div className="bg-[#FFFFFF] p-4">
+        <h1 className="font-bold text-4xl mb-2 ">Why Agriculture? </h1>
+        <div className="text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et soluta
+          nihil illo a iure asperiores quos modi quam suscipit perspiciatis
+          numquam quaerat doloribus, libero reprehenderit aspernatur molestias
+          ipsam hic labore nulla esse dicta exercitationem dignissimos? Dolores,
+          cupiditate, adipisci assumenda aut aperiam ea magnam nostrum ut porro
+          a veritatis non vel.
         </div>
       </div>
-      <div className='flex justify-center items-center bg-[#A1D9D6] p-8'>
-          <Figures count={55000} text={'Number of women impacted'} />
+      <div className="flex justify-center items-center bg-[#A1D9D6] p-8">
+        {/* <Figures count={55000} text={'Number of women impacted'} />
           <Figures count={60} text={'Orders and Market connects created'} />
           <Figures count={1514} text={'Exhibitions organised'} />
-          <Figures count={270} text={'Number of clients'} />
+          <Figures count={270} text={'Number of clients'} /> */}
+      </div>
+      {/* prolonged approach */}
+      <div>
+        <div className="flex flex-col m-2">
+          {/* title */}
+          <div className="text-4xl font-bold m-2">Prolonged approach</div>
+          {/* grid */}
+          <div className="m-2 grid grid-cols-2">
+            {prolonged.map((title, methods, color, index) => (
+              <Dropdown key={index} title={title} methods={methods} color={color} />
+            ))}
+          </div>
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;
