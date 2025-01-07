@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
       <Navbar />
 
       {/* Main Content */}
-      <main >
+      <main className="min-h-screen">
         <Component {...pageProps} />
       </main>
 

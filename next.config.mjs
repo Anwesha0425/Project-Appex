@@ -3,4 +3,7 @@ export default {
     images: {
         domains: ['res.cloudinary.com', "img.playbook.com", "images.pexels.com"],
     },
+    experimental: {
+        appDir: true,
+    },
 };

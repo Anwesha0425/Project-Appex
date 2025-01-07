@@ -1,6 +1,6 @@
 import { prolonged } from "@/components/Data/DataBase";
-import React from "react";
-// import ImageCarousel from './../../../components/Carousel/Carousel';
+import {React,useState} from "react";
+import ImageCarousel from './../../../components/Carousel/Carousel';
 import CountUp from "react-countup";
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { MdOutlineArrowDropDownCircle } from "react-icons/md";
@@ -68,28 +68,32 @@ function Figures({ count, text }) {
 
 function Dropdown(props) {
   console.log(props.title.color);
+  let total = "flex flex-row items-center rounded-md" + ` bg-[${props.title.color}]`;
+  console.log(total);
+  const [isOpen, setIsopen] = useState(false);
   return (
-    <>
-      <div className= {"flex flex-row m-2 p-2 items-center rounded-md" + `bg-[${props.title.color}]`}>
+    <div className="flex flex-col m-2 p-2 transition-all duration-1000" onClick={() => (setIsopen(!isOpen))}>
+      <div className={"flex flex-row items-center rounded-md p-2 bg-main"}>
         <div className="mr-2">
-          <MdOutlineArrowDropDownCircle />
+          <MdOutlineArrowDropDownCircle  />
         </div>
         <div className="text-2xl font-bold mr-2 ">{props.title.title}</div>
       </div>
-    </>
+      {isOpen && <div className={"flex flex-col p-4"}>
+        {props.title.methods.map((element) => (
+          <div>
+            ● {element}
+          </div>
+        ))}
+      </div>}
+    </div>
   );
 }
 
 const index = () => {
   return (
     <>
-      <div>
-        <span className="text-5xl font-bold drop-shadow-2xl ">
-          {" "}
-          EDUCATION IS EMPOWERMENT
-        </span>
-      </div>
-      {/* <ImageCarousel images={images} /> */}
+      <ImageCarousel images={images} text={"EDUCATION IS EMPOWERMENT"} />
       <div className="bg-[#FFFFFF] p-4">
         <h1 className="font-bold text-4xl mb-2 ">Why Agriculture? </h1>
         <div className="text-lg">
@@ -124,10 +128,10 @@ const index = () => {
         </div>
       </div>
       <div className="flex justify-center items-center bg-[#A1D9D6] p-8">
-        {/* <Figures count={55000} text={'Number of women impacted'} />
+        <Figures count={55000} text={'Number of women impacted'} />
           <Figures count={60} text={'Orders and Market connects created'} />
           <Figures count={1514} text={'Exhibitions organised'} />
-          <Figures count={270} text={'Number of clients'} /> */}
+          <Figures count={270} text={'Number of clients'} />
       </div>
       {/* prolonged approach */}
       <div>
