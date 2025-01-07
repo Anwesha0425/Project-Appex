@@ -94,21 +94,21 @@ export const prolonged = [
     title: "Improving Learning Outcomes",
     color: 'green',
     methods: [
-      " Curriculum Based Learning","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      " Curriculum Based Learning_2","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
     ]
   },
   {
     title: "Improving Learning Outcomes",
     color: 'blue',
     methods: [
-      " Curriculum Based Learning","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      " Curriculum Based Learning_3","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
     ]
   },
   {
     title: "Improving Learning Outcomes",
     color: 'red',
     methods: [
-      " Curriculum Based Learning","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      " Curriculum Based Learning_4","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
     ]
   }
 ];
