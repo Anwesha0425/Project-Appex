@@ -16,7 +16,14 @@ module.exports = {
     'text-sky-200',
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        dropdown: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      }
+    },
     screens: {
       'sm': { 'min': '1px', 'max': '767px' },
       'md': { 'min': '768px', 'max': '991px' },
