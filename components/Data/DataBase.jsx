@@ -82,6 +82,30 @@ export const card_data = [
   },
 ];
 
+
+export const children =[
+{
+  name: "child Education",
+  ImageURL: "https://img.playbook.com/lr5s9yhul9BNkUUyyhKzCrIHCdIadsyXCgqEKrVs55s/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FhNDA2OWRh/LTQzNzItNDRhMy05/OWY5LWQxODJiMWMw/MWU0Zg",
+  text: "Our organization has been entrusted by the District Collector-cum-Chairman, NCLP, Gajapati, to implement vocational training programs across 48 NCLP schools since August 2000. Currently, we manage 11 NCLP schools in the Gajapati district, supporting 550 child labor students. These schools are distributed across Mohana Block (6 schools), Rayagada Block (3 schools), and Gosani Block (2 schools). We are dedicated to providing quality education enriched with vocational training and nutritional food, fostering a holistic approach to the well-being and development of the children under our care.",
+},
+{
+  name: "child labour day",
+  ImageURL: "https://img.playbook.com/LK83UGFSNRwmu2Fr2rNylo_CrptC4tee0zqwUcj3wjM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk1MzA2MjQw/LTRmMGQtNGFjZi04/ZGQ0LTMzZGQ3ZWQx/YTdiYQ",
+  text:"The program raised awareness on child labor through street plays, rallies, and the distribution of leaflets and posters. Supported by the National Child Labour Project (NCLP) in Ganjam and Gajapati districts, it aimed to educate communities about the harmful effects of child labor and the importance of protecting children’s rights. The initiative engaged local residents, promoting collective action to eliminate child labor and create a safer environment for children.",
+},
+{
+  name: "child Education",
+  ImageURL: "https://img.playbook.com/lr5s9yhul9BNkUUyyhKzCrIHCdIadsyXCgqEKrVs55s/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FhNDA2OWRh/LTQzNzItNDRhMy05/OWY5LWQxODJiMWMw/MWU0Zg",
+  text: "Our organization has been entrusted by the District Collector-cum-Chairman, NCLP, Gajapati, to implement vocational training programs across 48 NCLP schools since August 2000. Currently, we manage 11 NCLP schools in the Gajapati district, supporting 550 child labor students. These schools are distributed across Mohana Block (6 schools), Rayagada Block (3 schools), and Gosani Block (2 schools). We are dedicated to providing quality education enriched with vocational training and nutritional food, fostering a holistic approach to the well-being and development of the children under our care.",
+},
+{
+  name: "child labour day",
+  ImageURL: "https://img.playbook.com/LK83UGFSNRwmu2Fr2rNylo_CrptC4tee0zqwUcj3wjM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk1MzA2MjQw/LTRmMGQtNGFjZi04/ZGQ0LTMzZGQ3ZWQx/YTdiYQ",
+  text:"The program raised awareness on child labor through street plays, rallies, and the distribution of leaflets and posters. Supported by the National Child Labour Project (NCLP) in Ganjam and Gajapati districts, it aimed to educate communities about the harmful effects of child labor and the importance of protecting children’s rights. The initiative engaged local residents, promoting collective action to eliminate child labor and create a safer environment for children.",
+}
+];
+
 export const prolonged = [
   {
     title: "Improving Learning Outcomes",

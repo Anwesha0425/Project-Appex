@@ -46,15 +46,6 @@ const images = [
     src: "https://img.playbook.com/VvujrV9EuIdcfT7MML8BNcrR3kPRNDLaUn8RYdbf9aY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk2ZjMwM2Zh/LTBiMjYtNGU5MC05/NWMwLWIxMmFmOTc3/NGRkOQ",
     alt: "image 8",
   },
-  {
-    src: "https://img.playbook.com/jmLNMwvWPeLa6C3iETV8fmigb55QZmvyoqzQBFWYMOA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzI1ODQ1MzY4/LTVlNGItNDgxMi04/OTMyLWFmNmFjYTUz/MWYzMQ",
-    alt: "image 4",
-  },
-
-  {
-    src: "https://img.playbook.com/0WiSDhDgtqXGASNt32bXMt1ToO6mF5KRV0uiqZI31iM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzUyYTNjODk3/LWU2MjQtNDJmNS1i/ZjA4LTQyMjM4NzNi/ZDczNg",
-    alt: "image 9",
-  },
 ];
 
 function Figures({ count, text }) {
@@ -135,7 +126,7 @@ const index = () => {
     <>
       <ImageCarousel images={images} text={"Agriculture"} />
       <div className="bg-[#FFFFFF] p-4 m-4">
-        <h1 className="font-bold text-4xl mb-2">Why Agriculture? </h1>
+        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Why Agriculture? </h1>
         <div className="text-lg m-2">
           Agriculture is the backbone of India, employing nearly half of the
           country's population and serving as a vital source of livelihood for
@@ -152,7 +143,7 @@ const index = () => {
         </div>
       </div>
       <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="font-bold text-4xl mb-2 ">What we do </h1>
+        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200 ">What we do </h1>
         <div className="flex flex-col m-2 p-2 ">
         <div className="flex flex-row m-2 p-2 justify-center items-center">
           <Image
@@ -208,7 +199,7 @@ const index = () => {
         </div>
       </div>
       <div className="bg-[#FFFFFF] p-4 m-4">
-        <h1 className="text-4xl font-bold text-gray-800 mb-8 ">Our Aim </h1>
+        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Our Aim </h1>
         <div className="text-lg">
         <p>
       At the heart of our mission lies a commitment to transforming rural and tribal lives through sustainable agriculture and empowered communities. We aim to bring lasting change by:
@@ -235,7 +226,7 @@ const index = () => {
       <div>
         <div className="flex flex-col m-2">
           {/* title */}
-          <div className="text-4xl font-bold m-2">Prolonged approach</div>
+          <div className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Prolonged approach</div>
           {/* grid */}
           <div className="m-2 grid grid-cols-2">
             {prolonged.map((title, methods, color, index) => (
@@ -292,7 +283,7 @@ const index = () => {
       <div>
         <div className="p-8">
           <div className="flex items-center justify-between">
-            <h1 className="text-5xl font-bold">Latest Stories</h1>
+            <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
               <div className="transition-all border-solid border-[black] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
