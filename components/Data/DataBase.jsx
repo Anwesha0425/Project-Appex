@@ -112,3 +112,21 @@ export const prolonged = [
     ]
   }
 ];
+
+export const Intervention = [
+  { 
+    icon: "AiFillAmazonCircle",
+    text: "Reaching the unreached through fully-equipped Mobile Healthcare Units staffed with doctors and paramedics, providing OPD services, point-of-care test facilities and medicines."},
+  { 
+    icon: "AiFillCar",
+    text: "Connecting people from remote rural areas with doctors for specialized healthcare from nearby urban health centres, through e-Health Kiosks and Telemedicine Centres staffed with paramedics."},
+  { 
+    icon: "AiFillAmazonCircle",
+    text: "Creating accessible static healthcare centres in remote rural communities providing OPD, medicines, point of care test facilities and counseling, with focus on Physiotherapy Services."},
+  { 
+    icon: "AiFillCar",
+    text: "Providing need-based healthcare services to specific target groups through standalone health camps with specialized doctors, point of care tests, and sometimes surgical facilities."},
+  { 
+    icon: "AiFillAmazonCircle",
+    text: "Enhancing reach and capacity of Government Health Centres by integrating telemedicine at sub-centres, training of frontline workers and upgradation of PHCs."},
+];
