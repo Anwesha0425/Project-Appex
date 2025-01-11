@@ -84,7 +84,7 @@ function Dropdown(props) {
       className="flex flex-col m-2 p-2 transition-all duration-1000"
       onClick={() => setIsopen(!isOpen)}
     >
-      <div className={"flex flex-row items-center rounded-md p-2 bg-main"}>
+      <div className={"flex flex-row items-center rounded-md p-2 bg-[#A0D9D6]"}>
         <div className="mr-2">
           <MdOutlineArrowDropDownCircle />
         </div>
@@ -151,9 +151,9 @@ const index = () => {
           farmers and their communities.
         </div>
       </div>
-      <div className="bg-[#A1D9D6] p-4 m-4">
+      <div className="bg-[#eafcfa] p-4 m-4">
         <h1 className="font-bold text-4xl mb-2 ">What we do </h1>
-        <div className="flex flex-col m-2 p-2">
+        <div className="flex flex-col m-2 p-2 ">
         <div className="flex flex-row m-2 p-2 justify-center items-center">
           <Image
           src="https://img.playbook.com/MDKHQXYyS37wex2UtLsVvmtnS_CelJKkgixuFGNmtCk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzUyYTQyNzAy/LTIzYWEtNGJjMC04/YmUwLTZlOTYwNjAx/NTc1NA"
@@ -250,7 +250,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row m-2 justify-center items-center">
+      <div className="flex flex-row m-2 justify-center items-center bg-[#eafcfa]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
@@ -295,7 +295,7 @@ const index = () => {
             <h1 className="text-5xl font-bold">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
-              <div className="transition-all border-solid border-[black] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#fafafa] hover:text-sky-200 hover:font-bold hover:tracking-normal">
+              <div className="transition-all border-solid border-[black] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
                 Explore
               </div>
             </Link>
@@ -315,6 +315,32 @@ const index = () => {
                 />
               ))}
           </div>
+        </div>
+      </div>
+      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+        {/* left */}
+        <div className="m-4 p-4 size-[50%] justify-center">
+          <div className="p-2 size-[52%]">
+            <Link href={"/fundraising"}>
+            <div className="text-2xl font-bold m-4 P-4 font-serif bg-[#A1D9D6] border-black border-2 rounded-md text-center">
+              Donate For Agriculture
+            </div>
+            </Link>
+          </div>
+        </div>
+        {/* right */}
+        <div className="m-4 p-4 flex flex-col justify-start ">   
+            <div className="text-4xl font-bold py-2 font-serif">
+             FOR SUPPORT
+            </div>
+            <div className="text-xl">
+              email-to
+            </div>
+            <div className="text-2xl font-bold font-serif">
+            <a href="mailto:appexfcc@gmail.com" className="text-[#0e0e0e] hover:underline">
+                  appexfcc@gmail.com
+                </a>
+            </div>
         </div>
       </div>
     </>

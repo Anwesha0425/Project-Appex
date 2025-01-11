@@ -19,8 +19,8 @@ export default function ImageCarousel({ images, text }) {
                                 src={image.src}
                                 alt={image.alt}
                                 className="w-[30vw] h-full object-cover border-x-2 border-main"
-                                height={2500}
-                                width={2500}
+                                height={1500}
+                                width={1500}
                             />
                         </div>
                     ))}
