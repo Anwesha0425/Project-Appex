@@ -126,3 +126,38 @@ export const card_women=[
             Text: 'The Family Counseling Centre plays a pivotal role in resolving complex family issues such as marital disputes, dowry demands, and economic crises. Skilled counselors engage with families to mediate conflicts, foster understanding, and guide them toward peaceful resolutions. Their interventions often include providing legal aid, police assistance, and even referrals to external services when required. Through dedicated efforts, many families are able to overcome their struggles and rebuild harmonious relationships.'
     },
     ];
+
+    export const card_health=[
+        {
+            ID:'story1',
+                ImageUrl:"https://img.playbook.com/MYIWIrzuiIanObDL_H7BPGnao7jBpLbNUoxihrh0-As/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2Q1YmZmNmU3/LTczYmYtNDc3ZS05/Y2ZkLWFhMjAzMTcy/OGYxNA",
+                Title:'Visit Of Police',
+                Author_name:'Anwesha',
+                Date_posted: '01-01-2025',
+                Text: 'Regular visits by the police to the Swadhar Shelter Home ensure safety and foster a sense of security for women in distress. These checks help in maintaining law and order within the facility and provide reassurance to the residents. During these visits, police officers interact with the women, ensuring their concerns are heard and addressed promptly. Such initiatives not only deter potential threats but also create an environment of trust between the women and law enforcement authorities.'
+        },
+        {
+            ID:'story1',
+                ImageUrl:"https://img.playbook.com/w5oMsRHlF0liIeGiF_VU-uLY_kg2i730jleqbhGBRmc/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzgyOTdmYjhj/LWFjY2YtNGJiMy1i/ODgyLWMyMzc1ZTQ1/Yjc4Ng",
+                Title:'Family Issue Resolving',
+                Author_name:'Anwesha',
+                Date_posted: '01-01-2025',
+                Text: 'The Family Counseling Centre plays a pivotal role in resolving complex family issues such as marital disputes, dowry demands, and economic crises. Skilled counselors engage with families to mediate conflicts, foster understanding, and guide them toward peaceful resolutions. Their interventions often include providing legal aid, police assistance, and even referrals to external services when required. Through dedicated efforts, many families are able to overcome their struggles and rebuild harmonious relationships.'
+        },
+        {
+            ID:'story1',
+                ImageUrl:"https://img.playbook.com/X8CbHNFJbZ-XuRLrkXQR9gdz0Fc9S4vPFNEkQi1YHtY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2NiYmJhYWRh/LTM3ZGQtNDA3NC04/ZWM0LTFmYWJhYjY4/YjkyZQ",
+                Title:'Swadhar Home',
+                Author_name:'Anwesha',
+                Date_posted: '01-01-2025',
+                Text: 'The Swadhar Shelter Home is a sanctuary for women in difficult circumstances, offering them a chance to rebuild their lives. Women who have faced domestic violence, abandonment, or exploitation find a safe space here to heal and regain their confidence. The shelter provides not only basic amenities but also vocational training, counseling sessions, and emotional support to help them reintegrate into society. With a capacity to house 50 women, the home stands as a testament to compassion and resilience.'
+        },
+        {
+            ID:'story1',
+                ImageUrl:"https://img.playbook.com/lr__MjbEsTj0kkRWWYsGwGr7HhvTJzj96OaraXWTW5Y/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2Q1ODAwYjkz/LTQ0ZjAtNDRlNC04/ODkzLTcyN2JkOTk1/NGNkNQ",
+                Title:'Counciling Session',
+                Author_name:'Anwesha',
+                Date_posted: '01-01-2025',
+                Text: 'The Family Counseling Centre plays a pivotal role in resolving complex family issues such as marital disputes, dowry demands, and economic crises. Skilled counselors engage with families to mediate conflicts, foster understanding, and guide them toward peaceful resolutions. Their interventions often include providing legal aid, police assistance, and even referrals to external services when required. Through dedicated efforts, many families are able to overcome their struggles and rebuild harmonious relationships.'
+        },
+        ];

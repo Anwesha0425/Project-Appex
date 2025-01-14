@@ -308,6 +308,8 @@ const index = () => {
           </div>
         </div>
       </div>
+      
+      {/* Donate */}
       <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
         {/* left */}
         <div className="m-4 p-4 size-[50%] justify-center">
