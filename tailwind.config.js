@@ -35,5 +35,5 @@ module.exports = {
       'dark__blue': '#060031'
     },
   },
-  plugins: [require('@tailwindcss/line-clamp')],
+ 
 }
