@@ -32,15 +32,8 @@ export const data = [{}];
 
 export const card_data = [
   {
-    name: "Training of PRI Members",
-    link: "/project/training-of-pri-members",
-    ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis inventore a earum ratione mollitia, eveniet nemo qui aliquam aliquid quos beatae nam soluta, sed atque. Necessitatibus soluta corporis temporibus perspiciatis!",
-  },
-  {
-    name: "Old Age Home",
-    link: "/project/old-age-home",
+    name: "Miscellaneous Activities",
+    link: "/project/miscellaneous-activities",
     ImageURL:
       "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis inventore a earum ratione mollitia, eveniet nemo qui aliquam aliquid quos beatae nam soluta, sed atque. Necessitatibus soluta corporis temporibus perspiciatis!",
@@ -138,22 +131,28 @@ export const prolonged = [
 ];
 
 export const Intervention = [
-  { 
-    icon: "AiFillAmazonCircle",
-    text: "Reaching the unreached through fully-equipped Mobile Healthcare Units staffed with doctors and paramedics, providing OPD services, point-of-care test facilities and medicines."},
-  { 
-    icon: "AiFillCar",
-    text: "Connecting people from remote rural areas with doctors for specialized healthcare from nearby urban health centres, through e-Health Kiosks and Telemedicine Centres staffed with paramedics."},
-  { 
-    icon: "AiFillAmazonCircle",
-    text: "Creating accessible static healthcare centres in remote rural communities providing OPD, medicines, point of care test facilities and counseling, with focus on Physiotherapy Services."},
-  { 
-    icon: "AiFillCar",
-    text: "Providing need-based healthcare services to specific target groups through standalone health camps with specialized doctors, point of care tests, and sometimes surgical facilities."},
-  { 
-    icon: "AiFillAmazonCircle",
-    text: "Enhancing reach and capacity of Government Health Centres by integrating telemedicine at sub-centres, training of frontline workers and upgradation of PHCs."},
+  {
+    icon: "FaBook", // Icon for library
+    text: "Maintaining libraries at Jharipadar and Bijipur, offering over 10,000 books, periodicals, and newspapers, open to the public with professional staff ensuring accessibility and preservation."
+  },
+  {
+    icon: "FaScroll", // Icon for manuscripts
+    text: "Preserving rare and valuable manuscripts, including those in tribal dialects, with efforts to construct a dedicated library hall for conservation and public access."
+  },
+  {
+    icon: "FaPeopleArrows", // Icon for social cohesion
+    text: "Fostering social harmony through annual cultural programs, community meets, and celebrations of events like Holi, Rakshya Bandhan, Eid, and Christmas to build goodwill and unity."
+  },
+  {
+    icon: "FaFlag", // Icon for celebrations
+    text: "Organizing celebrations and observations of socially and nationally important days to inspire positive impacts and encourage moral and social development."
+  },
+  {
+    icon: "FaRoad", // Icon for road safety
+    text: "Creating awareness about traffic rules and road safety through programs and rallies, including participation from school students, with a focus on immediate impact."
+  }
 ];
+
 
 export const scrollcard = [
   {

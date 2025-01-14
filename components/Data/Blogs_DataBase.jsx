@@ -161,3 +161,38 @@ export const card_women=[
                 Text: 'The Family Counseling Centre plays a pivotal role in resolving complex family issues such as marital disputes, dowry demands, and economic crises. Skilled counselors engage with families to mediate conflicts, foster understanding, and guide them toward peaceful resolutions. Their interventions often include providing legal aid, police assistance, and even referrals to external services when required. Through dedicated efforts, many families are able to overcome their struggles and rebuild harmonious relationships.'
         },
         ];
+
+        export const card_miscellaneous=[
+            {
+                ID:'story1',
+                    ImageUrl:"https://img.playbook.com/zaaTjdeWS6lgI3fj4S8l80EmW_-1jJRc1PrpNGEaPvo/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2MxMzRjNjFk/LTYwYjEtNDljOS1i/ZjBmLTg2MWY4MWRi/MDFiMQ",
+                    Title:'Training Of Asha',
+                    Author_name:'Anwesha',
+                    Date_posted: '01-01-2025',
+                    Text: 'During 2013-14, our organization was recognized as a District Training Site (DTS) by the National Rural Health Mission (NRHM), Odisha, through the CDMO, Ganjam, to conduct training for Accredited Social Health Activists (ASHAs) under the "ASHA Module 6&7" program. This initiative aimed to enhance the skills and knowledge of ASHAs in improving maternal and newborn health, child nutrition, and overall community health. By training over 500 ASHAs from various Community Health Centers (CHCs) in the Ganjam district, the program provided practical knowledge on antenatal care, newborn care, breastfeeding, and reproductive health, alongside skills like using diagnostic tools such as Nischay kits and digital thermometers, wrapping newborns to prevent hypothermia, and maintaining essential health records. This training played a pivotal role in equipping ASHAs with the expertise to contribute significantly to reducing Infant Mortality Rate (IMR) and Maternal Mortality Rate (MMR) in Odisha.'
+            },
+            {
+                ID:'story1',
+                    ImageUrl:"https://img.playbook.com/l-Oc_Ye9plc4rlirPZP6xf3uNL5HlauCbMCQUJfihOg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2Q3NjgzYmQ1/LWU5YTQtNDk3My05/ZGFlLWFkZWRkMjIw/YmEzNw",
+                    Title:'Swach Bharat Mission',
+                    Author_name:'Anwesha',
+                    Date_posted: '01-01-2025',
+                    Text: 'The Family Counseling Centre plays a pivotal role in resolving complex family issues such as marital disputes, dowry demands, and economic crises. Skilled counselors engage with families to mediate conflicts, foster understanding, and guide them toward peaceful resolutions. Their interventions often include providing legal aid, police assistance, and even referrals to external services when required. Through dedicated efforts, many families are able to overcome their struggles and rebuild harmonious relationships.'
+            },
+            {
+                ID:'story1',
+                    ImageUrl:"https://img.playbook.com/Vc-PMfs2kF9GJK_-p1vFq5meyOuXue352lZ9If6KI6w/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzMwMTU2NmNl/LTc5NmYtNDY4Yy1i/ZmVlLTI4ODIxODYz/ODg3Nw",
+                    Title:'Cluster Development Program',
+                    Author_name:'Anwesha',
+                    Date_posted: '01-01-2025',
+                    Text: 'The Swadhar Shelter Home is a sanctuary for women in difficult circumstances, offering them a chance to rebuild their lives. Women who have faced domestic violence, abandonment, or exploitation find a safe space here to heal and regain their confidence. The shelter provides not only basic amenities but also vocational training, counseling sessions, and emotional support to help them reintegrate into society. With a capacity to house 50 women, the home stands as a testament to compassion and resilience.'
+            },
+            {
+                ID:'story1',
+                    ImageUrl:"https://img.playbook.com/0lSJemwbposSh_5S_6SfDe9ta7qI_kB9mVWbRyhH898/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzZmODkyMGEz/LTM2Y2QtNDUzMi1i/NDZmLTkxZjRlMWUz/NWYxOA",
+                    Title:'Enterpreneurship Development Program',
+                    Author_name:'Anwesha',
+                    Date_posted: '01-01-2025',
+                    Text: 'The Family Counseling Centre plays a pivotal role in resolving complex family issues such as marital disputes, dowry demands, and economic crises. Skilled counselors engage with families to mediate conflicts, foster understanding, and guide them toward peaceful resolutions. Their interventions often include providing legal aid, police assistance, and even referrals to external services when required. Through dedicated efforts, many families are able to overcome their struggles and rebuild harmonious relationships.'
+            },
+            ];

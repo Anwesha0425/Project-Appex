@@ -1,6 +1,7 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaStarOfLife } from "react-icons/fa";
 import Link from "next/link";
 
+
 const Footer = () => {
   return (
     <div className="bg-[#A0D9D6] font-medium sm:text-center">
