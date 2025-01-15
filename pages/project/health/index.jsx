@@ -214,7 +214,7 @@ const index = () => {
 
       <div className="flex flex-col m-2 ">
               <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
-                WHO's HIV indication for India
+                WHO&apos;s HIV indication for India
               </h1>
               <Image
                 src="https://img.playbook.com/tMYbjKUf9LjHBoSrYJiUQwiS1DkFenKrZ81qeKuTurU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2UwODdlYTRk/LTI0YTUtNDhjOC05/MGZhLTk1NWI4MzJm/Mzk3YQ"

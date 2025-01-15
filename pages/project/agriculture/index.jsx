@@ -83,8 +83,8 @@ function Dropdown(props) {
       </div>
       {isOpen && (
         <div className={"flex flex-col p-4"}>
-          {props.title.methods.map((element) => (
-            <div>● {element}</div>
+          {props.title.methods.map((element,index) => (
+            <div key={index}>● {element}</div>
           ))}
         </div>
       )}
@@ -128,18 +128,8 @@ const index = () => {
       <div className="bg-[#FFFFFF] p-4 m-4">
         <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Why Agriculture? </h1>
         <div className="text-lg m-2">
-          Agriculture is the backbone of India, employing nearly half of the
-          country's population and serving as a vital source of livelihood for
-          millions of rural families. With its rich history and diverse
-          landscapes, India has immense potential to be a global leader in
-          sustainable farming practices. However, many smallholder farmers face
-          challenges such as limited access to modern technology, financial
-          resources, and climate-resilient practices. By supporting agriculture,
-          we can empower these farmers, enhance food security, and promote rural
-          development. Our NGO is committed to transforming lives through
-          initiatives that foster innovation, education, and sustainable growth
-          in the agricultural sector, ensuring a brighter future for India’s
-          farmers and their communities.
+        Agriculture is the backbone of India, employing nearly half of the country&apos;s population and serving as a vital source of livelihood for millions of rural families. With its rich history and diverse landscapes, India has immense potential to be a global leader in sustainable farming practices. However, many smallholder farmers face challenges such as limited access to modern technology, financial resources, and climate-resilient practices. By supporting agriculture, we can empower these farmers, enhance food security, and promote rural development. Our NGO is committed to transforming lives through initiatives that foster innovation, education, and sustainable growth in the agricultural sector, ensuring a brighter future for India&apos;s farmers and their communities.
+
         </div>
       </div>
       <div className="bg-[#eafcfa] p-4 m-4">
@@ -170,31 +160,8 @@ const index = () => {
           <div className="text-2xl font-serif m-4 p-4 justify-center items-center">Save plants save lives.</div>
         </div>
         <div className="text-lg m-2 p-2 justify-center">
-          Our organization is deeply committed to enhancing rural livelihoods by
-          promoting sustainable agriculture, community development, and resource
-          management. We work closely with farmers in tribal-dominated and rural
-          areas, equipping them with essential training on crop management,
-          water management, seed treatment, and modern farming techniques to
-          maximize production and income for small and marginal farmers. Over
-          the years, we have conducted awareness camps in Ganjam and Gajapati
-          districts, motivating farmers to form Farmers Interest Groups (FIGs)
-          and adopt diverse crops such as paddy, maize, vegetables, and
-          mushrooms. We actively collaborate with agencies like ATMA
-          (Agricultural Technology Management Agency) to provide technological
-          support and demonstrations, such as Rice Line Transplanting and
-          improved maize cultivation techniques. To promote community
-          self-reliance, we have developed agro farms near Berhampur city,
-          facilitating the cultivation of fruit-bearing plants and other
-          agricultural products in partnership with the horticulture department.
-          Our efforts extend to water resource management under the "National
-          Programme for Repair, Restoration & Renovation of Water Bodies"
-          initiated by the Department of Water Resources. Through baseline
-          surveys and capacity-building activities in Ganjam, Gajapati, and
-          Rayagada districts, we assess the pre-renovation status of water
-          bodies, agricultural productivity, irrigation intensity, and community
-          institutions. By restoring water bodies and empowering communities, we
-          aim to strengthen rural resilience and ensure sustainable agricultural
-          practices for generations to come.
+        Our organization is deeply committed to enhancing rural livelihoods by promoting sustainable agriculture, community development, and resource management. We work closely with farmers in tribal-dominated and rural areas, equipping them with essential training on crop management, water management, seed treatment, and modern farming techniques to maximize production and income for small and marginal farmers. Over the years, we have conducted awareness camps in Ganjam and Gajapati districts, motivating farmers to form Farmers Interest Groups (FIGs) and adopt diverse crops such as paddy, maize, vegetables, and mushrooms. We actively collaborate with agencies like ATMA (Agricultural Technology Management Agency) to provide technological support and demonstrations, such as Rice Line Transplanting and improved maize cultivation techniques. To promote community self-reliance, we have developed agro farms near Berhampur city, facilitating the cultivation of fruit-bearing plants and other agricultural products in partnership with the horticulture department. Our efforts extend to water resource management under the &quot;National Programme for Repair, Restoration &amp; Renovation of Water Bodies&quot; initiated by the Department of Water Resources. Through baseline surveys and capacity-building activities in Ganjam, Gajapati, and Rayagada districts, we assess the pre-renovation status of water bodies, agricultural productivity, irrigation intensity, and community institutions. By restoring water bodies and empowering communities, we aim to strengthen rural resilience and ensure sustainable agricultural practices for generations to come.
+
         </div>
         </div>
       </div>
@@ -207,16 +174,16 @@ const index = () => {
     <ul className="list-disc ml-6">
       <li><strong>Empowering Farmers, Transforming Lives</strong> – We equip small and marginal farmers with modern techniques, crop management skills, and innovative solutions to maximize productivity and unlock new income opportunities.</li>
       <li><strong>Building Resilient Communities</strong> – Collaboration is the key to success. Through Farmers Interest Groups (FIGs) and community-driven initiatives, we foster unity, self-reliance, and collective growth.</li>
-      <li><strong>Reviving Nature’s Lifelines</strong> – Restoring water bodies and improving irrigation systems isn’t just about farming—it’s about reviving hope, securing livelihoods, and nurturing future generations.</li>
+      <li><strong>Reviving Nature&apos;s Lifelines</strong> – Restoring water bodies and improving irrigation systems isn&apos;t just about farming—it&apos;s about reviving hope, securing livelihoods, and nurturing future generations.</li>
       <li><strong>Sowing Seeds of Innovation</strong> – By integrating cutting-edge technology and expert guidance, we pave the way for smarter, more sustainable agricultural practices.</li>
       <li><strong>Harvesting Prosperity Through Agro-Farming</strong> – Our agro-farming initiatives and horticulture projects ensure food security while boosting rural economies and empowering communities to dream big.</li>
     </ul>
     <p>
-      We are not just about farming; we’re about transforming possibilities into realities. Together, we’re sowing the seeds of change for a thriving and sustainable future.
+      We are not just about farming; we&apos;re about transforming possibilities into realities. Together, we&apos;re sowing the seeds of change for a thriving and sustainable future.
     </p>
         </div>
       </div>
-      <div className="flex justify-center items-center bg-[url('https://img.playbook.com/47bzRCD1Uklj6Y36l4T3QA4zl0oSqPGywH1nfBVVJiE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzgxODdiODk0/LWZmZWItNDFkNy04/ZmE5LTg0OGVmOTZj/YTQ1OQ')] opacity-70 p-8">
+      <div className="flex justify-center items-center bg-[url( 'https://img.playbook.com/47bzRCD1Uklj6Y36l4T3QA4zl0oSqPGywH1nfBVVJiE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzgxODdiODk0/LWZmZWItNDFkNy04/ZmE5LTg0OGVmOTZj/YTQ1OQ ')] opacity-70 p-8">
         <Figures count={500} text={"Villages covered"} />
         <Figures count={100} text={"Projects completed"} />
         <Figures count={5000} text={"Number of farmers impacted"} />

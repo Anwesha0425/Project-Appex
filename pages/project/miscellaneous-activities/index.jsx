@@ -70,7 +70,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
   );
 }
 
-const index = () => {
+const Index = () => {
   const option_css =
     "border-solid border-[1px] border-[gray] py-2 px-6 rounded-t-xl ";
   const [option, setOption] = useState(0);
@@ -102,15 +102,8 @@ const index = () => {
           What We Do
         </h1>
         <div className="text-lg m-2">
-          Our organization is dedicated to fostering sustainable development and
-          empowering communities by addressing critical social challenges. From
-          providing healthcare through mobile units and telemedicine centers to
-          preserving cultural heritage through manuscript conservation, we
-          strive to create holistic solutions. We also focus on promoting
-          education, enhancing social cohesion, and organizing community
-          programs that inspire collective progress. Through these efforts, we
-          aim to uplift underserved communities, ensuring access to essential
-          resources and opportunities for a better tomorrow.
+        Our organization is dedicated to fostering sustainable development and empowering communities by addressing critical social challenges. From providing healthcare through mobile units and telemedicine centers to preserving cultural heritage through manuscript conservation, we strive to create holistic solutions. We also focus on promoting education, enhancing social cohesion, and organizing community programs that inspire collective progress. Through these efforts, we aim to uplift underserved communities, ensuring access to essential resources and opportunities for a better tomorrow.
+
         </div>
       </div>
 
@@ -120,17 +113,8 @@ const index = () => {
             Our Aim
           </h1>
           <div className="text-lg m-2">
-            Our organization is committed to fostering grassroots democracy and
-            empowering rural communities. By promoting capacity building among
-            Panchayati Raj Institution (PRI) members, we aim to achieve
-            Gandhiji’s vision of self-sustained villages and revitalized rural
-            infrastructure. In addition, we focus on preserving cultural
-            heritage through the conservation of rare manuscripts and
-            traditional art forms, while also fostering social harmony through
-            cultural programs and celebrations. With dedicated efforts in
-            education, community cohesion, and sustainable development, our aim
-            is to create a society rooted in equality, empowerment, and
-            progress.
+          Our organization is committed to fostering grassroots democracy and empowering rural communities. By promoting capacity building among Panchayati Raj Institution (PRI) members, we aim to achieve Gandhiji&apos;s vision of self-sustained villages and revitalized rural infrastructure. In addition, we focus on preserving cultural heritage through the conservation of rare manuscripts and traditional art forms, while also fostering social harmony through cultural programs and celebrations. With dedicated efforts in education, community cohesion, and sustainable development, our aim is to create a society rooted in equality, empowerment, and progress.
+
           </div>
         </div>
       </div>
@@ -248,4 +232,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

@@ -111,7 +111,7 @@ const index = () => {
         </h1>
         <div className="text-lg m-2 p-2 justify-center">
           Our NGO is dedicated to fostering holistic development by addressing
-          critical social issues such as child labor, women’s empowerment, and
+          critical social issues such as child labor, women&apos;s empowerment, and
           community upliftment. We provide education to underprivileged children
           and marginalized women, empowering them with knowledge and skills for
           a better future. Our vocational training programs equip women and
@@ -119,7 +119,7 @@ const index = () => {
           sustainable livelihoods. Through family counseling, we help families
           resolve conflicts and rebuild stability, while income generation
           programs and Self-Help Groups promote entrepreneurship among women.
-          Additionally, our "SWADHARA" shelter home offers safety and
+          Additionally, our &quot;SWADHARA&quot; shelter home offers safety and
           rehabilitation for women in distress. By conducting awareness
           campaigns on education, rights, and social issues, we aim to inspire
           lasting change and create a society where every individual can thrive
@@ -143,12 +143,14 @@ const index = () => {
             />
             <Image
               src="https://img.playbook.com/7nukJ45MMv9jXeOi3Ym9rh1K26HwHMFcrwm1j1si9y0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzFjNTgzNWY2/LTYzNGYtNDExZS1h/NzUyLTAxYjkzNzY3/YjNmNA"
+              alt=""
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"
             />
             <Image
               src="https://img.playbook.com/z--WxU7p7wBMobHvjrWj1wRswHUXM7EgBucrjiiYjfU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzcxMjE4NjVm/LTRjNTYtNDc3Yi04/NWUwLTQ0MTA4Nzc2/YzJiNA"
+              alt=""
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"
@@ -163,7 +165,7 @@ const index = () => {
 
       <div className="flex flex-col m-2 ">
         <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
-          UN's Strategic Plan and Vision
+          UN&apos;s Strategic Plan and Vision
         </h1>
         <Image
           src="https://img.playbook.com/Kx6cL3SNsVZaqc6nuOExaElfiKrJTdKnZHJm3dispgg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FmZTZjNjgx/LTNkYzUtNGY0NC04/NmEyLTJlYTQ2Yjc4/OWNlZA"
@@ -208,7 +210,7 @@ const index = () => {
             </li>
             <li>
               <strong>Providing Shelter and Support</strong> – Operating
-              "SWADHARA," a shelter home for women in distress, to help them
+              &quot;SWADHARA,&quot; a shelter home for women in distress, to help them
               rebuild their lives with dignity and confidence.
             </li>
           </ul>
@@ -266,7 +268,7 @@ const index = () => {
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Vocational Training</h1>
             <p>
-              Vocational training transforms women’s potential into real
+              Vocational training transforms women&apos;s potential into real
               opportunities.
             </p>
           </div>

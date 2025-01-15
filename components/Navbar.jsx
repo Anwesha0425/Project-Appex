@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Sling as Hamburger } from "hamburger-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <img
+              <Image
                 width="auto"
                 height="auto"
                 src="https://img.playbook.com/6MeRmsLAPaHeWVysxfssWU1IhU7ivBsGUQ6GS5Ttceg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzYyNDVlODlm/LTQ1OTMtNDY0MS1i/NGRmLWViYTY0ODUw/NGEwZQ"

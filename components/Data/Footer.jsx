@@ -86,7 +86,7 @@ const Footer = () => {
         {/* Subscription Section */}
         <div>
           <h1 className="text-xl font-semibold text-[#006B5D]">Get Subscribed</h1>
-          <h1 className="pt-2">Don't miss our latest updates!</h1>
+          <h1 className="pt-2">Don&apos;t miss our latest updates!</h1>
           <br />
           <form className="flex flex-col gap-4">
             <div>

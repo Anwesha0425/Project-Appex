@@ -4,26 +4,26 @@ import Link from "next/link";
 import Image from "next/image";
 import { children } from "@/components/Data/DataBase";
 
-const images = [
+const Images = [
   {
     src: "https://img.playbook.com/LK83UGFSNRwmu2Fr2rNylo_CrptC4tee0zqwUcj3wjM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk1MzA2MjQw/LTRmMGQtNGFjZi04/ZGQ0LTMzZGQ3ZWQx/YTdiYQ",
-    alt: "image 1",
+    alt: "Image 1",
   },
   {
     src: "https://img.playbook.com/vNcOsBlfB96rW21-wElsX9uv5csgt7iFO4jmbG2auy4/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2EwN2NiNjQ4/LWUxZWYtNGVlNC04/NDgwLWQzYWRlODc4/NzZlMg",
-    alt: "image 2",
+    alt: "Image 2",
   },
   {
     src: "https://img.playbook.com/7ZTc7Sy25KJEQc3qTAsxrVjJ6e4brC013alB1ZqS8W0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzlkYjc1YzIz/LTVmMmMtNDViNi05/MTMyLWM1ODM3ZjM0/OGNlOQ",
-    alt: "image 7",
+    alt: "Image 7",
   },
   {
     src: "https://img.playbook.com/4LUmdihx-s6JM6sYIMn3e6uu0-bm9Xdsc7VbYfiXJy4/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzViYzM2NTJm/LWZmZDgtNGU5ZS05/NDMyLWQ3Zjg1NjQx/ZDQzNA",
-    alt: "image 5",
+    alt: "Image 5",
   },
   {
     src: "https://img.playbook.com/hwuMpsEXHqnf4_yPEncXOL6XE4QNPfjuLXg2wqnJD6Q/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzlhZTU2ZGI4/LWRmZmYtNGI2Mi1i/MTY5LTFiOTM0NmVh/ZTFmOA",
-    alt: "image 6",
+    alt: "Image 6",
   },
 ];
 
@@ -76,23 +76,15 @@ const Index = () => {
     <>
       {/* Carousel */}
       <div>
-        <ImageCarousel images={images} text={"Child Development"} />
+        <ImageCarousel Images={Images} text={"Child Development"} />
       </div>
       <div className="bg-[#FFFFFF] p-4 m-4">
         <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">
           Why Child Development?
         </h1>
         <div className="text-lg m-2">
-          Children are the foundation of a nation's future, and their well-being
-          is vital for India’s progress. Despite advancements, many children in
-          rural and marginalized communities face challenges such as poverty,
-          lack of education, malnutrition, and limited access to healthcare. By
-          prioritizing child development, we can ensure that every child gets
-          the opportunity to grow in a nurturing environment. Our NGO is
-          dedicated to empowering children through initiatives focused on
-          education, healthcare, nutrition, and skill development. By fostering
-          holistic growth and breaking the cycle of poverty, we aim to build a
-          brighter future for the next generation and their communities.
+        Children are the foundation of a nation&apos;s future, and their well-being is vital for India&apos;s progress. Despite advancements, many children in rural and marginalized communities face challenges such as poverty, lack of education, malnutrition, and limited access to healthcare. By prioritizing child development, we can ensure that every child gets the opportunity to grow in a nurturing environment. Our NGO is dedicated to empowering children through initiatives focused on education, healthcare, nutrition, and skill development. By fostering holistic growth and breaking the cycle of poverty, we aim to build a brighter future for the next generation and their communities.
+
         </div>
       </div>
       <div className="bg-[#eafcfa] p-4 m-4">
@@ -101,24 +93,13 @@ const Index = () => {
         </h1>
         <div className="flex flex-col m-2 p-2 ">
           <div className="text-lg m-2 p-2 justify-center">
-            At our NGO, we are committed to eradicating child labor and
-            promoting child development in India. Through our National Child
-            Labour Program (NCLP), we provide specialized education and
-            vocational training to children in need, especially those at risk of
-            exploitation. We operate schools that focus on both academic and
-            technical skills, such as soft toy making, tailoring, and coir
-            craft, empowering children with the tools to secure a brighter
-            future and improve their family's income. In addition to education,
-            we run awareness campaigns to highlight the dangers of child labor
-            and dropout rates, aiming to create a society where every child has
-            access to education and opportunities for growth. Our efforts have
-            reached thousands of children across districts like Gajapati and
-            Ganjam, transforming lives and fostering long-term positive change
-            in communities.
+          At our NGO, we are committed to eradicating child labor and promoting child development in India. Through our National Child Labour Program (NCLP), we provide specialized education and vocational training to children in need, especially those at risk of exploitation. We operate schools that focus on both academic and technical skills, such as soft toy making, tailoring, and coir craft, empowering children with the tools to secure a brighter future and improve their family&apos;s income. In addition to education, we run awareness campaigns to highlight the dangers of child labor and dropout rates, aiming to create a society where every child has access to education and opportunities for growth. Our efforts have reached thousands of children across districts like Gajapati and Ganjam, transforming lives and fostering long-term positive change in communities.
+
           </div>
           <div className="flex flex-row m-2 p-2 justify-center items-center">
             <Image
               src="https://img.playbook.com/GsThB309VcZpkeBBSzwkgoMDB7vXUnXFH70DorK-X7g/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JkODM3ZDI0/LTk4YWYtNGJjYi1h/Mzg3LWIwNzM0ZTEw/ZGJiNw"
+              alt=""
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"
@@ -132,12 +113,14 @@ const Index = () => {
             />
             <Image
               src="https://img.playbook.com/vhzsb79faRCp0ji5vGobTE7scjK7pebols59UOv4TuM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2QzMWM1OGNi/LTA5N2QtNDY1OS1h/OThkLTgxZWU2MjNi/OTY4Ng"
+              alt=""
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"
             />
             <Image
               src="https://img.playbook.com/QowTWrDENJ2WYeWOpGo2VyIR2mLKqlFZoHCVe5LwzQ0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzVjYTkyOTZi/LTU0NTctNDNiNS05/OGFlLTIyODU4Y2Qx/MDE4ZQ"
+              alt=""
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"
@@ -178,7 +161,7 @@ const Index = () => {
               families.
             </li>
             <li>
-              <strong>Reviving Nature’s Lifelines</strong> – Restoring water
+              <strong>Reviving Nature&apos;s Lifelines</strong> – Restoring water
               bodies while providing education and skills to vulnerable
               children, creating hope for families and communities.
             </li>
@@ -234,8 +217,9 @@ const Index = () => {
                 </defs>
 
                 {/* <!-- Image clipped to the circle --> */}
-                <image
+                <Image
                   href="https://img.playbook.com/Fb34qOB4x8k7j20c_kxGKg1ZWsoElzLeqRxe5Yc4dm0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzY5NDRmMGM5/LWIxNDMtNGRkMi1i/OTVjLTM3NmMzYTk5/Y2E3NA"
+                  alt=""
                   x="1"
                   y="1"
                   width="22"
@@ -245,10 +229,10 @@ const Index = () => {
               </svg>
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
-            Educate. Empower. Evolve.
+            &quot;Educate. Empower. Evolve.&quot;
             </h1>
             <p className="px-4 text-gray-500">
-            "Education is the most powerful tool we can use to break the cycle of poverty and create a brighter future for every child."
+            &quot;Education is the most powerful tool we can use to break the cycle of poverty and create a brighter future for every child.&quot;
             </p>
           </div>
 
@@ -281,8 +265,9 @@ const Index = () => {
                 </defs>
 
                 {/* <!-- Image --> */}
-                <image
+                <Image
                   href="https://img.playbook.com/P9bdSfZ6e_xwSzHN5s5K2p8uT6csA6lkzISSBf8rPZk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2Q2ZDkxNWI0/LWFkZjUtNDM2My1i/YzBhLWZkMWU3M2Nk/Y2M4NA"
+                  alt=""
                   x="2"
                   y="2"
                   width="22"
@@ -292,10 +277,10 @@ const Index = () => {
               </svg>
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
-            "Explore. Create. Grow."
+            &quot;Explore. Create. Grow.&quot;
             </h1>
             <p className="px-4 text-gray-500">
-            "Extracurricular activities ignite creativity, build confidence, and nurture skills that shape a child's future."
+            &quot;Extracurricular activities ignite creativity, build confidence, and nurture skills that shape a child&apos;s future.&quot;
             </p>
           </div>
 
@@ -328,8 +313,9 @@ const Index = () => {
                 </defs>
 
                 {/* <!-- Image --> */}
-                <image
+                <Image
                   href="https://img.playbook.com/0-yCtBkP1Cq0dlN_YiMzLgJPLgUe8BEkJsD-CsCUKvE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzU2NzQzM2I3/LWZjYTktNDAzNy05/ZGQxLTJiNjI5Yzc2/Mjk1OQ"
+                  alt=""
                   x="2"
                   y="2"
                   width="22"
@@ -339,10 +325,10 @@ const Index = () => {
               </svg>
             </div>
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
-            "Learn. Innovate. Lead."
+            &quot;Learn. Innovate. Lead.&quot;
             </h1>
             <p className="px-4 text-gray-500">
-            "Skills and technology empower children to innovate, solve problems, and lead the future with confidence."
+            &quot;Skills and technology empower children to innovate, solve problems, and lead the future with confidence.&quot;
             </p>
           </div>
         </div>
