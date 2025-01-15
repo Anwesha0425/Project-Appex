@@ -143,14 +143,14 @@ const index = () => {
             />
             <Image
               src="https://img.playbook.com/7nukJ45MMv9jXeOi3Ym9rh1K26HwHMFcrwm1j1si9y0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzFjNTgzNWY2/LTYzNGYtNDExZS1h/NzUyLTAxYjkzNzY3/YjNmNA"
-              alt=""
+              alt="x"
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"
             />
             <Image
               src="https://img.playbook.com/z--WxU7p7wBMobHvjrWj1wRswHUXM7EgBucrjiiYjfU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzcxMjE4NjVm/LTRjNTYtNDc3Yi04/NWUwLTQ0MTA4Nzc2/YzJiNA"
-              alt=""
+              alt="y"
               height={150}
               width={150}
               className="border-black border-3 p-2 m-4 rounded-full shadow-md"

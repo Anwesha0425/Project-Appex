@@ -18,8 +18,8 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                width="auto"
-                height="auto"
+                width="10"
+                height="10"
                 src="https://img.playbook.com/6MeRmsLAPaHeWVysxfssWU1IhU7ivBsGUQ6GS5Ttceg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzYyNDVlODlm/LTQ1OTMtNDY0MS1i/NGRmLWViYTY0ODUw/NGEwZQ"
                 alt="Logo"
                 className="h-12 w-auto"
