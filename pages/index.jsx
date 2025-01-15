@@ -514,7 +514,7 @@ export default function index() {
                 <p className="text-gray-600 text-sm">
                   Promoted livestock activities as a sustainable income source.
                   Established dairy units with 60% income benefits and plans to
-                  expand with the "Goshala" concept for employment and
+                  expand with the &quot;Goshala&quot; concept for employment and
                   bio-manure production.
                 </p>
               </div>
