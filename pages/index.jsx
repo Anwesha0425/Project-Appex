@@ -4,15 +4,11 @@ import {
   FaChalkboardTeacher,
   FaHandsHelping,
   FaPaintBrush,
-  FaVolleyballBall,
   FaFemale,
   FaSeedling,
   FaTractor,
   FaWater,
   FaRegChartBar,
-  FaHeartbeat,
-  FaEye,
-  FaRibbon,
   FaToilet,
   FaLeaf,
   FaShoppingCart,
@@ -24,8 +20,9 @@ import {
 import { RiSeedlingFill } from "react-icons/ri";
 import { GiCow } from "react-icons/gi";
 import ProjectCard from "@/components/Project_cad";
+import Image from "next/image";
 export default function index() {
-   const projects = [
+  const projects = [
     {
       title: "Women Empowerment",
       description:
@@ -72,31 +69,58 @@ export default function index() {
       description:
         "Our organization is dedicated to preserving cultural heritage, promoting social harmony, and fostering community development. These efforts are reflected through a variety of initiatives, including library services, manuscript preservation, social cohesion programs, and celebrations of cultural and national importance.",
       flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
-      flowDescription:
-        "Library → Manuscripts → Social Cohesion → Celebrations",
+      flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
       titleColor: "text-blue-600",
     },
   ];
   return (
     <>
-    <div>
-      <div className="text-3xl font-bold m-2 text-center">Projects</div>
-    <div className="text-sm font-semibold text-center m-2">
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-2">
-        {projects.map((project, index) => (
-          <div className="mb-2" key={index}>
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              flowSteps={project.flowSteps}
-              flowDescription={project.flowDescription}
-              titleColor={project.titleColor}
-            />
-          </div>
-        ))}
+      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/iUqamV1mEwWdc1BINe3fI_-0EePPyqBEX76v2UJRxyU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2ZmODg2Mzg2/LTIwZjUtNGE1MS05/NTAxLWVkMzlmODdj/MGQ4Yw"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+            Welcome to APPEX GUIDE LINE
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+            Inspiring hope, igniting change, and empowering dreams every step of
+            the way.
+          </p>
+          {/* <a
+            href="/"
+            class="bg-[yellow] text-gray-900 hover:bg-[yellow] py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
+            Get Started
+          </a> */}
+        </div>
       </div>
-    </div>
-    </div>
+      <div>
+        <div className="text-3xl font-bold m-2 text-center">Projects</div>
+        <div className="text-sm font-semibold text-center m-2">
+          <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-2">
+            {projects.map((project, index) => (
+              <div className="mb-2" key={index}>
+                <ProjectCard
+                  title={project.title}
+                  description={project.description}
+                  flowSteps={project.flowSteps}
+                  flowDescription={project.flowDescription}
+                  titleColor={project.titleColor}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 }
