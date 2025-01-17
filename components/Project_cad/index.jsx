@@ -2,10 +2,10 @@ import React from "react";
 
 function ProjectCard({ title, description, flowSteps, flowDescription, titleColor }) {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 max-w-4xl w-full">
+    <div className="bg-white hover:bg-[#ade6e1] shadow-lg rounded-lg p-4 max-w-4xl w-full">
       <h1 className={`text-2xl font-bold text-center ${titleColor} mb-4`}>{title}</h1>
       <p className="text-gray-700 text-justify mb-4">{description}</p>
-      <h2 className="text-xl font-bold text-center text-gray-800 mb-4">Flow Diagram</h2>
+      {/* <h2 className="text-xl font-bold text-center text-gray-800 mb-4">Flow Diagram</h2> */}
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           {flowSteps.map((StepIcon, index) => (

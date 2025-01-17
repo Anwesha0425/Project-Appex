@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const PageLinks = [
   {
     name: "About Organization",
@@ -199,5 +201,80 @@ export const scrollcard2 = [
       "The organization, through an integrated approach, has created ongoing income-generating opportunities for both men and women trained in various skills, including stitching, appliqué work, paper thunga, and khali stitching. The 'Training cum Production Unit' located in Berhampur, Ganjam, employs 20 individuals on a daily wage basis, providing stable employment and fostering skill development.",
       "To further enhance the training experience, the organization has partnered with the Directorate General of Employment & Training (DGET), Cuttack, to provide expertise in modern stitching techniques. With its growing production capacity, the unit has been recognized as a small-scale industry, contributing significantly to the local economy and empowering workers through sustainable livelihoods."
     ]
+  },
+];
+
+export const pdfData = [
+  {
+    title: "Annual Report 2006-07",
+    fileUrl: "https://drive.google.com/file/d/1Num3YTVmYDEhUxLYaZJkjg8DCFXKBjkd/preview",
+  },
+  {
+    title: "Annual Report 2007-08",
+    fileUrl: "https://drive.google.com/file/d/1YOFe__e0pT7jlL1lIwFh7o0AqoHj1LMG/preview",
+  },
+  {
+    title: "Annual Report 2008-09",
+    fileUrl: "https://drive.google.com/file/d/16O26qWQCL8wTNZIvUw9AUOfRZxC7vtSz/preview",
+  },
+  {
+    title: "Annual Report 2009-10",
+    fileUrl: "https://drive.google.com/file/d/1jEpj6l03HYoD7HZp7LKy73PadNmRYl_O/preview",
+  },
+  {
+    title: "Annual Report 2010-11",
+    fileUrl: "https://drive.google.com/file/d/1u1UR1zOtsvfBZyR856akDJ--_ejx3Mxw/preview",
+  },
+  {
+    title: "Annual Report 2011-12",
+    fileUrl: "https://drive.google.com/file/d/1YjW-PLbdUtZkGGSLrTRJ7_Wwe8LBdMfY/preview",
+  },
+  {
+    title: "Annual Report 2012-13",
+    fileUrl: "https://drive.google.com/file/d/14wTlUvaPFLfTjtH1DE8efBFst1wdCq24/preview",
+  },
+  {
+    title: "Annual Report 2013-14",
+    fileUrl: "https://drive.google.com/file/d/1rvLjIj2x88MHIhpcqqJaSFuGSNu4EgKa/preview",
+  },
+  {
+    title: "Annual Report 2014-15",
+    fileUrl: "https://drive.google.com/file/d/1iPtkyH5-XHnC4Qjxpcuvtq97Cr3dGTWN/preview",
+  },
+  {
+    title: "Annual Report 2015-16",
+    fileUrl: "https://drive.google.com/file/d/1zj1h6cO2J5cRc56M0kBbmMbHxVPzkXzd/preview",
+  },
+  {
+    title: "Annual Report 2016-17",
+    fileUrl: "https://drive.google.com/file/d/1NVn_iyoWkTglDU2MmZVet32QKkjSe8Rh/preview",
+  },
+  {
+    title: "Annual Report 2017-18",
+    fileUrl: "https://drive.google.com/file/d/1v3VFYoSl3hIK9G8KhoPkhwDDR9sV9Qs3/preview",
+  },
+  {
+    title: "Annual Report 2018-19",
+    fileUrl: "https://drive.google.com/file/d/1SjHNP8bSlVFzSX7Xoc9-4Cw9YuOQ3_8Y/preview",
+  },
+  {
+    title: "Annual Report 2019-20",
+    fileUrl: "https://drive.google.com/file/d/1b6wrulQsBLkqyMZymvSz6f4naoV66DFI/preview",
+  },
+  {
+    title: "Annual Report 2020-21",
+    fileUrl: "https://drive.google.com/file/d/1jXeC0OLPARZrsmJN2peM0JzXaPO3v5Ko/preview",
+  },
+  {
+    title: "Annual Report 2021-22",
+    fileUrl: "https://drive.google.com/file/d/1nwaMOG0PDDwpzYvFA1bGbT8e5OUqj--9/preview",
+  },
+  {
+    title: "Annual Report 2022-23",
+    fileUrl: "https://drive.google.com/file/d/1oaYX_uykawY2Z-77BFst2is-KAdOCGKJ/preview",
+  },
+  {
+    title: "Annual Report 2023-24",
+    fileUrl: "https://drive.google.com/file/d/1kVhEjcUISEknIRdTDvQaHWoMYZkLIDD_/preview",
   },
 ];

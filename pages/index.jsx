@@ -21,58 +21,115 @@ import { RiSeedlingFill } from "react-icons/ri";
 import { GiCow } from "react-icons/gi";
 import ProjectCard from "@/components/Project_cad";
 import Image from "next/image";
-export default function index() {
-  const projects = [
+import DynamicCard from "@/components/Background_card";
+
+const fetchData = async () => {
+  return [
     {
-      title: "Women Empowerment",
+      id: 1,
+      title: "Vintage Cars",
       description:
-        "Empowering women is essential for achieving sustainable development and equality in society. Our organization has dedicated itself to uplifting women through education, skill development, and creating awareness about their rights and opportunities. By providing them with resources and support, we strive to help women become self-reliant and confident contributors to society.",
-      flowSteps: [FaFemale, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
-      flowDescription: "Awareness → Skill Development → Support → Empowerment",
-      titleColor: "text-purple-600",
+        "A vintage car, also known as a classic car, is typically defined as a vehicle manufactured between the early 1900s and the 1970s.",
+      imageUrl: "https://pagedone.io/asset/uploads/1688031162.jpg",
     },
     {
-      title: "Child Support",
+      id: 2,
+      title: "Toy",
       description:
-        "With India lagging behind in efforts to abolish child labour, it is crucial to supplement eradication efforts with comprehensive socio-economic programmes and educational upliftment of underprivileged sections. Child Support services by our organization have been one of the most successful social initiatives, passionately focusing on the education and welfare of child labourers.",
-      flowSteps: [FaChild, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
-      flowDescription:
-        "Child Welfare → Awareness → Support → Skill Development → Empowerment",
-      titleColor: "text-blue-600",
+        "A toy is an object designed for play and enjoyment, typically used by children but appreciated by all ages.",
+      imageUrl: "https://pagedone.io/asset/uploads/1688031375.jpg",
     },
     {
-      title: "Agricultural Promotion",
+      id: 3,
+      title: "Vintage Cars",
       description:
-        "Agriculture is the backbone of rural livelihoods, especially in tribal-dominated areas. With proper training in production processes, crop management, water management, and seed treatment, small and marginal farmers can achieve optimal production and increase their incomes. Our organization has been actively working to empower farmers through awareness programs, demonstrations, and technical support.",
-      flowSteps: [
-        FaSeedling,
-        FaTractor,
-        RiSeedlingFill,
-        FaWater,
-        FaRegChartBar,
-      ],
-      flowDescription:
-        "Awareness → Demonstration → Seed Treatment → Water Management → Productivity",
-      titleColor: "text-green-600",
+        "A vintage car, also known as a classic car, is typically defined as a vehicle manufactured between the early 1900s and the 1970s.",
+      imageUrl: "https://pagedone.io/asset/uploads/1688031162.jpg",
     },
     {
-      title: "Health Activities",
+      id: 4,
+      title: "Toy",
       description:
-        "Ensuring a healthy body and mind requires a healthy environment. Our organization emphasizes community-based health management and focuses on child health, family welfare programs, immunization (Pulse Polio), and pre/postnatal care for women and children.",
-      flowSteps: [FaToilet, FaLeaf, FaShoppingCart, GiCow],
-      flowDescription:
-        "Sanitation → Environment Protection → Consumer Awareness → Livestock Development",
-      titleColor: "text-green-600",
+        "A toy is an object designed for play and enjoyment, typically used by children but appreciated by all ages.",
+      imageUrl: "https://pagedone.io/asset/uploads/1688031375.jpg",
     },
     {
-      title: "Miscellaneous Works",
+      id: 5,
+      title: "Vintage Cars",
       description:
-        "Our organization is dedicated to preserving cultural heritage, promoting social harmony, and fostering community development. These efforts are reflected through a variety of initiatives, including library services, manuscript preservation, social cohesion programs, and celebrations of cultural and national importance.",
-      flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
-      flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
-      titleColor: "text-blue-600",
+        "A vintage car, also known as a classic car, is typically defined as a vehicle manufactured between the early 1900s and the 1970s.",
+      imageUrl: "https://pagedone.io/asset/uploads/1688031162.jpg",
+    },
+    {
+      id: 6,
+      title: "Toy",
+      description:
+        "A toy is an object designed for play and enjoyment, typically used by children but appreciated by all ages.",
+      imageUrl: "https://pagedone.io/asset/uploads/1688031375.jpg",
     },
   ];
+};
+const projects = [
+  {
+    title: "Women Empowerment",
+    description:
+      "Empowering women is essential for achieving sustainable development and equality in society. Our organization has dedicated itself to uplifting women through education, skill development, and creating awareness about their rights and opportunities. By providing them with resources and support, we strive to help women become self-reliant and confident contributors to society.",
+    flowSteps: [FaFemale, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
+    flowDescription: "Awareness → Skill Development → Support → Empowerment",
+    titleColor: "text-purple-600",
+  },
+  {
+    title: "Child Support",
+    description:
+      "With India lagging behind in efforts to abolish child labour, it is crucial to supplement eradication efforts with comprehensive socio-economic programmes and educational upliftment of underprivileged sections. Child Support services by our organization have been one of the most successful social initiatives, passionately focusing on the education and welfare of child labourers.",
+    flowSteps: [FaChild, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
+    flowDescription:
+      "Child Welfare → Awareness → Support → Skill Development → Empowerment",
+    titleColor: "text-blue-600",
+  },
+  {
+    title: "Agricultural Promotion",
+    description:
+      "Agriculture is the backbone of rural livelihoods, especially in tribal-dominated areas. With proper training in production processes, crop management, water management, and seed treatment, small and marginal farmers can achieve optimal production and increase their incomes. Our organization has been actively working to empower farmers through awareness programs, demonstrations, and technical support.",
+    flowSteps: [
+      FaSeedling,
+      FaTractor,
+      RiSeedlingFill,
+      FaWater,
+      FaRegChartBar,
+    ],
+    flowDescription:
+      "Awareness → Demonstration → Seed Treatment → Water Management → Productivity",
+    titleColor: "text-green-600",
+  },
+  {
+    title: "Health Activities",
+    description:
+      "Ensuring a healthy body and mind requires a healthy environment. Our organization emphasizes community-based health management and focuses on child health, family welfare programs, immunization (Pulse Polio), and pre/postnatal care for women and children.",
+    flowSteps: [FaToilet, FaLeaf, FaShoppingCart, GiCow],
+    flowDescription:
+      "Sanitation → Environment Protection → Consumer Awareness → Livestock Development",
+    titleColor: "text-green-600",
+  },
+  {
+    title: "Miscellaneous Works",
+    description:
+      "Our organization is dedicated to preserving cultural heritage, promoting social harmony, and fostering community development. These efforts are reflected through a variety of initiatives, including library services, manuscript preservation, social cohesion programs, and celebrations of cultural and national importance.",
+    flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
+    flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
+    titleColor: "text-blue-600",
+  },
+];
+export default function index() {
+  const [data, setData] = React.useState([]);
+
+  React.useEffect(() => {
+    const loadData = async () => {
+      const fetchedData = await fetchData();
+      setData(fetchedData);
+    };
+    loadData();
+  }, []);
   return (
     <>
       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
@@ -82,7 +139,7 @@ export default function index() {
             height="auto"
             src="https://img.playbook.com/iUqamV1mEwWdc1BINe3fI_-0EePPyqBEX76v2UJRxyU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2ZmODg2Mzg2/LTIwZjUtNGE1MS05/NTAxLWVkMzlmODdj/MGQ4Yw"
             alt="Background Image"
-            class="object-cover object-center w-full h-full opacity-70"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
           />
           <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
@@ -121,6 +178,21 @@ export default function index() {
           </div>
         </div>
       </div>
+      <div className="justify-between items-center w-[80%] px-auto mx-auto">
+      <div className="relative m-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {data.map((item) => (
+          <DynamicCard
+            key={item.id}
+            title={item.title}
+            description={item.description}
+            imageUrl={item.imageUrl}
+          />
+        ))}
+      </div>
+    </div>
+      </div>
+     
     </>
   );
 }

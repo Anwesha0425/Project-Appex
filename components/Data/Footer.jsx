@@ -18,15 +18,15 @@ const Footer = () => {
               <br />
               <li>
                 Contact: &nbsp;
-                <a href="tel:+91-661-2462021" className="text-[#006B5D] hover:underline">
-                  +91-661-2462021
+                <a href="tel:+91-9861086564" className="text-[#006B5D] hover:underline">
+                  +91-9861086564 
                 </a>
               </li>
               <br />
               <li>
                 Email: &nbsp;
                 <a href="mailto:appexfcc@gmail.com" className="text-[#006B5D] hover:underline">
-                  appexfcc@gmail.com
+                  appex29@yahoo.co.in
                 </a>
               </li>
             </ul>

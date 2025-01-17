@@ -1,24 +1,56 @@
 import Image from "next/image";
 import React from "react";
+import PdfViewer from "@/components/Pdfviewer";
+import { pdfData } from "@/components/Data/DataBase";
 
 export default function index() {
   return (
     <>
+    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/kTYrNMZ0Jdw6blIE2rDtbSiOPvQBNwDsVMsxqJJrDGU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JiMmNhNTZj/LWQ3MjMtNDQ5MS1h/OGQ4LWNkYTNkYzk4/MjFkNw"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+          Empowering Communities for a Better Tomorrow
+          </h1>
+          {/* <p class="text-lg text-gray-300 mb-8">
+            Inspiring hope, igniting change, and empowering dreams every step of
+            the way.
+          </p> */}
+          {/* <a
+            href="/"
+            class="bg-[yellow] text-gray-900 hover:bg-[yellow] py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
+          >
+            Get Started
+          </a> */}
+        </div>
+      </div>
+      
       <div className="bg-gray-50 min-h-screen p-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <header className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800">
+            <h1 className="text-5xl font-bold text-gray-800 font-serif ">
               APPEX GUIDE LINE
             </h1>
             <p className="text-lg text-gray-600 mt-2">
-              Empowering Communities for a Better Tomorrow
+            Build a Healthy and Favorable Socio Economic 
+            and Cultural Environment for an Egalitarian Society.
             </p>
           </header>
 
           {/* Story Section */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 bg-[#ade6e1] text-center font-serif">
               Our Story
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -38,7 +70,7 @@ export default function index() {
 
           {/* Mission Section */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center bg-[#adc8e6] font-serif">
               Our Mission
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -56,7 +88,7 @@ export default function index() {
 
           {/* Vision Section */}
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center bg-[#eabdbd] font-serif">
               Our Vision
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -74,11 +106,11 @@ export default function index() {
         </div>
       </div>
 
-      <div className="bg-gray-50 min-h-screen p-4">
+      <div className="bg-gray-50 p-4">
         <div className="max-w-5xl mx-auto">
           {/* Organization Profile Section */}
-          <section className="mb-12 bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+          <section className="mb-4 bg-white shadow-md rounded-lg p-6">
+            <h2 className="text-2xl font-semibold mb-4 font-serif text-center bg-[#b7e6ad]">
               Organization Profile
             </h2>
             <ul className="text-gray-700 space-y-4">
@@ -116,7 +148,7 @@ export default function index() {
                 </ul>
               </li>
               <li>
-                <strong>Phone:</strong> +91 98610-86564, +91 94375-94131
+                <strong>Phone:</strong> +91 98610-86564, +91 80935-44944
               </li>
               <li>
                 <strong>Fax:</strong> 0680-2220669, 2220794
@@ -188,11 +220,11 @@ export default function index() {
         </div>
       </div>
 
-      <div className="bg-gray-50 min-h-screen p-4">
+      <div className="bg-gray-50 p-4">
         <div className="max-w-6xl mx-auto">
           {/* Introduction */}
-          <section className="bg-white shadow-md rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          <section className="bg-white shadow-md rounded-lg p-6 mb-4">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center font-serif bg-[#e6adb9]">
               Introduction
             </h2>
             <p className="text-gray-700">
@@ -218,7 +250,7 @@ export default function index() {
 
           {/* Operational Area */}
           <section className="bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center font-serif bg-[#caade6]">
               Operational Area & Target People
             </h2>
             <div className="overflow-auto">
@@ -314,7 +346,7 @@ export default function index() {
       <main className="bg-gray-50 min-h-screen">
         <section className="py-10 px-6 lg:px-20 bg-white">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-semibold text-gray-800">
+            <h2 className="text-2xl font-semibold text-gray-800 text-center font-serif bg-[#ade6e1]">
               Future Aspirations
             </h2>
             <ul className="mt-4 space-y-3 text-gray-600 list-disc list-inside ">
@@ -361,36 +393,69 @@ export default function index() {
             </ul>
           </div>
         </section>
-
-        <section className="py-10 px-6 lg:px-20 bg-gray-100">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-semibold text-gray-800">
+        <div className="min-h-screen bg-gray-100 p-6">
+          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#adc8e6]">
+            Annual Reports
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hover:shadow-2xl ">
+            {pdfData.map((pdf, index) => (
+              <PdfViewer key={index} pdfUrl={pdf.fileUrl} title={pdf.title} />
+            ))}
+          </div>
+        </div>
+        <div className="bg-gray-50 py-12">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#eabdbd]">
               Acknowledgment
             </h2>
-            <p className="mt-4 text-gray-700">
-              We extend our heartfelt gratitude to everyone who supported our
-              efforts, including:
+            <p className="text-gray-700 leading-relaxed mb-8">
+              This annual reports are summing up of the efforts made by the
+              organization during the years. However, it recognizes the
+              recording and transforming of its heartfelt gratitude to the
+              following who deserve that at all costs.
             </p>
-            <ul className="mt-4 space-y-3 text-gray-600 list-disc list-inside">
-              <li>Our donors for their timely support in funds and kind.</li>
-              <li>
-                Beneficiaries who embraced our spirit of empowerment and change.
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <span className="text-blue-500 font-bold mr-2">1.</span>
+                <p className="text-gray-700 leading-relaxed">
+                  The donors who extended timely and required support both in
+                  terms of funds and kind.
+                </p>
               </li>
-              <li>
-                Government departments and officials for their continuous
-                support and trust.
+              <li className="flex items-start">
+                <span className="text-blue-500 font-bold mr-2">2.</span>
+                <p className="text-gray-700 leading-relaxed">
+                  Members of focus groups (the beneficiaries) who regarded and
+                  retained the spirit of accepting and recognizing the
+                  beneficiary spirit of the organization towards them.
+                </p>
               </li>
-              <li>
-                Current and former staff members whose dedication strengthened
-                our mission.
+              <li className="flex items-start">
+                <span className="text-blue-500 font-bold mr-2">3.</span>
+                <p className="text-gray-700 leading-relaxed">
+                  Those government departments and officials who extended
+                  uninterrupted continuous support and relied upon our
+                  solidarity in all aspects.
+                </p>
               </li>
-              <li>
-                Governing and Executive Body members for their guidance and
-                corrective advice.
+              <li className="flex items-start">
+                <span className="text-blue-500 font-bold mr-2">4.</span>
+                <p className="text-gray-700 leading-relaxed">
+                  Those staff and ex-staff whose efforts fortified the attempts
+                  of the organization to be perfect.
+                </p>
+              </li>
+              <li className="flex items-start">
+                <span className="text-blue-500 font-bold mr-2">5.</span>
+                <p className="text-gray-700 leading-relaxed">
+                  Those members of the Governing Body/Executive Body who
+                  provided timely guidance and advice through corrective
+                  suggestions.
+                </p>
               </li>
             </ul>
           </div>
-        </section>
+        </div>
       </main>
     </>
   );
