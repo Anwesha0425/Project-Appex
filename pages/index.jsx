@@ -120,7 +120,7 @@ const projects = [
     titleColor: "text-blue-600",
   },
 ];
-export default function index() {
+export default function Index() {
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {
