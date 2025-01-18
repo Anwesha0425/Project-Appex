@@ -25,7 +25,7 @@ export default function ImageCarousel({ images, text }) {
                         </div>
                     ))}
                 </Marquee>
-                <div className="xl:text-6xl lg:text-5xl md:text-2xl sm:text-md z-10 text-center absolute inset-0 flex justify-center items-center text-[white] font-bold bg-[black] opacity-50">
+                <div className="xl:text-6xl lg:text-5xl md:text-2xl sm:text-md z-10 text-center absolute inset-0 flex justify-center items-center text-[white] font-bold bg-[black] opacity-30">
                     {text}
                 </div>
             </div>

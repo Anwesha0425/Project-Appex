@@ -74,27 +74,64 @@ function Cards({ name }) {
 const Index = () => {
   return (
     <>
-      {/* Carousel */}
-      <div>
-        <ImageCarousel images={Images} text={"Child Development"} />
-      </div>
-      <div className="bg-[#FFFFFF] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">
-          Why Child Development?
-        </h1>
-        <div className="text-lg m-2">
-        Children are the foundation of a nation&apos;s future, and their well-being is vital for India&apos;s progress. Despite advancements, many children in rural and marginalized communities face challenges such as poverty, lack of education, malnutrition, and limited access to healthcare. By prioritizing child development, we can ensure that every child gets the opportunity to grow in a nurturing environment. Our NGO is dedicated to empowering children through initiatives focused on education, healthcare, nutrition, and skill development. By fostering holistic growth and breaking the cycle of poverty, we aim to build a brighter future for the next generation and their communities.
-
+      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/uKrEXrBZ9r5sJDxqMrpiQS1hwCFV_YSMFnPQTNi6pR8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzc0ZGY2MDVi/LTdhZTYtNDIxYi04/YmJiLTFlNGM0MDIx/NGQwNQ"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+            Child Development
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+            Educate a child today to break the chains of exploitation tomorrow.
+          </p>
         </div>
       </div>
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200 ">
-          What we do{" "}
+
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl text-center font-serif bg-[#d4a1a1] font-bold border-teal-400  dark:text-gray-200">
+          Why Child Development
+        </h1>
+        <div className="text-lg m-2">
+          Children are the foundation of a nation&apos;s future, and their
+          well-being is vital for India&apos;s progress. Despite advancements,
+          many children in rural and marginalized communities face challenges
+          such as poverty, lack of education, malnutrition, and limited access
+          to healthcare. By prioritizing child development, we can ensure that
+          every child gets the opportunity to grow in a nurturing environment.
+          Our NGO is dedicated to empowering children through initiatives
+          focused on education, healthcare, nutrition, and skill development. By
+          fostering holistic growth and breaking the cycle of poverty, we aim to
+          build a brighter future for the next generation and their communities.
+        </div>
+      </div>
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl text-center font-serif bg-[#a1d4ae] font-bold border-teal-400  dark:text-gray-200 ">
+          What we do
         </h1>
         <div className="flex flex-col m-2 p-2 ">
           <div className="text-lg m-2 p-2 justify-center">
-          At our NGO, we are committed to eradicating child labor and promoting child development in India. Through our National Child Labour Program (NCLP), we provide specialized education and vocational training to children in need, especially those at risk of exploitation. We operate schools that focus on both academic and technical skills, such as soft toy making, tailoring, and coir craft, empowering children with the tools to secure a brighter future and improve their family&apos;s income. In addition to education, we run awareness campaigns to highlight the dangers of child labor and dropout rates, aiming to create a society where every child has access to education and opportunities for growth. Our efforts have reached thousands of children across districts like Gajapati and Ganjam, transforming lives and fostering long-term positive change in communities.
-
+            At our NGO, we are committed to eradicating child labor and
+            promoting child development in India. Through our National Child
+            Labour Program (NCLP), we provide specialized education and
+            vocational training to children in need, especially those at risk of
+            exploitation. We operate schools that focus on both academic and
+            technical skills, such as soft toy making, tailoring, and coir
+            craft, empowering children with the tools to secure a brighter
+            future and improve their family&apos;s income. In addition to
+            education, we run awareness campaigns to highlight the dangers of
+            child labor and dropout rates, aiming to create a society where
+            every child has access to education and opportunities for growth.
+            Our efforts have reached thousands of children across districts like
+            Gajapati and Ganjam, transforming lives and fostering long-term
+            positive change in communities.
           </div>
           <div className="flex flex-row m-2 p-2 justify-center items-center">
             <Image
@@ -132,54 +169,62 @@ const Index = () => {
         </div>
       </div>
       {/* Cards Section */}
-      <div className="grid grid-cols-2 gap-6 mx-auto">
-        {children.map((child, index) => (
-          <Cards key={index} name={child} />
-        ))}
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl text-center font-serif bg-[#a1b9d4] font-bold border-teal-400 dark:text-gray-200">
+          Their Stories
+        </h1>
+        <div className="grid grid-cols-2 gap-6 ">
+          {children.map((child, index) => (
+            <Cards key={index} name={child} />
+          ))}
+        </div>
       </div>
+
       {/* our aim */}
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-200">
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl text-center font-serif bg-[#bca1d4] font-bold border-teal-400 dark:text-gray-200">
           Our Aim
         </h1>
         <div className="text-lg">
           <div>
-            At the heart of our mission lies a commitment to transforming rural
-            and tribal lives, while addressing critical issues like child labor
-            eradication and socio-economic empowerment. Our goals include:
+            Addressing child labor in India requires a comprehensive approach
+            targeting socio-economic challenges and empowering the
+            underprivileged. Our organization remains committed to this cause,
+            with key initiatives:
           </div>
           <ul className="list-disc ml-6">
             <li>
-              <strong>Empowering Farmers and Families</strong> – Equipping small
-              and marginal farmers with sustainable methods to enhance incomes,
-              reducing the economic necessity for child labor.
+              <strong>Awareness Programme on Child Labour</strong> – Conducting
+              rallies and participatory discussions to spread awareness about
+              the impact of child labor, engaging community members and
+              officials.
             </li>
             <li>
-              <strong>Building Resilient Communities</strong> – Forming
-              collaborative Farmers Interest Groups (FIGs) and integrating
-              education and vocational programs for children in farming
-              families.
+              <strong>Supporting Child Education</strong> – Establishing special
+              schools to educate child laborers and equip them to defend against
+              exploitation and deprivation.
             </li>
             <li>
-              <strong>Reviving Nature&apos;s Lifelines</strong> – Restoring water
-              bodies while providing education and skills to vulnerable
-              children, creating hope for families and communities.
+              <strong>Addressing Root Causes</strong> – Tackling poverty,
+              illiteracy, and inadequate living conditions by offering
+              socio-economic support and education to families.
             </li>
             <li>
-              <strong>Sowing Seeds of Education and Innovation</strong> –
-              Combining agricultural progress with education and training for
-              children, including tailoring, soft toys, and coir craft skills.
+              <strong>Recreation and Entertainment Activities</strong> –
+              Boosting the morale of children through events like Saraswati
+              Pooja, national day celebrations, and competitions, fostering a
+              spirit of joy and competitiveness.
             </li>
             <li>
-              <strong>Harvesting Prosperity Through Agro-Farming</strong> –
-              Boosting rural economies while supporting education and vocational
-              training to eliminate generational cycles of child labor.
+              <strong>Community Engagement through Sports</strong> – Organizing
+              cricket tournaments and youth events, fostering unity and
+              rewarding achievements to promote a spirit of healthy competition.
             </li>
           </ul>
           <div>
-            Together, we are sowing the seeds of change for a thriving,
-            sustainable future, free of child labor and filled with
-            opportunities for every child to dream and thrive.
+            Through awareness, education, and community engagement, we aim to
+            break the cycles of child labor, empowering families and creating
+            opportunities for children to thrive.
           </div>
         </div>
       </div>
@@ -209,6 +254,9 @@ const Index = () => {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <ImageCarousel images={Images} text={"Memories"} />
       </div>
     </>
   );

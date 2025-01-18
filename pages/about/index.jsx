@@ -393,6 +393,7 @@ export default function index() {
             </ul>
           </div>
         </section>
+        {/* Annual Report Documents */}
         <div className="min-h-screen bg-gray-100 p-6">
           <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#adc8e6]">
             Annual Reports
@@ -403,6 +404,7 @@ export default function index() {
             ))}
           </div>
         </div>
+        {/* Acknowledgment */}
         <div className="bg-gray-50 py-12">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#eabdbd]">

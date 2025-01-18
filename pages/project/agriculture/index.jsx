@@ -11,6 +11,10 @@ import { RiGovernmentFill } from "react-icons/ri";
 import { card_agriculture } from "../../../components/Data/Blogs_DataBase";
 import Link from "next/link";
 import Image from "next/image";
+import AgricultureStats from "@/components/Agriculture_statistics";
+import PdfViewer from "@/components/Pdfviewer";
+import { docagriculture } from "@/components/Data/DataBase";
+
 
 const images = [
   {
@@ -65,25 +69,26 @@ function Figures({ count, text }) {
 }
 
 function Dropdown(props) {
-  console.log(props.title.color);
-  let total =
-    "flex flex-row items-center rounded-md" + ` bg-[${props.title.color}]`;
-  console.log(total);
-  const [isOpen, setIsopen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
-      className="flex flex-col m-2 p-2 transition-all duration-1000"
-      onClick={() => setIsopen(!isOpen)}
+      className="flex flex-col m-2 p-2 transition-all duration-500"
+      onClick={() => setIsOpen(!isOpen)}
     >
-      <div className={"flex flex-row items-center rounded-md p-2 bg-[#A0D9D6]"}>
-        <div className="mr-2">
-          <MdOutlineArrowDropDownCircle />
+      <div className="flex flex-row items-center rounded-md p-2 bg-[#f1fff2] cursor-pointer">
+        <div
+          className={`mr-2 transition-transform duration-500 ${
+            isOpen ? "rotate-90" : ""
+          }`}
+        >
+          <MdOutlineArrowDropDownCircle size={24} />
         </div>
-        <div className="text-2xl font-bold mr-2 ">{props.title.title}</div>
+        <div className="text-2xl font-bold mr-2">{props.title.title}</div>
       </div>
       {isOpen && (
-        <div className={"flex flex-col p-4"}>
-          {props.title.methods.map((element,index) => (
+        <div className="flex flex-col p-4">
+          {props.title.methods.map((element, index) => (
             <div key={index}>● {element}</div>
           ))}
         </div>
@@ -124,16 +129,36 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 const index = () => {
   return (
     <>
-      <ImageCarousel images={images} text={"Agriculture"} />
-      <div className="bg-[#FFFFFF] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Why Agriculture? </h1>
+       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/kifisEB1F58N2KHgkzs8DfamtCJ70HPhtwSe7pubn6U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FhYTAzNDll/LTA5NjktNDA4Yi1i/MTYyLTg1YzNjMzFk/NGFiNQ"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+            Agriculture
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+          Empowering rural farmers with sustainable agriculture, modern techniques, and self-reliance for a prosperous future.
+          </p>
+        </div>
+        </div>
+
+      <div className="p-4 mx-auto w-[80%]">
+        <h1 className="text-4xl font-bold border-teal-400  dark:text-gray-200 text-center font-serif bg-[#d4a1a1]">Why Agriculture? </h1>
         <div className="text-lg m-2">
         Agriculture is the backbone of India, employing nearly half of the country&apos;s population and serving as a vital source of livelihood for millions of rural families. With its rich history and diverse landscapes, India has immense potential to be a global leader in sustainable farming practices. However, many smallholder farmers face challenges such as limited access to modern technology, financial resources, and climate-resilient practices. By supporting agriculture, we can empower these farmers, enhance food security, and promote rural development. Our NGO is committed to transforming lives through initiatives that foster innovation, education, and sustainable growth in the agricultural sector, ensuring a brighter future for India&apos;s farmers and their communities.
 
         </div>
       </div>
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200 ">What we do </h1>
+      <div className="p-4 mx-auto w-[80%]">
+        <h1 className="text-4xl font-bold border-teal-400  dark:text-gray-200 text-center font-serif bg-[#a4d7d1]">What we do </h1>
         <div className="flex flex-col m-2 p-2 ">
         <div className="flex flex-row m-2 p-2 justify-center items-center">
           <Image
@@ -165,8 +190,8 @@ const index = () => {
         </div>
         </div>
       </div>
-      <div className="bg-[#FFFFFF] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Our Aim </h1>
+      <div className="p-4 m-4 w-[80%] mx-auto">
+        <h1 className="text-4xl font-serif text-center font-bold border-teal-400 dark:text-gray-200 bg-[#bc9ad2]">Our Aim </h1>
         <div className="text-lg">
         <p>
       At the heart of our mission lies a commitment to transforming rural and tribal lives through sustainable agriculture and empowered communities. We aim to bring lasting change by:
@@ -183,17 +208,11 @@ const index = () => {
     </p>
         </div>
       </div>
-      <div className="flex justify-center items-center bg-[url( 'https://img.playbook.com/47bzRCD1Uklj6Y36l4T3QA4zl0oSqPGywH1nfBVVJiE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzgxODdiODk0/LWZmZWItNDFkNy04/ZmE5LTg0OGVmOTZj/YTQ1OQ ')] opacity-70 p-8">
-        <Figures count={500} text={"Villages covered"} />
-        <Figures count={100} text={"Projects completed"} />
-        <Figures count={5000} text={"Number of farmers impacted"} />
-        <Figures count={50} text={"Government officers involved"} />
-      </div>
       {/* prolonged approach */}
       <div>
-        <div className="flex flex-col m-2">
+        <div className="flex flex-col m-2 w-[80%] mx-auto">
           {/* title */}
-          <div className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Prolonged approach</div>
+          <div className="text-4xl font-serif text-center font-bold border-teal-400 bg-[#97d5a4] dark:text-gray-200">Prolonged approach</div>
           {/* grid */}
           <div className="m-2 grid grid-cols-2">
             {prolonged.map((title, methods, color, index) => (
@@ -208,7 +227,22 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row m-2 justify-center items-center bg-[#eafcfa]">
+       <div>
+       <AgricultureStats />
+       </div>
+
+       <div className=" w-[80%] mx-auto bg-gray-100 p-6">
+          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#adc8e6]">
+            List Of Farmers
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 hover:shadow-2xl ">
+            {docagriculture.map((pdf, index) => (
+              <PdfViewer key={index} pdfUrl={pdf.fileUrl} title={pdf.title} />
+            ))}
+          </div>
+        </div>
+
+      <div className="flex flex-row mx-auto justify-center items-center bg-[#eafcfa] w-[80%]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
@@ -250,10 +284,10 @@ const index = () => {
       <div>
         <div className="p-8">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
+            <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
-              <div className="transition-all border-solid border-[black] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
+              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
                 Explore
               </div>
             </Link>
@@ -282,7 +316,7 @@ const index = () => {
         <div className="m-4 p-4 size-[50%] justify-center">
           <div className="p-2 size-[52%]">
             <Link href={"/fundraising"}>
-            <div className="text-2xl font-bold m-4 P-4 font-serif bg-[#A1D9D6] border-black border-2 rounded-md text-center">
+            <div className="text-2xl font-bold m-4 P-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center">
               Donate For Agriculture
             </div>
             </Link>
@@ -303,6 +337,8 @@ const index = () => {
             </div>
         </div>
       </div>
+      
+      <ImageCarousel images={images} text={"Agriculture"} />
     </>
   );
 };

@@ -90,44 +90,60 @@ export const children =[
   text:"The program raised awareness on child labor through street plays, rallies, and the distribution of leaflets and posters. Supported by the National Child Labour Project (NCLP) in Ganjam and Gajapati districts, it aimed to educate communities about the harmful effects of child labor and the importance of protecting children’s rights. The initiative engaged local residents, promoting collective action to eliminate child labor and create a safer environment for children.",
 },
 {
-  name: "child Education",
-  ImageURL: "https://img.playbook.com/lr5s9yhul9BNkUUyyhKzCrIHCdIadsyXCgqEKrVs55s/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FhNDA2OWRh/LTQzNzItNDRhMy05/OWY5LWQxODJiMWMw/MWU0Zg",
-  text: "Our organization has been entrusted by the District Collector-cum-Chairman, NCLP, Gajapati, to implement vocational training programs across 48 NCLP schools since August 2000. Currently, we manage 11 NCLP schools in the Gajapati district, supporting 550 child labor students. These schools are distributed across Mohana Block (6 schools), Rayagada Block (3 schools), and Gosani Block (2 schools). We are dedicated to providing quality education enriched with vocational training and nutritional food, fostering a holistic approach to the well-being and development of the children under our care.",
+  name: "Hope for Children",
+  ImageURL: "https://img.playbook.com/8vBkq3XjGWnMxNn4849OvODTqhhlI7Cr7_pJl-BdcJk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2RmZTU5NTVk/LTI1N2UtNDliNC1h/NzFiLWNmOGQwMWE4/YThiZg",
+  text: "Walking hand in hand with the future of our nation, the image reflects the unwavering efforts to uplift children trapped in the vicious cycle of child labor. In a country where socio-economic challenges like poverty, illiteracy, and inadequate living conditions often push children into laborious jobs, organizations like this are beacons of hope. With a focus on comprehensive socio-economic programs, the establishment of special schools, and a commitment to education, these initiatives empower children to defend themselves against exploitation. The smiling faces of these children, as seen in the image, embody the transformative impact of such programs. By addressing parental compulsion and lack of resources, this endeavor strives to rewrite the narrative for underprivileged children, giving them a chance to dream and build brighter futures.",
 },
 {
-  name: "child labour day",
-  ImageURL: "https://img.playbook.com/LK83UGFSNRwmu2Fr2rNylo_CrptC4tee0zqwUcj3wjM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk1MzA2MjQw/LTRmMGQtNGFjZi04/ZGQ0LTMzZGQ3ZWQx/YTdiYQ",
-  text:"The program raised awareness on child labor through street plays, rallies, and the distribution of leaflets and posters. Supported by the National Child Labour Project (NCLP) in Ganjam and Gajapati districts, it aimed to educate communities about the harmful effects of child labor and the importance of protecting children’s rights. The initiative engaged local residents, promoting collective action to eliminate child labor and create a safer environment for children.",
+  name: "Awareness Program",
+  ImageURL: "https://img.playbook.com/rEbqgt8ueZEmQ3Cvsq2dXb1Ti4K-4wgmiTdUMb9634Y/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2M5MWNjYzcy/LTk5YmQtNGRlZC04/OTUxLTcwZTNhODJh/YmI1Nw",
+  text:"wareness programs on child support play a crucial role in addressing the challenges faced by underprivileged children and creating a society that values their rights and well-being. These initiatives focus on educating communities about the importance of safeguarding children from exploitation, providing them with access to education, and ensuring their overall development. Through workshops, rallies, and participatory discussions, these programs emphasize the socio-economic factors leading to child labor and highlight the need for collective action to combat them. Distributing informational leaflets, engaging local leaders, and involving parents in dialogues about the benefits of education and support services are key elements of these campaigns. By fostering awareness, these programs aim to break the cycle of neglect and deprivation, inspiring communities to create a nurturing environment where every child has the opportunity to thrive and succeed.",
 }
 ];
 
 export const prolonged = [
   {
-    title: "Improving Learning Outcomes",
+    title: "Awareness and Training Programs",
     color: 'yellow',
     methods: [
-      " Curriculum Based Learning","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      "Conducted 12 awareness camps annually.",
+      "Trained farmers on crop management.",
+      "Organized sessions on water conservation.",
+      "Educated about scientific seed treatment.",
+      "Promoted Farmers Interest Groups (FIGs)."
     ],
   },
   {
-    title: "Improving Learning Outcomes",
+    title: "Demonstration of Best Practices for Crop Production",
     color: 'green',
     methods: [
-      " Curriculum Based Learning_2","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      "Implemented Rice Line Transplanting methods.",
+      "Demonstrated hybrid maize cultivation techniques.",
+      "Showcased hybrid sunflower farming methods.",
+      "Conducted inter-cropping demonstration projects.",
+      "Focused on pest-resistant crop practices.",
     ]
   },
   {
-    title: "Improving Learning Outcomes",
+    title: "Collaboration with Government Agencies",
     color: 'blue',
     methods: [
-      " Curriculum Based Learning_3","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      "Linked FIGs with ATMA for support.",
+      "Partnered with BGREI for rice promotion.",
+      "Organized campaigns with district officials.",
+      "Gained technical support from agriculture bodies.",
+      "Ensured access to government schemes.",
     ]
   },
   {
-    title: "Improving Learning Outcomes",
+    title: "Promotion of Sustainable Farming",
     color: 'red',
     methods: [
-      " Curriculum Based Learning_4","STEM & Experiential Learning","Digital Learning Solutions","Sports and Extra-Curricular Activities","Nutrition and Healthcare Support"
+      "Encouraged eco-friendly seed treatments.",
+      "Focused on optimal input use efficiency.",
+      "Reduced productivity gaps with scientific methods.",
+      "Supported integrated pest management practices.",
+      "Promoted continuous block farming practices.",
     ]
   }
 ];
@@ -276,5 +292,16 @@ export const pdfData = [
   {
     title: "Annual Report 2023-24",
     fileUrl: "https://drive.google.com/file/d/1kVhEjcUISEknIRdTDvQaHWoMYZkLIDD_/preview",
+  },
+];
+
+export const docagriculture=[
+  {
+    title: "List Of Farmers",
+    fileUrl: "https://drive.google.com/file/d/1anRse6kanJKAS4_LVUltaKBd84L4Uq43/preview",
+  },
+  {
+    title: "Letter to DDA",
+    fileUrl: "https://drive.google.com/file/d/1srHOilRa43aK1UwGLT8NpwcUKfWqKqG9/preview",
   },
 ];

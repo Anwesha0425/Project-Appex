@@ -129,14 +129,32 @@ const index = () => {
 
   return (
     <>
-      <div>
-        <ImageCarousel images={images} text={"Health"} />
-      </div>
-      <div className="bg-gray-50 py-10 px-4 md:px-8">
+      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/kifisEB1F58N2KHgkzs8DfamtCJ70HPhtwSe7pubn6U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FhYTAzNDll/LTA5NjktNDA4Yi1i/MTYyLTg1YzNjMzFk/NGFiNQ"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+            Health
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+          Promoting Health, Empowering Lives: Caring for Communities, Women, and Children.
+          </p>
+        </div>
+        </div>
+
+      <div className="bg-gray-50 py-10 px-4 w-[80%] mx-auto">
         {/* Why This Topic Section */}
-        <section className="mb-12">
-          <h2 className="text-4xl md:text-3xl pl-2 my-4 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
-            Why This Topic
+        <section className="mb-4">
+          <h2 className="text-4xl font-serif text-center bg-[#d29a9a] font-bold border-teal-400 dark:text-gray-150">
+            Why Health
           </h2>
           <p className="text-lg text-gray-700">
             Health is a cornerstone for a thriving community, yet many rural and
@@ -150,16 +168,16 @@ const index = () => {
         </section>
 
         {/* What We Do Section */}
-        <section className="py-16 bg-gray-100 bg-[#f6f2f2]">
+        <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+            <h2 className="text-4xl font-bold font-serif text-center text-gray-800 mb-8 bg-[#9ad2ae]">
               What We Do
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
               {activities.map((activity, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 bg-[#a0d5d5] hover:bg-[#f6f2f2]"
+                  className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 bg-[#c5ffd9] hover:bg-[#f6f2f2]"
                 >
                   <h3 className="text-2xl font-semibold text-blue-600 mb-4">
                     {activity.title}
@@ -176,7 +194,7 @@ const index = () => {
 
         {/* Our Aim Section */}
         <section>
-          <h2 className="text-4xl md:text-3xl pl-2 my-4 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
+          <h2 className="text-4xl font-serif text-center bg-[#9abcd2] font-bold border-teal-400 dark:text-gray-150">
             Our Aim
           </h2>
           <div className="text-lg text-gray-700">
@@ -212,8 +230,8 @@ const index = () => {
         </section>
       </div>
 
-      <div className="flex flex-col m-2 ">
-              <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
+      <div className="flex flex-col mx-auto w-[80%]">
+              <h1 className="text-4xl font-serif text-center bg-[#b19ad2] font-bold border-teal-400 dark:text-gray-150">
                 WHO&apos;s HIV indication for India
               </h1>
               <Image
@@ -225,9 +243,9 @@ const index = () => {
               />
             </div>
 
-            <section className="py-16 bg-gray-50 bg-[#f4fdfd]">
+            <section className="py-16 bg-gray-50 w-[80%] mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
+        <h2 className="text-4xl font-bold text-center font-serif bg-[#d29aba] text-gray-800 mb-12">
           Health Activities 
         </h2>
         <div className="flex items-center justify-center space-x-8 overflow-x-auto">
@@ -237,7 +255,7 @@ const index = () => {
               className="group flex flex-col items-center text-center w-64"
             >
               {/* Icon with Animation */}
-              <div className="bg-white p-6 rounded-full shadow-md transition-transform transform group-hover:scale-110 hover:bg-[#d0fcf2]">
+              <div className="bg-[#ffcae8] p-6 rounded-full shadow-md transition-transform transform group-hover:scale-110 hover:bg-[#f9f9f9]">
                 {step.icon}
               </div>
 
@@ -259,10 +277,10 @@ const index = () => {
       <div>
         <div className="p-8">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
+            <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
-              <div className="transition-all border-solid border-[black] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
+              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
                 Explore
               </div>
             </Link>
@@ -305,10 +323,13 @@ const index = () => {
               href="mailto:appexfcc@gmail.com"
               className="text-[#0e0e0e] hover:underline"
             >
-              appexfcc@gmail.com
+              appex29@yahoo.co.in
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <ImageCarousel images={images} text={"Health"} />
       </div>
     </>
   );

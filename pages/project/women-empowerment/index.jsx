@@ -80,13 +80,30 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 const index = () => {
   return (
     <>
-      <div>
-        <ImageCarousel images={images} text={"Women Empowerment"} />
-      </div>
+      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/d2hhk5xfCsyoKrW7AL20RikUiheyip5wN0cYELWPRA8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzI3Y2I3MmMx/LWMzMjgtNDBiNS04/NzkxLTAyZWRkYjYy/ODI3YQ"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+            Women Empowerment
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+          Strengthen a woman, and you build the foundation of progress.
+          </p>
+        </div>
+        </div>
 
-      <div className="bg-[#FFFFFF] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-150">
-          Why Women Empowerment?{" "}
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-150 text-center bg-[#d4a1a1]">
+          Why Women Empowerment
         </h1>
         <div className="text-lg m-2">
           Empowering women and addressing their challenges is essential for
@@ -105,9 +122,9 @@ const index = () => {
         </div>
       </div>
 
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-150 ">
-          What We Do{" "}
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl font-serif text-center bg-[#a1cad4] font-bold border-teal-400  dark:text-gray-150 ">
+          What We Do
         </h1>
         <div className="text-lg m-2 p-2 justify-center">
           Our NGO is dedicated to fostering holistic development by addressing
@@ -163,8 +180,8 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-col m-2 ">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
+      <div className="flex flex-col mx-auto w-[80%]">
+        <h1 className="text-4xl font-serif text-center bg-[#a1d4ae] font-bold border-teal-400 dark:text-gray-150">
           UN&apos;s Strategic Plan and Vision
         </h1>
         <Image
@@ -176,8 +193,8 @@ const index = () => {
         />
       </div>
 
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
+      <div className="w-[80%] p-4 mx-auto">
+        <h1 className="text-4xl font-serif text-center bg-[#afa1d4] font-bold border-teal-400 dark:text-gray-150">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -223,7 +240,7 @@ const index = () => {
       </div>
 
       {/* hover card */}
-      <div className="mx-auto grid grid-cols-3 m-2">
+      <div className="mx-auto grid grid-cols-3 w-[80%]">
         {/* Card 1 */}
         <div className="relative mx-auto max-w-md rounded-lg bg-[#e6fcd4] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
@@ -286,7 +303,7 @@ const index = () => {
       <div>
         <div className="p-8">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">
+            <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">
               Latest Stories
             </h1>
             <Link href={"/blogs"} className="">
@@ -378,7 +395,7 @@ const index = () => {
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-black border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
                 Donate For Women
               </div>
             </Link>
@@ -393,11 +410,12 @@ const index = () => {
               href="mailto:appexfcc@gmail.com"
               className="text-[#0e0e0e] hover:underline"
             >
-              appexfcc@gmail.com
+              appex29@yahoo.co.in
             </a>
           </div>
         </div>
       </div>
+      <ImageCarousel images={images} text={"Memories"} />
     </>
   );
 };
