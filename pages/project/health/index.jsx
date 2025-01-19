@@ -177,7 +177,7 @@ const index = () => {
               {activities.map((activity, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 bg-[#c5ffd9] hover:bg-[#f6f2f2]"
+                  className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:bg-[#9ad2ae] bg-[#f6f2f2]"
                 >
                   <h3 className="text-2xl font-semibold text-blue-600 mb-4">
                     {activity.title}
@@ -255,7 +255,7 @@ const index = () => {
               className="group flex flex-col items-center text-center w-64"
             >
               {/* Icon with Animation */}
-              <div className="bg-[#ffcae8] p-6 rounded-full shadow-md transition-transform transform group-hover:scale-110 hover:bg-[#f9f9f9]">
+              <div className="hover:bg-[#d29aba] p-6 rounded-full shadow-md transition-transform transform group-hover:scale-110 bg-[#f9f9f9]">
                 {step.icon}
               </div>
 
@@ -275,7 +275,7 @@ const index = () => {
 
       {/* blogs */}
       <div>
-        <div className="p-8">
+        <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
             <Link href={"/blogs"} className="">
@@ -303,12 +303,12 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row mx-auto p-2 w-[80%] bg-[#f5f8f7] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-black border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A0D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
                 Donate For Health
               </div>
             </Link>
