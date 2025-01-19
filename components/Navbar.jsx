@@ -18,11 +18,11 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
-                width="10"
-                height="10"
+                height={100}
+                width={100}
+                className={'h-[80px] w-[80px] rounded-full bg-[white] m-1'}
                 src="https://img.playbook.com/6MeRmsLAPaHeWVysxfssWU1IhU7ivBsGUQ6GS5Ttceg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzYyNDVlODlm/LTQ1OTMtNDY0MS1i/NGRmLWViYTY0ODUw/NGEwZQ"
                 alt="Logo"
-                className="h-12 w-auto"
               />
             </Link>
           </div>
@@ -44,7 +44,7 @@ export default function Navbar() {
                 Fundraising
               </li>
             </Link>
-            <Link href="/news-and-events">
+            <Link href="/news">
               <li className="text-lg font-medium text-white hover:text-gray-200 hover:underline transition duration-300">
                 News and Events
               </li>
@@ -82,7 +82,7 @@ export default function Navbar() {
                 Fundraising
               </li>
             </Link>
-            <Link href="/news-and-events">
+            <Link href="/news">
               <li className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-[#00796B] hover:text-white transition duration-300">
                 News and Events
               </li>

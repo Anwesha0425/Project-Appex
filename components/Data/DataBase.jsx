@@ -34,46 +34,46 @@ export const data = [{}];
 
 export const card_data = [
   {
-    name: "Miscellaneous Activities",
+    name: "Sanitation and Environment",
     link: "/project/miscellaneous-activities",
     ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis inventore a earum ratione mollitia, eveniet nemo qui aliquam aliquid quos beatae nam soluta, sed atque. Necessitatibus soluta corporis temporibus perspiciatis!",
+      "https://img.playbook.com/AanjaOx4RAfXXw6dilfucpX84g7JmIzkSQAiAeWRWjA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2NjMTQyMjAy/LTAzOTItNGVmZC1i/MGRlLTU3NDE4MGM4/MzBmMg",
+    text: "Delays caused by bureaucracy, mismanagement of allocated funds, and a lack of public awareness about their rights and entitlements have hindered the success of developmental programs. Many communities continue to struggle without basic necessities such as clean drinking water, adequate housing, electricity, and proper sanitation systems essential for a sustainable life.",
   },
   {
     name: "Women Empowerment",
     link: "/project/women-empowerment",
     ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?",
+      "https://img.playbook.com/GIPqLpSQjFXrFS1Sx3hwjt37GwL1f2x74i3_JiroaOg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzVmZjQ1MDZh/LTc1MTgtNDU5OC1i/ZGMzLWMwOTFhYmNh/MGE2Mw",
+    text: "In ancient India, women enjoyed a respected and privileged position in society, with their worth recognized and valued. However, over time, they were marginalized, and these practices became ingrained traditions. Empowering women is essential for societal and national progress. Acknowledging this, the organization has implemented numerous initiatives, consistently enhancing existing efforts and introducing new programs to uplift women. These efforts aim to rebuild their confidence and ensure equal opportunities for growth and success.",
   },
   {
     name: "Child Development",
     link: "/project/child-development",
     ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?",
-  },
-  {
-    name: "Agriculture",
-    link: "/project/agriculture",
-    ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?",
+      "https://img.playbook.com/kALt5vk2MOoBB2BlLIG6npzCQXn1MGd1ux4midsWSlY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzA0YmFlYjll/LTcxMzktNDQwZi04/Njk0LTUzMDUxOTQy/OTM2NA",
+    text: "India faces significant challenges in eradicating child labor, lagging behind many nations in its efforts. True eradication requires comprehensive socio-economic programs and the educational upliftment of underprivileged communities. Recognizing this, the organization has passionately championed child support services, one of its most successful social initiatives. It has established special schools to educate neglected and deprived child laborers, equipping them with the tools to protect themselves from exploitation and build a brighter future.",
   },
   {
     name: "Health",
     link: "/project/health",
     ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?",
+      "https://img.playbook.com/Nw3fiA39D6xhZwokxFfwB4hmDbrM2BK8hj_T1B2tfP4/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzcxOWVmYzJh/LWE4ZjYtNGEyZi1h/ZmUzLTJhOTg5OWU0/OWUyMQ",
+    text: "A healthy body and mind thrive in a healthy environment, and the organization remains deeply committed to health-related initiatives. Its efforts focus on community-based health management while giving special attention to child health, family welfare programs, immunization drives like Pulse Polio, and pre- and post-natal care for women and children. These initiatives aim to ensure holistic well-being for individuals and communities, fostering a healthier and more resilient society.",
   },
   {
     name: "MSME",
     link: "/project/msme",
     ImageURL:
-      "https://images.pexels.com/photos/366551/pexels-photo-366551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed repellendus enim vel molestias. Quis repellendus adipisci nisi, maxime illum eum perspiciatis animi perferendis, id officiis eius iure ipsa natus modi?",
+      "https://img.playbook.com/evQyN7Ry0ubnVIq9z4rZI3eXUxGLWuh99EZtfe0uwj8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzM0M2I5ODky/LTMzZTQtNDA3MS1h/MzBkLWRiY2E5Nzg0/ZTFmNA",
+    text: "The organization has prioritized agriculture-based income-generating activities and self-reliance among beneficiaries, with a strong focus on livestock development since 1999. This initiative has proven to be both cost-effective and highly impactful, generating a 60% increase in income and providing permanent wage employment for two workers. To scale these efforts, the organization plans to adopt the “Goshala” concept, which will not only create opportunities for unemployed youth but also promote sustainable practices through bio-manure and compost production. External funding support could significantly boost the expansion and success of this initiative.",
+  },
+  {
+    name: "Agriculture",
+    link: "/project/agriculture",
+    ImageURL:
+      "https://img.playbook.com/bpoV3eoKv9E2VzRSpsLGgluHp4-Gep7XWqQwVQn7y5w/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2YwYzQwY2Zk/LWVjMzktNDBlNy05/NzcxLTA1NjZiZTQ3/NTQ4Yw",
+    text: "Agriculture is the primary stake in rural and regarded as one of the most dependable resort for livelihood by the rural mass mostly the remote dwellers in tribal dominated area. Of course income from forest produces is also much important for the tribal's. However, with the existing resources such as land and other amenities, if they are properly trained and educated about the production process, crop management, water management, seed treatment will certainly derive optimum production and generate income of small and marginal farmers. ",
   },
 ];
 
