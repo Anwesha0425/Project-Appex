@@ -301,14 +301,14 @@ const index = () => {
       </div>
 
       <div>
-        <div className="p-8">
+        <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">
               Latest Stories
             </h1>
             <Link href={"/blogs"} className="">
               {" "}
-              <div className="transition-all border-solid border-[black] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
+              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
                 Explore
               </div>
             </Link>
@@ -331,7 +331,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row m-2 justify-center items-center bg-[#eafcfa]">
+      <div className="flex flex-row mx-auto w-[80%] justify-center items-center bg-[#ececec]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
@@ -370,7 +370,7 @@ const index = () => {
       </div>
 
 
-      <div className="flex m-auto p-4 justify-center">
+      <div className="flex m-auto w-[80%] p-4 justify-center">
       {scrollcard.map((data, index) => (
         <InfoCard
           key={index}
@@ -380,7 +380,7 @@ const index = () => {
       ))}
     </div>
     
-    <div className="flex m-auto p-4 justify-center">
+    <div className="flex m-auto w-[80%] p-4 justify-center">
       {scrollcard2.map((data, index) => (
         <InfoCard
           key={index}
@@ -390,7 +390,7 @@ const index = () => {
       ))}
     </div>
 
-      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#ececec] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">

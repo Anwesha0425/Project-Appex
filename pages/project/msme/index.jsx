@@ -5,6 +5,7 @@ import { MdFamilyRestroom } from "react-icons/md";
 import { GiPlantSeed } from "react-icons/gi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { MdOutlineWorkOutline } from "react-icons/md";
+import { activities } from "@/components/Data/DataBase";
 
 const images = [
   {
@@ -30,40 +31,32 @@ const images = [
 ];
 
 const index = () => {
-  const activities = [
-    {
-      title: "Sanitation",
-      description:
-        "We conduct sanitation awareness programs and motivate communities to build Individual Household Latrines (IHL), improving hygiene and health standards in rural areas.",
-      stats: "8 Camps | 300+ Families Benefited",
-    },
-    {
-      title: "Environment Protection",
-      description:
-        "We organize tree plantation drives, soil conservation awareness, and forest protection programs, distributing over 2,000 saplings annually.",
-      stats: "4 Camps | 2,000+ Saplings Planted",
-    },
-    {
-      title: "Consumer Awareness",
-      description:
-        "We empower consumers through awareness programs, educating them about their rights, grievance mechanisms, and precautions when purchasing goods.",
-      stats: "3 Camps | Hundreds Benefited",
-    },
-    {
-      title: "Livestock Development",
-      description:
-        "We promote dairy and livestock units, creating sustainable income sources and employment opportunities, while planning large-scale Goshala models.",
-      stats: "60% Income Growth | Jobs Created",
-    },
-  ];
   return (
     <>
-      <div>
-        <ImageCarousel images={images} text={"MSME"} />
-      </div>
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">
-          Why MSME?
+      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div class="absolute inset-0">
+          <img
+            width="auto"
+            height="auto"
+            src="https://img.playbook.com/3cQqsYML-8WunJi_TeHUGEr0lP-h05xc7yZRAlnxxTs/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzliMzBkNzg5/LWI3ZWUtNDhjNC1i/MGU1LTc0OGU4OGJh/ZjE4Zg"
+            alt="Background Image"
+            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+          />
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 class="text-5xl font-bold leading-tight mb-4">
+           MSME
+          </h1>
+          <p class="text-lg text-gray-300 mb-8">
+          Empowering rural communities through MSMEs for self-reliance and sustainability.
+          </p>
+        </div>
+        </div>
+
+      <div className="p-4 mx-auto w-[80%]">
+        <h1 className="text-4xl font-serif bg-[#a0ddb4] text-center font-bold border-teal-400  dark:text-gray-200">
+          Why MSME
         </h1>
         <div className="text-lg m-2">
           Micro, Small, and Medium Enterprises (MSMEs) are the backbone of
@@ -76,16 +69,16 @@ const index = () => {
           can expand these efforts to bring even greater impact.
         </div>
       </div>
-      <section className="py-16 bg-gray-100">
+      <section className="py-8 bg-gray-100 w-[80%] mx-auto">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+          <h2 className="text-4xl font-bold font-serif bg-[#a0b1dd] text-center text-gray-800 mb-8">
             What We Do
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {activities.map((activity, index) => (
               <div
                 key={index}
-                className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105"
+                className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:bg-[#a0b1dd]"
               >
                 <h3 className="text-2xl font-semibold text-blue-600 mb-4">
                   {activity.title}
@@ -100,9 +93,46 @@ const index = () => {
         </div>
       </section>
 
-      {/* our aim */}
-      <div className="bg-[#eafcfa] p-4 m-4">
-        <h1 className="text-4xl md:text-3xl pl-2 my-2 border-l-4 font-sans font-bold border-teal-400 dark:text-gray-150">
+      <div className="flex flex-row mx-auto w-[80%] justify-center items-center bg-[#ececec]">
+        <div className="text-4xl font-bold m-4 P-4 font-serif">
+          {/* reach and presence */}
+          REACH AND PRESENCE
+        </div>
+        <div className="m-4 p-4 flex flex-row">
+          {/* symbolic representation */}
+          <div className="flex flex-col m-2 p-2">
+            <div className="border-black rounded-full border-4 p-4">
+              {" "}
+              <MdFamilyRestroom size={80} />
+            </div>
+            <div className="font-bold m-2">300+ families</div>
+          </div>
+          <div className="flex flex-col m-2 p-2">
+            <div className="border-black rounded-full border-4 p-4">
+              {" "}
+              <GiPlantSeed size={80} />
+            </div>
+            <div className="font-bold m-2">2000+ planted</div>
+          </div>
+          <div className="flex flex-col m-2 p-2">
+            <div className="border-black rounded-full border-4 p-4">
+              {" "}
+              <FaPeopleGroup size={80} />
+            </div>
+            <div className="font-bold m-2">100+ Benifited</div>
+          </div>
+          <div className="flex flex-col m-2 p-2">
+            <div className="border-black rounded-full border-4 p-4">
+              {" "}
+              <MdOutlineWorkOutline size={80} />{" "}
+            </div>
+            <div className="font-bold m-2">400+ employed</div>
+          </div>
+        </div>
+      </div>
+       {/* our aim */}
+      <div className="p-4 mx-auto w-[80%]">
+        <h1 className="text-4xl font-serif text-center bg-[#dda0c7] font-bold border-teal-400 dark:text-gray-150">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -150,50 +180,13 @@ const index = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-row m-2 justify-center items-center bg-[#f8f9f9]">
-        <div className="text-4xl font-bold m-4 P-4 font-serif">
-          {/* reach and presence */}
-          REACH AND PRESENCE
-        </div>
-        <div className="m-4 p-4 flex flex-row">
-          {/* symbolic representation */}
-          <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
-              {" "}
-              <MdFamilyRestroom size={80} />
-            </div>
-            <div className="font-bold m-2">300+ families</div>
-          </div>
-          <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
-              {" "}
-              <GiPlantSeed size={80} />
-            </div>
-            <div className="font-bold m-2">2000+ planted</div>
-          </div>
-          <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
-              {" "}
-              <FaPeopleGroup size={80} />
-            </div>
-            <div className="font-bold m-2">100+ Benifited</div>
-          </div>
-          <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
-              {" "}
-              <MdOutlineWorkOutline size={80} />{" "}
-            </div>
-            <div className="font-bold m-2">400+ employed</div>
-          </div>
-        </div>
-      </div>
 
-      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row mx-auto p-2 bg-[#ececec] w-[80%] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-black border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
                 Donate For MSME
               </div>
             </Link>
@@ -208,10 +201,13 @@ const index = () => {
               href="mailto:appexfcc@gmail.com"
               className="text-[#0e0e0e] hover:underline"
             >
-              appexfcc@gmail.com
+              appex29@yahoo.co.in
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <ImageCarousel images={images} text={"Memories"} />
       </div>
     </>
   );

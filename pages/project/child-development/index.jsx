@@ -230,12 +230,12 @@ const Index = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#eafcfa] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-black border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
                 Donate For Children
               </div>
             </Link>

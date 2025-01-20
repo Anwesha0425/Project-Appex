@@ -305,3 +305,42 @@ export const docagriculture=[
     fileUrl: "https://drive.google.com/file/d/1srHOilRa43aK1UwGLT8NpwcUKfWqKqG9/preview",
   },
 ];
+
+export const activities = [
+    {
+      title: "Sanitation",
+      description:
+        "We conduct sanitation awareness programs and motivate communities to build Individual Household Latrines (IHL), improving hygiene and health standards in rural areas.",
+      stats: "8 Camps | 300+ Families Benefited",
+    },
+    {
+      title: "Environment Protection",
+      description:
+        "We organize tree plantation drives, soil conservation awareness, and forest protection programs, distributing over 2,000 saplings annually.",
+      stats: "4 Camps | 2,000+ Saplings Planted",
+    },
+    {
+      title: "Consumer Awareness",
+      description:
+        "We empower consumers through awareness programs, educating them about their rights, grievance mechanisms, and precautions when purchasing goods.",
+      stats: "3 Camps | Hundreds Benefited",
+    },
+    {
+      title: "Livestock Development",
+      description:
+        "We promote dairy and livestock units, creating sustainable income sources and employment opportunities, while planning large-scale Goshala models.",
+      stats: "60% Income Growth | Jobs Created",
+    },
+    {
+      title: "PRI Member Training",
+      description:
+        "Selected by SIRD under the Department of Panchayati Raj, Odisha, we conduct training sessions across Ganjam district, focusing on the 'Role, Rule, and Clarity' of the Panchayati Raj System and welfare schemes.",
+      stats: "50 Blocks Covered | Ongoing Training",
+    },
+    {
+      title: "Safe Water Access ",
+      description:
+        "Aligned with UN goals, we train PRI members to address water and sanitation disparities, reduce water pollution, and improve access to safe drinking water, especially for vulnerable groups like women and children.",
+      stats: "Target: 50% Access Improvement | Community Empowerment",
+    },
+  ];

@@ -8,7 +8,6 @@ import {
   FaSeedling,
   FaTractor,
   FaWater,
-  FaRegChartBar,
   FaToilet,
   FaLeaf,
   FaShoppingCart,
@@ -16,56 +15,66 @@ import {
   FaScroll,
   FaHandshake,
   FaCalendarAlt,
+  FaToiletPaper,
+  FaTree,
+  FaUsers,
+  FaHandHoldingUsd,
 } from "react-icons/fa";
 import { RiSeedlingFill } from "react-icons/ri";
 import { GiCow } from "react-icons/gi";
 import ProjectCard from "@/components/Project_cad";
-import Image from "next/image";
 import DynamicCard from "@/components/Background_card";
+import Image from "next/image";
 
 const fetchData = async () => {
   return [
     {
       id: 1,
-      title: "Vintage Cars",
+      title: "Women Trafficking Prevention",
       description:
-        "A vintage car, also known as a classic car, is typically defined as a vehicle manufactured between the early 1900s and the 1970s.",
-      imageUrl: "https://pagedone.io/asset/uploads/1688031162.jpg",
+        "Our NGO is committed to preventing women trafficking by raising awareness, providing rehabilitation support, and empowering survivors through education and vocational training. Together, we aim to create a safer, dignified, and equitable future for women.",
+      imageUrl:
+        "https://img.playbook.com/B66XReFTfAFF2O7MS935k559xPFRdc3l1Jn_H4CXlyA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2M1ZjNhYTA3/LTI0YzUtNDRmZS1h/NWNmLWQxNzdmMmQ3/NjkyYg",
     },
     {
       id: 2,
-      title: "Toy",
+      title: "Child Labour Prevention",
       description:
-        "A toy is an object designed for play and enjoyment, typically used by children but appreciated by all ages.",
-      imageUrl: "https://pagedone.io/asset/uploads/1688031375.jpg",
+        "Our NGO works to eliminate child labor by promoting education, providing vocational training, and supporting vulnerable families. We strive to create a future where every child enjoys their right to learn, play, and thrive.",
+      imageUrl:
+        "https://img.playbook.com/LK83UGFSNRwmu2Fr2rNylo_CrptC4tee0zqwUcj3wjM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk1MzA2MjQw/LTRmMGQtNGFjZi04/ZGQ0LTMzZGQ3ZWQx/YTdiYQ",
     },
     {
       id: 3,
-      title: "Vintage Cars",
+      title: "Labour Education",
       description:
-        "A vintage car, also known as a classic car, is typically defined as a vehicle manufactured between the early 1900s and the 1970s.",
-      imageUrl: "https://pagedone.io/asset/uploads/1688031162.jpg",
+        "Our NGO empowers laborers through education, equipping them with knowledge of their rights, workplace safety, and skill development. We aim to create a workforce that is informed, skilled, and capable of building a better future.",
+      imageUrl:
+        "https://img.playbook.com/58G4X3jjhesL_JlC48NaDirjHUuAAsevkUGIE2Weet8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzlkMjg1YjRh/LWU0MjUtNDJlZS05/YjRiLWU3NDM4M2Zi/MzMwZQ",
     },
     {
       id: 4,
-      title: "Toy",
+      title: "Entrepreneurship Programme",
       description:
-        "A toy is an object designed for play and enjoyment, typically used by children but appreciated by all ages.",
-      imageUrl: "https://pagedone.io/asset/uploads/1688031375.jpg",
+        "Our NGO fosters entrepreneurship by providing training, resources, and mentorship to aspiring individuals. We empower communities to create sustainable businesses, generate employment, and drive economic growth, paving the way for self-reliance and innovation.",
+      imageUrl:
+        "https://img.playbook.com/xDZgHaKgQbOS6bFXyVl1yQyC2DQ9oxiOCa5Fs2R1ogo/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzg3YzY4ODg2/LWRhNDctNDA3MS1h/OGYyLTYyNzcxMzVi/YjhjYQ",
     },
     {
       id: 5,
-      title: "Vintage Cars",
+      title: "Check Distribution",
       description:
-        "A vintage car, also known as a classic car, is typically defined as a vehicle manufactured between the early 1900s and the 1970s.",
-      imageUrl: "https://pagedone.io/asset/uploads/1688031162.jpg",
+        "Our NGO supports farmers by facilitating check distribution programs for agricultural development. These initiatives provide financial assistance, enabling farmers to invest in modern techniques, quality seeds, and equipment, ensuring improved productivity and sustainable livelihoods.",
+      imageUrl:
+        "https://img.playbook.com/Lwqw8anTljM6Rrl3KQteJMfvQMsY6sxDhcazbM5xqAA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JkZTM5YzRm/LTIyNzItNDE3NC04/ODQ3LTNiYjI3YjEz/M2U3Mg",
     },
     {
       id: 6,
-      title: "Toy",
+      title: "Teaching Farmers",
       description:
-        "A toy is an object designed for play and enjoyment, typically used by children but appreciated by all ages.",
-      imageUrl: "https://pagedone.io/asset/uploads/1688031375.jpg",
+        "Our NGO empowers farmers through educational programs on modern farming techniques, sustainable practices, and resource management. By enhancing their knowledge and skills, we aim to improve agricultural productivity, promote eco-friendly methods, and ensure better livelihoods for farming communities.",
+      imageUrl:
+        "https://img.playbook.com/xoAnhGniMWUMlgc_i75G-cDzEutB3RE5d0iD1b-jv1k/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzgzYWY5NGMz/LTlkNGEtNGU3MS1h/MzZmLTk2NjlhYTQy/NjllMA",
     },
   ];
 };
@@ -91,21 +100,15 @@ const projects = [
     title: "Agricultural Promotion",
     description:
       "Agriculture is the backbone of rural livelihoods, especially in tribal-dominated areas. With proper training in production processes, crop management, water management, and seed treatment, small and marginal farmers can achieve optimal production and increase their incomes. Our organization has been actively working to empower farmers through awareness programs, demonstrations, and technical support.",
-    flowSteps: [
-      FaSeedling,
-      FaTractor,
-      RiSeedlingFill,
-      FaWater,
-      FaRegChartBar,
-    ],
+    flowSteps: [FaSeedling, FaTractor, RiSeedlingFill, FaWater],
     flowDescription:
-      "Awareness → Demonstration → Seed Treatment → Water Management → Productivity",
+      "Awareness → Demonstration → Seed Treatment → Water Management",
     titleColor: "text-green-600",
   },
   {
     title: "Health Activities",
     description:
-      "Ensuring a healthy body and mind requires a healthy environment. Our organization emphasizes community-based health management and focuses on child health, family welfare programs, immunization (Pulse Polio), and pre/postnatal care for women and children.",
+      "Ensuring a healthy body and mind requires a healthy environment. Our organization emphasizes community-based health management and focuses on child health, family welfare programs, immunization (Pulse Polio), and pre/postnatal care for women and children. We also promote health awareness through workshops, camps, and initiatives aimed at fostering long-term well-being in underserved communities.",
     flowSteps: [FaToilet, FaLeaf, FaShoppingCart, GiCow],
     flowDescription:
       "Sanitation → Environment Protection → Consumer Awareness → Livestock Development",
@@ -118,6 +121,14 @@ const projects = [
     flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
     flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
     titleColor: "text-blue-600",
+  },
+  {
+    title: "Community Empowerment",
+    description:
+      "We focus on driving impactful change in rural and underprivileged communities by addressing critical challenges and promoting holistic development through various initiatives. These include improving sanitation, protecting the environment, empowering consumers, promoting livelihoods, and uplifting families.",
+    flowSteps: [FaToiletPaper, FaTree, FaUsers, FaHandHoldingUsd],
+    flowDescription: "Sanitation → Environment → Empowerment → Livelihood ",
+    titleColor: "text-green-600",
   },
 ];
 export default function Index() {
@@ -132,38 +143,58 @@ export default function Index() {
   }, []);
   return (
     <>
-      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
-        <div class="absolute inset-0">
+      <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+        <div className="absolute inset-0">
           <img
             width="auto"
             height="auto"
             src="https://img.playbook.com/iUqamV1mEwWdc1BINe3fI_-0EePPyqBEX76v2UJRxyU/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2ZmODg2Mzg2/LTIwZjUtNGE1MS05/NTAxLWVkMzlmODdj/MGQ4Yw"
             alt="Background Image"
-            class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
+            className="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
           />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
         </div>
 
-        <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-          <h1 class="text-5xl font-bold leading-tight mb-4">
+        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 className="text-5xl font-bold leading-tight mb-4">
             Welcome to APPEX GUIDE LINE
           </h1>
-          <p class="text-lg text-gray-300 mb-8">
+          <p className="text-lg text-gray-300 mb-8">
             Inspiring hope, igniting change, and empowering dreams every step of
             the way.
           </p>
-          {/* <a
-            href="/"
-            class="bg-[yellow] text-gray-900 hover:bg-[yellow] py-2 px-6 rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-          >
-            Get Started
-          </a> */}
         </div>
       </div>
       <div>
-        <div className="text-3xl font-bold m-2 text-center">Projects</div>
+        <div className="text-3xl font-serif bg-[#ff90b5] font-bold my-4 mx-auto text-center w-[80%]">
+          Awards
+        </div>
+        <div className="mx-auto p-4 w-[80%] flex justify-between">
+          {/* left */}
+          <div className="m-2 size-[50%]">
+            <Image
+              width="1200"
+              height="1200"
+              src="https://img.playbook.com/nT4Cbo75KENYiha1lvCquQQEo3NWNAAv2puwYDNWp7E/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FjZDRkYTgw/LWM3MjMtNDU2NC05/NTJlLWQ2YzI5Mzlh/YzNiYg"
+              alt="award"
+            />
+          </div>
+          {/* right */}
+          <div className="m-2 size-[50%]">
+            <Image
+              width="1200"
+              height="1200"
+              src="https://img.playbook.com/317K62BxbMEsYWnm1WCHs32P9KZ4I5bnUENbhb40Q7U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2QyYWViYjU4/LTExNGQtNGVlNC04/OTFmLWI4ZGJjN2Ex/OTVkZA"
+              alt="award2"
+            />
+          </div>
+        </div>
+
+        <div className="text-3xl font-serif bg-[#8bcba1] font-bold mx-auto text-center w-[80%]">
+          Projects
+        </div>
         <div className="text-sm font-semibold text-center m-2">
-          <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-2">
+          <div className="grid grid-cols-2 items-center justify-center overflow-hidden bg-gray-100 p-2 w-[80%] m-auto">
             {projects.map((project, index) => (
               <div className="mb-2" key={index}>
                 <ProjectCard
@@ -178,21 +209,24 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="justify-between items-center w-[80%] px-auto mx-auto">
-      <div className="relative m-4">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {data.map((item) => (
-          <DynamicCard
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            imageUrl={item.imageUrl}
-          />
-        ))}
+
+      <div className="justify-between items-center w-[80%] px-auto m-auto">
+        <div className="text-3xl font-bold font-serif bg-[#adbfe6] m-4 text-center">
+          Activities
+        </div>
+        <div className="relative m-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {data.map((item) => (
+              <DynamicCard
+                key={item.id}
+                title={item.title}
+                description={item.description}
+                imageUrl={item.imageUrl}
+              />
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
-      </div>
-     
     </>
   );
 }

@@ -107,7 +107,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 
 const Index = () => {
   const option_css =
-    "border-solid border-[1px] border-[gray] py-2 px-6 rounded-t-xl ";
+    "border-solid border-[1px] border-[black] py-2 px-6 ";
   const [option, setOption] = useState(0);
   const [text, setText] = useState(Intervention[0].text);
   const [icon, setIcon] = useState(Intervention[0].icon);
@@ -241,7 +241,7 @@ const Index = () => {
               </div>
             </div>
             {/* Textbox */}
-            <div className="border-solid border-[1px] border-[#131313] p-4 rounded-b-xl bg-[#ffd5e5] flex items-center justify-around">
+            <div className="border-solid border-[1px] border-[#ffd5e5] p-4 bg-[#ffd5e5] flex items-center justify-around">
               <div className="mx-2">
                 <Icon />
               </div>
@@ -255,9 +255,9 @@ const Index = () => {
 
       {/* blog section */}
       <div>
-        <div className="p-8">
+        <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">
+            <h1 className="text-4xl font-serif font-bold border-teal-400 dark:text-gray-200">
               Latest Stories
             </h1>
             <Link href={"/blogs"} className="">
@@ -267,7 +267,7 @@ const Index = () => {
               </div>
             </Link>
           </div>
-          <div className="grid grid-cols-2 w-[100%] p-4">
+          <div className="grid grid-cols-2 p-4">
             {card_miscellaneous
               .slice(0, 4)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
@@ -285,7 +285,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row p-2 bg-[#ececec] items-center w-[80%] mx-auto">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">

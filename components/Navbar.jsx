@@ -21,7 +21,7 @@ export default function Navbar() {
                 height={100}
                 width={100}
                 className={'h-[80px] w-[80px] rounded-full bg-[white] m-1'}
-                src="https://img.playbook.com/6MeRmsLAPaHeWVysxfssWU1IhU7ivBsGUQ6GS5Ttceg/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzYyNDVlODlm/LTQ1OTMtNDY0MS1i/NGRmLWViYTY0ODUw/NGEwZQ"
+                src="https://img.playbook.com/cO9x7nkZ10OpDoJrb8YW1wotD7c8M-GyhBnSsQinYKE/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2I4NzM0Yjli/LTE2OWItNGNlOC05/MDgyLTA4OGVhMDIz/Y2YxZg"
                 alt="Logo"
               />
             </Link>
