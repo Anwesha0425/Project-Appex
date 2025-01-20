@@ -85,7 +85,7 @@ const projects = [
       "Empowering women is essential for achieving sustainable development and equality in society. Our organization has dedicated itself to uplifting women through education, skill development, and creating awareness about their rights and opportunities. By providing them with resources and support, we strive to help women become self-reliant and confident contributors to society.",
     flowSteps: [FaFemale, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
     flowDescription: "Awareness → Skill Development → Support → Empowerment",
-    titleColor: "text-purple-600",
+    titleColor: "text-[purple]",
   },
   {
     title: "Child Support",
@@ -94,7 +94,7 @@ const projects = [
     flowSteps: [FaChild, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
     flowDescription:
       "Child Welfare → Awareness → Support → Skill Development → Empowerment",
-    titleColor: "text-blue-600",
+    titleColor: "text-[maroon]",
   },
   {
     title: "Agricultural Promotion",
@@ -103,7 +103,7 @@ const projects = [
     flowSteps: [FaSeedling, FaTractor, RiSeedlingFill, FaWater],
     flowDescription:
       "Awareness → Demonstration → Seed Treatment → Water Management",
-    titleColor: "text-green-600",
+    titleColor: "text-[navy]",
   },
   {
     title: "Health Activities",
@@ -112,7 +112,7 @@ const projects = [
     flowSteps: [FaToilet, FaLeaf, FaShoppingCart, GiCow],
     flowDescription:
       "Sanitation → Environment Protection → Consumer Awareness → Livestock Development",
-    titleColor: "text-green-600",
+    titleColor: "text-[pink]",
   },
   {
     title: "Miscellaneous Works",
@@ -120,7 +120,7 @@ const projects = [
       "Our organization is dedicated to preserving cultural heritage, promoting social harmony, and fostering community development. These efforts are reflected through a variety of initiatives, including library services, manuscript preservation, social cohesion programs, and celebrations of cultural and national importance.",
     flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
     flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
-    titleColor: "text-blue-600",
+    titleColor: "text-[skyblue]",
   },
   {
     title: "Community Empowerment",
@@ -128,7 +128,7 @@ const projects = [
       "We focus on driving impactful change in rural and underprivileged communities by addressing critical challenges and promoting holistic development through various initiatives. These include improving sanitation, protecting the environment, empowering consumers, promoting livelihoods, and uplifting families.",
     flowSteps: [FaToiletPaper, FaTree, FaUsers, FaHandHoldingUsd],
     flowDescription: "Sanitation → Environment → Empowerment → Livelihood ",
-    titleColor: "text-green-600",
+    titleColor: "text-[green]",
   },
 ];
 export default function Index() {
@@ -143,6 +143,7 @@ export default function Index() {
   }, []);
   return (
     <>
+    <main className="bg-[#fff9e9]">
       <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -166,9 +167,50 @@ export default function Index() {
         </div>
       </div>
       <div>
-        <div className="text-3xl font-serif bg-[#ff90b5] font-bold my-4 mx-auto text-center w-[80%]">
+
+      <section className="bg-gray-50 py-12 px-6 lg:px-20 w-[80%] mx-auto bg-[#fff9e9]">
+      <div className="max-w-5xl mx-auto text-center">
+        <h1 className="text-5xl font-bold  font-serif text-green-600 mb-6 text-[#dfca55]">About</h1>
+        <p className="text-lg text-gray-700 leading-7 mb-6">
+          “Appex Guide Line” has been a cornerstone of rural development since its inception in 1991. Founded by
+          visionaries known for their human values and experience, the organization focuses on poverty alleviation and
+          fostering self-reliance among underprivileged communities. Through participatory approaches, we revive faith
+          in the inherent potential of rural masses, empowering them to transform their economic and social lives.
+        </p>
+        <p className="text-lg text-gray-700 leading-7 mb-6">
+          With a multidisciplinary team, we aim to build a sustainable future by continuously learning and innovating
+          while staying true to our mission of creating a healthier and more egalitarian society.
+        </p>
+      </div>
+      <div className="grid grid-cols-3 gap-6 mt-12 ">
+        <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
+          <h2 className="text-xl font-semibold text-green-600 mb-4">Our Vision</h2>
+          <p className="text-gray-700">
+            To build a healthy and favorable socio-economic and cultural environment for an egalitarian society.
+          </p>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
+          <h2 className="text-xl font-semibold text-green-600 mb-4">Our Mission</h2>
+          <p className="text-gray-700">
+            To bring qualitative change in rural and tribal communities by disseminating knowledge and promoting
+            sustainable development.
+          </p>
+        </div>
+        <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
+          <h2 className="text-xl font-semibold text-green-600 mb-4">Our Strategy</h2>
+          <p className="text-gray-700">
+            We follow participatory approaches like PRA and PLA, involving beneficiaries in planning and monitoring to
+            ensure sustainable impact.
+          </p>
+        </div>
+      </div>
+    </section>
+        
+        <section className="mb-8">
+        <div className="text-5xl font-serif text-[#ff90b5] font-bold m-4 mx-auto text-center w-[80%]">
           Awards
         </div>
+        <div className="text-xl text-center font-semibold font-mono leading-7 w-[80%] mx-auto mb-6">At Appex Guide Line, we turn challenges into opportunities, fostering hope and change for a brighter, sustainable future. Together, we celebrate every step toward empowering communities.</div>
         <div className="mx-auto p-4 w-[80%] flex justify-between">
           {/* left */}
           <div className="m-2 size-[50%]">
@@ -177,7 +219,18 @@ export default function Index() {
               height="1200"
               src="https://img.playbook.com/nT4Cbo75KENYiha1lvCquQQEo3NWNAAv2puwYDNWp7E/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FjZDRkYTgw/LWM3MjMtNDU2NC05/NTJlLWQ2YzI5Mzlh/YzNiYg"
               alt="award"
+              className="rounded-lg shadow-lg"
             />
+          </div>
+          {/* right */}
+          <div className="m-2 size-[50%] text-center justify-center ">
+          <div className="text-lg justify-center font-semibold font-mono leading-7 mt-[25%] items-center ">&quot;Every small step towards change creates ripples of transformation.&quot;</div>
+          </div>
+        </div>
+        <div className="mx-auto p-4 w-[80%] flex justify-between">
+          {/* left */}
+          <div className="m-2 size-[50%]">
+          <div className="text-lg justify-center font-semibold font-mono leading-7 mt-[25%] items-center ">&quot;Building stronger communities today for a resilient tomorrow.&quot;</div>
           </div>
           {/* right */}
           <div className="m-2 size-[50%]">
@@ -186,15 +239,17 @@ export default function Index() {
               height="1200"
               src="https://img.playbook.com/317K62BxbMEsYWnm1WCHs32P9KZ4I5bnUENbhb40Q7U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2QyYWViYjU4/LTExNGQtNGVlNC04/OTFmLWI4ZGJjN2Ex/OTVkZA"
               alt="award2"
+              className="rounded-lg shadow-lg"
             />
           </div>
         </div>
+        </section>
 
-        <div className="text-3xl font-serif bg-[#8bcba1] font-bold mx-auto text-center w-[80%]">
+        <div className="text-5xl font-serif text-[#39955a] my-4 font-bold mx-auto text-center w-[80%]">
           Projects
         </div>
-        <div className="text-sm font-semibold text-center m-2">
-          <div className="grid grid-cols-2 items-center justify-center overflow-hidden bg-gray-100 p-2 w-[80%] m-auto">
+        <div className="text-sm font-semibold text-center w-[80%] m-auto ">
+          <div className="grid grid-cols-2 items-center gap-4 justify-center overflow-hidden bg-gray-100 p-2 ">
             {projects.map((project, index) => (
               <div className="mb-2" key={index}>
                 <ProjectCard
@@ -211,11 +266,11 @@ export default function Index() {
       </div>
 
       <div className="justify-between items-center w-[80%] px-auto m-auto">
-        <div className="text-3xl font-bold font-serif bg-[#adbfe6] m-4 text-center">
+        <div className="text-5xl font-bold font-serif text-[#4b6db6] m-4 text-center">
           Activities
         </div>
         <div className="relative m-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {data.map((item) => (
               <DynamicCard
                 key={item.id}
@@ -227,6 +282,7 @@ export default function Index() {
           </div>
         </div>
       </div>
+      </main>
     </>
   );
 }

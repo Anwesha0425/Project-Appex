@@ -76,7 +76,7 @@ function Dropdown(props) {
       className="flex flex-col m-2 p-2 transition-all duration-500"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className="flex flex-row items-center rounded-md p-2 bg-[#f1fff2] cursor-pointer">
+      <div className={`flex flex-row items-center rounded-md p-2 cursor-pointer ${props.title.color}`}>
         <div
           className={`mr-2 transition-transform duration-500 ${
             isOpen ? "rotate-90" : ""

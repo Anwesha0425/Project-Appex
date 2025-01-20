@@ -104,7 +104,7 @@ export const children =[
 export const prolonged = [
   {
     title: "Awareness and Training Programs",
-    color: 'yellow',
+    color: 'bg-[gray]',
     methods: [
       "Conducted 12 awareness camps annually.",
       "Trained farmers on crop management.",
@@ -115,7 +115,7 @@ export const prolonged = [
   },
   {
     title: "Demonstration of Best Practices for Crop Production",
-    color: 'green',
+    color: 'bg-[green]',
     methods: [
       "Implemented Rice Line Transplanting methods.",
       "Demonstrated hybrid maize cultivation techniques.",
@@ -126,7 +126,7 @@ export const prolonged = [
   },
   {
     title: "Collaboration with Government Agencies",
-    color: 'blue',
+    color: 'bg-[skyblue]',
     methods: [
       "Linked FIGs with ATMA for support.",
       "Partnered with BGREI for rice promotion.",
@@ -137,7 +137,7 @@ export const prolonged = [
   },
   {
     title: "Promotion of Sustainable Farming",
-    color: 'red',
+    color: 'bg-[pink]',
     methods: [
       "Encouraged eco-friendly seed treatments.",
       "Focused on optimal input use efficiency.",

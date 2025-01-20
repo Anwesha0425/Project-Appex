@@ -8,7 +8,7 @@ const DynamicCard = ({ title, description, imageUrl }) => {
 
       {/* Content */}
       <div className="relative p-6">
-        <h3 className="text-3xl font-manrope font-semibold text-white mb-6">{title}</h3>
+        <h3 className="text-3xl font-manrope font-semibold text-white mb-6 ">{title}</h3>
         <p className="text-base leading-6 text-white font-normal mb-6">{description}</p>
       </div>
     </div>
