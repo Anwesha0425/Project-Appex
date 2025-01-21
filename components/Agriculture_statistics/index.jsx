@@ -38,9 +38,9 @@ const AgricultureStats = () => {
   ];
 
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="p-6 bg-white shadow-lg rounded-lg w-4/5 max-w-screen-lg">
-        <h1 className="text-3xl font-bold text-center mb-6 text-green-700 font-serif bg-[#96a5da]">
+    <div className="min-h-screen flex items-center justify-center">
+      <div className="p-6 bg-white shadow-lg rounded-lg w-4/5 max-w-screen-lg bg-[#eee9ff]">
+        <h1 className="text-3xl font-bold text-center mb-6 text-green-700 font-serif text-[#1d3075]">
           Demonstration on Rice under 2nd Green Revolution RKVY
         </h1>
 

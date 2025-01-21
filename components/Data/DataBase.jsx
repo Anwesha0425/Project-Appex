@@ -59,14 +59,14 @@ export const card_data = [
     link: "/project/health",
     ImageURL:
       "https://img.playbook.com/Nw3fiA39D6xhZwokxFfwB4hmDbrM2BK8hj_T1B2tfP4/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzcxOWVmYzJh/LWE4ZjYtNGEyZi1h/ZmUzLTJhOTg5OWU0/OWUyMQ",
-    text: "A healthy body and mind thrive in a healthy environment, and the organization remains deeply committed to health-related initiatives. Its efforts focus on community-based health management while giving special attention to child health, family welfare programs, immunization drives like Pulse Polio, and pre- and post-natal care for women and children. These initiatives aim to ensure holistic well-being for individuals and communities, fostering a healthier and more resilient society.",
+    text: "A healthy body and mind thrive in a healthy environment, and the organization remains committed to health-related initiatives. It's efforts focus on community-based health management while giving attention to child health, family welfare programs, immunization drives like Pulse Polio, and pre- and post-natal care for women and children. These initiatives aim to ensure holistic well-being for individuals and communities, fostering a healthier and more resilient society.",
   },
   {
     name: "MSME",
     link: "/project/msme",
     ImageURL:
       "https://img.playbook.com/evQyN7Ry0ubnVIq9z4rZI3eXUxGLWuh99EZtfe0uwj8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzM0M2I5ODky/LTMzZTQtNDA3MS1h/MzBkLWRiY2E5Nzg0/ZTFmNA",
-    text: "The organization has prioritized agriculture-based income-generating activities and self-reliance among beneficiaries, with a strong focus on livestock development since 1999. This initiative has proven to be both cost-effective and highly impactful, generating a 60% increase in income and providing permanent wage employment for two workers. To scale these efforts, the organization plans to adopt the “Goshala” concept, which will not only create opportunities for unemployed youth but also promote sustainable practices through bio-manure and compost production. External funding support could significantly boost the expansion and success of this initiative.",
+    text: "The organization has prioritized agriculture-based income-generating activities and self-reliance among beneficiaries, with a strong focus on livestock development since 1999. This has proven to be both cost-effective and highly impactful, generating a 60% increase in income and providing permanent wage employment for two workers. To scale these efforts, the organization plans to adopt the “Goshala” concept, which will not only create opportunities for unemployed youth but also promote sustainable practices through bio-manure and compost production. External funding support could significantly boost the expansion and success of this initiative.",
   },
   {
     name: "Agriculture",
@@ -104,7 +104,7 @@ export const children =[
 export const prolonged = [
   {
     title: "Awareness and Training Programs",
-    color: 'bg-[gray]',
+    color: 'text-[darkred]',
     methods: [
       "Conducted 12 awareness camps annually.",
       "Trained farmers on crop management.",
@@ -115,7 +115,7 @@ export const prolonged = [
   },
   {
     title: "Demonstration of Best Practices for Crop Production",
-    color: 'bg-[green]',
+    color: 'text-[black]',
     methods: [
       "Implemented Rice Line Transplanting methods.",
       "Demonstrated hybrid maize cultivation techniques.",
@@ -126,7 +126,7 @@ export const prolonged = [
   },
   {
     title: "Collaboration with Government Agencies",
-    color: 'bg-[skyblue]',
+    color: 'text-[darkblue]',
     methods: [
       "Linked FIGs with ATMA for support.",
       "Partnered with BGREI for rice promotion.",
@@ -137,7 +137,7 @@ export const prolonged = [
   },
   {
     title: "Promotion of Sustainable Farming",
-    color: 'bg-[pink]',
+    color: 'text-[purple]',
     methods: [
       "Encouraged eco-friendly seed treatments.",
       "Focused on optimal input use efficiency.",

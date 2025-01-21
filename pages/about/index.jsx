@@ -6,6 +6,7 @@ import { pdfData } from "@/components/Data/DataBase";
 export default function index() {
   return (
     <>
+    <main class="bg-[#fff9e9]">
     <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -50,7 +51,7 @@ export default function index() {
 
           {/* Story Section */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 bg-[#ade6e1] text-center font-serif">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4 text-[#1c625d] text-center font-serif">
               Our Story
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -70,7 +71,7 @@ export default function index() {
 
           {/* Mission Section */}
           <section className="mb-12">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center bg-[#adc8e6] font-serif">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4 text-center text-[#20446c] font-serif">
               Our Mission
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -88,7 +89,7 @@ export default function index() {
 
           {/* Vision Section */}
           <section>
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center bg-[#eabdbd] font-serif">
+            <h2 className="text-3xl font-semibold text-gray-800 mb-4 text-center text-[#792e2e] font-serif">
               Our Vision
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -106,11 +107,11 @@ export default function index() {
         </div>
       </div>
 
-      <div className="bg-gray-50 p-4">
+      <div className="p-4">
         <div className="max-w-5xl mx-auto">
           {/* Organization Profile Section */}
-          <section className="mb-4 bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-2xl font-semibold mb-4 font-serif text-center bg-[#b7e6ad]">
+          <section className="mb-4 bg-white shadow-md rounded-lg p-6 bg-[#f3fef5]">
+            <h2 className="text-3xl font-semibold mb-4 font-serif text-center text-[#337025]">
               Organization Profile
             </h2>
             <ul className="text-gray-700 space-y-4">
@@ -220,11 +221,11 @@ export default function index() {
         </div>
       </div>
 
-      <div className="bg-gray-50 p-4">
+      <div className="p-4">
         <div className="max-w-6xl mx-auto">
           {/* Introduction */}
-          <section className="bg-white shadow-md rounded-lg p-6 mb-4">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center font-serif bg-[#e6adb9]">
+          <section className="bg-white shadow-md rounded-lg p-6 mb-4 bg-[#fef3f3]">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center font-serif text-[#662231]">
               Introduction
             </h2>
             <p className="text-gray-700">
@@ -249,8 +250,8 @@ export default function index() {
           </section>
 
           {/* Operational Area */}
-          <section className="bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center font-serif bg-[#caade6]">
+          <section className="bg-[#f8f4fc] shadow-md rounded-lg p-6">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center font-serif text-[#472369]">
               Operational Area & Target People
             </h2>
             <div className="overflow-auto">
@@ -346,7 +347,7 @@ export default function index() {
       <main className="bg-gray-50 min-h-screen">
         <section className="py-10 px-6 lg:px-20 bg-white">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-semibold text-gray-800 text-center font-serif bg-[#ade6e1]">
+            <h2 className="text-3xl font-semibold text-gray-800 text-center font-serif text-[#1f625c]">
               Future Aspirations
             </h2>
             <ul className="mt-4 space-y-3 text-gray-600 list-disc list-inside ">
@@ -395,7 +396,7 @@ export default function index() {
         </section>
         {/* Annual Report Documents */}
         <div className="min-h-screen bg-gray-100 p-6">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#adc8e6]">
+          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif text-[#20436a]">
             Annual Reports
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hover:shadow-2xl ">
@@ -407,7 +408,7 @@ export default function index() {
         {/* Acknowledgment */}
         <div className="bg-gray-50 py-12">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#eabdbd]">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif text-[#5b1c1c]">
               Acknowledgment
             </h2>
             <p className="text-gray-700 leading-relaxed mb-8">
@@ -458,6 +459,7 @@ export default function index() {
             </ul>
           </div>
         </div>
+      </main>
       </main>
     </>
   );

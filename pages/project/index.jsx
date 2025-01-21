@@ -8,7 +8,7 @@ function Cards({ name, link, text, ImageURL }) {
   // console.log(name);
   return (
     <>
-      <div className='border-[#A0D9D6] border-4 rounded-md p-4 aspect-video m-4 flex flex-col items-center shadow-2xl'>
+      <div className='border-[#A0D9D6] bg-[white] border-4 rounded-md p-4 aspect-video m-4 flex flex-col items-center shadow-2xl'>
         <Image
                   src={name.ImageURL}
                   alt={'Image Not Found!'}
@@ -31,10 +31,12 @@ function Cards({ name, link, text, ImageURL }) {
 
 export default function index() {
   return (
+    <main className='bg-[#fff9e9]'>
     <div className='grid grid-cols-2 w-[80%] mx-auto'>
       {card_data.map((name, link,ImageURL, text, index) => (
         <Cards key={index} name={name} link={link} ImageURL={ImageURL} text={text} />
       ))}
     </div>
+    </main>
   )
 }

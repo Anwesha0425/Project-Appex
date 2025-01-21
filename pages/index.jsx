@@ -30,49 +30,97 @@ const fetchData = async () => {
   return [
     {
       id: 1,
-      title: "Women Trafficking Prevention",
+      title: "",
       description:
-        "Our NGO is committed to preventing women trafficking by raising awareness, providing rehabilitation support, and empowering survivors through education and vocational training. Together, we aim to create a safer, dignified, and equitable future for women.",
+        "",
       imageUrl:
         "https://img.playbook.com/B66XReFTfAFF2O7MS935k559xPFRdc3l1Jn_H4CXlyA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2M1ZjNhYTA3/LTI0YzUtNDRmZS1h/NWNmLWQxNzdmMmQ3/NjkyYg",
     },
     {
-      id: 2,
-      title: "Child Labour Prevention",
+      id: 10,
+      title: "Women Trafficking Prevention",
       description:
-        "Our NGO works to eliminate child labor by promoting education, providing vocational training, and supporting vulnerable families. We strive to create a future where every child enjoys their right to learn, play, and thrive.",
+        "Our NGO is committed to preventing women trafficking by raising awareness, providing rehabilitation support, and empowering survivors through education and vocational training. Together, we aim to create a safer, dignified, and equitable future for women.",
+      imageUrl:
+        "",
+    },
+    {
+      id: 2,
+      title: "",
+      description:
+        "",
       imageUrl:
         "https://img.playbook.com/LK83UGFSNRwmu2Fr2rNylo_CrptC4tee0zqwUcj3wjM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzk1MzA2MjQw/LTRmMGQtNGFjZi04/ZGQ0LTMzZGQ3ZWQx/YTdiYQ",
     },
     {
-      id: 3,
-      title: "Labour Education",
+      id: 20,
+      title: "Child Labour Prevention",
       description:
-        "Our NGO empowers laborers through education, equipping them with knowledge of their rights, workplace safety, and skill development. We aim to create a workforce that is informed, skilled, and capable of building a better future.",
+        "Our NGO works to eliminate child labor by promoting education, providing vocational training, and supporting vulnerable families. We strive to create a future where every child enjoys their right to learn, play, and thrive.",
+      imageUrl:
+        "",
+    },
+    {
+      id: 3,
+      title: "",
+      description:
+        "",
       imageUrl:
         "https://img.playbook.com/58G4X3jjhesL_JlC48NaDirjHUuAAsevkUGIE2Weet8/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzlkMjg1YjRh/LWU0MjUtNDJlZS05/YjRiLWU3NDM4M2Zi/MzMwZQ",
     },
     {
-      id: 4,
+      id: 30,
+      title: "Labour Education",
+      description:
+        "Our NGO empowers laborers through education, equipping them with knowledge of their rights, workplace safety, and skill development. We aim to create a workforce that is informed, skilled, and capable of building a better future.",
+      imageUrl:
+        "",
+    },
+    {
+    id: 40,
       title: "Entrepreneurship Programme",
       description:
         "Our NGO fosters entrepreneurship by providing training, resources, and mentorship to aspiring individuals. We empower communities to create sustainable businesses, generate employment, and drive economic growth, paving the way for self-reliance and innovation.",
       imageUrl:
+        "",
+    },
+    {
+      id: 4,
+      title: "",
+      description:
+        "",
+      imageUrl:
         "https://img.playbook.com/xDZgHaKgQbOS6bFXyVl1yQyC2DQ9oxiOCa5Fs2R1ogo/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzg3YzY4ODg2/LWRhNDctNDA3MS1h/OGYyLTYyNzcxMzVi/YjhjYQ",
     },
     {
-      id: 5,
+      id: 50,
       title: "Check Distribution",
       description:
         "Our NGO supports farmers by facilitating check distribution programs for agricultural development. These initiatives provide financial assistance, enabling farmers to invest in modern techniques, quality seeds, and equipment, ensuring improved productivity and sustainable livelihoods.",
       imageUrl:
+        "",
+    },
+    {
+      id: 5,
+      title: "",
+      description:
+        "",
+      imageUrl:
         "https://img.playbook.com/Lwqw8anTljM6Rrl3KQteJMfvQMsY6sxDhcazbM5xqAA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JkZTM5YzRm/LTIyNzItNDE3NC04/ODQ3LTNiYjI3YjEz/M2U3Mg",
     },
     {
-      id: 6,
+      id: 60,
       title: "Teaching Farmers",
       description:
         "Our NGO empowers farmers through educational programs on modern farming techniques, sustainable practices, and resource management. By enhancing their knowledge and skills, we aim to improve agricultural productivity, promote eco-friendly methods, and ensure better livelihoods for farming communities.",
+      imageUrl:
+        "",
+    },
+    {
+      id: 6,
+      title: "",
+      description:
+        "",
       imageUrl:
         "https://img.playbook.com/xoAnhGniMWUMlgc_i75G-cDzEutB3RE5d0iD1b-jv1k/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzgzYWY5NGMz/LTlkNGEtNGU3MS1h/MzZmLTk2NjlhYTQy/NjllMA",
     },
@@ -90,7 +138,7 @@ const projects = [
   {
     title: "Child Support",
     description:
-      "With India lagging behind in efforts to abolish child labour, it is crucial to supplement eradication efforts with comprehensive socio-economic programmes and educational upliftment of underprivileged sections. Child Support services by our organization have been one of the most successful social initiatives, passionately focusing on the education and welfare of child labourers.",
+      "With India lagging behind in efforts to abolish child labour, it is crucial to supplement eradication efforts with comprehensive socio-economic programmes and educational upliftment of underprivileged sections. Child Support services have been one of the most successful social initiatives, passionately focusing on the education and welfare of child labourers.",
     flowSteps: [FaChild, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
     flowDescription:
       "Child Welfare → Awareness → Support → Skill Development → Empowerment",
@@ -170,7 +218,7 @@ export default function Index() {
 
       <section className="bg-gray-50 py-12 px-6 lg:px-20 w-[80%] mx-auto bg-[#fff9e9]">
       <div className="max-w-5xl mx-auto text-center">
-        <h1 className="text-5xl font-bold  font-serif text-green-600 mb-6 text-[#dfca55]">About</h1>
+        <h1 className="text-5xl font-bold  font-serif text-green-600 mb-6 text-[#ad9c3a]">About</h1>
         <p className="text-lg text-gray-700 leading-7 mb-6">
           “Appex Guide Line” has been a cornerstone of rural development since its inception in 1991. Founded by
           visionaries known for their human values and experience, the organization focuses on poverty alleviation and
@@ -184,20 +232,20 @@ export default function Index() {
       </div>
       <div className="grid grid-cols-3 gap-6 mt-12 ">
         <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
-          <h2 className="text-xl font-semibold text-green-600 mb-4">Our Vision</h2>
+          <h2 className="text-xl font-semibold text-green-600 mb-4 text-[#dfca55]">Our Vision</h2>
           <p className="text-gray-700">
             To build a healthy and favorable socio-economic and cultural environment for an egalitarian society.
           </p>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
-          <h2 className="text-xl font-semibold text-green-600 mb-4">Our Mission</h2>
+          <h2 className="text-xl font-semibold text-green-600 mb-4 text-[#dfca55]">Our Mission</h2>
           <p className="text-gray-700">
             To bring qualitative change in rural and tribal communities by disseminating knowledge and promoting
             sustainable development.
           </p>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
-          <h2 className="text-xl font-semibold text-green-600 mb-4">Our Strategy</h2>
+          <h2 className="text-xl font-semibold text-green-600 mb-4 text-[#dfca55]">Our Strategy</h2>
           <p className="text-gray-700">
             We follow participatory approaches like PRA and PLA, involving beneficiaries in planning and monitoring to
             ensure sustainable impact.
@@ -207,7 +255,7 @@ export default function Index() {
     </section>
         
         <section className="mb-8">
-        <div className="text-5xl font-serif text-[#ff90b5] font-bold m-4 mx-auto text-center w-[80%]">
+        <div className="text-5xl font-serif text-[#b83460] font-bold m-4 mx-auto text-center w-[80%]">
           Awards
         </div>
         <div className="text-xl text-center font-semibold font-mono leading-7 w-[80%] mx-auto mb-6">At Appex Guide Line, we turn challenges into opportunities, fostering hope and change for a brighter, sustainable future. Together, we celebrate every step toward empowering communities.</div>
@@ -266,11 +314,11 @@ export default function Index() {
       </div>
 
       <div className="justify-between items-center w-[80%] px-auto m-auto">
-        <div className="text-5xl font-bold font-serif text-[#4b6db6] m-4 text-center">
+        <div className="text-5xl font-bold font-serif text-[#294072] m-4 text-center">
           Activities
         </div>
         <div className="relative m-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 text-[#4b6db6] ">
             {data.map((item) => (
               <DynamicCard
                 key={item.id}

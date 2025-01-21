@@ -76,7 +76,7 @@ function Dropdown(props) {
       className="flex flex-col m-2 p-2 transition-all duration-500"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div className={`flex flex-row items-center rounded-md p-2 cursor-pointer ${props.title.color}`}>
+      <div className={`flex flex-row items-center rounded-md p-2 border-4 bg-[#f5fbf3] cursor-pointer ${props.title.color}`}>
         <div
           className={`mr-2 transition-transform duration-500 ${
             isOpen ? "rotate-90" : ""
@@ -129,6 +129,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 const index = () => {
   return (
     <>
+      <main className="bg-[#fff9e9]">
        <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -140,6 +141,7 @@ const index = () => {
           />
           <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
+        
         <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
           <h1 class="text-5xl font-bold leading-tight mb-4">
             Agriculture
@@ -151,15 +153,16 @@ const index = () => {
         </div>
 
       <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-bold border-teal-400  dark:text-gray-200 text-center font-serif bg-[#d4a1a1]">Why Agriculture? </h1>
+        <h1 className="text-4xl font-bold border-teal-400  dark:text-gray-200 text-center font-serif text-[#cb5353]">Why Agriculture</h1>
         <div className="text-lg m-2">
         Agriculture is the backbone of India, employing nearly half of the country&apos;s population and serving as a vital source of livelihood for millions of rural families. With its rich history and diverse landscapes, India has immense potential to be a global leader in sustainable farming practices. However, many smallholder farmers face challenges such as limited access to modern technology, financial resources, and climate-resilient practices. By supporting agriculture, we can empower these farmers, enhance food security, and promote rural development. Our NGO is committed to transforming lives through initiatives that foster innovation, education, and sustainable growth in the agricultural sector, ensuring a brighter future for India&apos;s farmers and their communities.
 
         </div>
       </div>
-      <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-bold border-teal-400  dark:text-gray-200 text-center font-serif bg-[#a4d7d1]">What we do </h1>
-        <div className="flex flex-col m-2 p-2 ">
+
+      <div className=" mx-auto w-[80%]">
+        <h1 className="text-4xl font-bold border-teal-400 dark:text-gray-200 text-center font-serif text-[#43bdae]">What We Do </h1>
+        <div className="flex flex-col m-2 p-2">
         <div className="flex flex-row m-2 p-2 justify-center items-center">
           <Image
           src="https://img.playbook.com/MDKHQXYyS37wex2UtLsVvmtnS_CelJKkgixuFGNmtCk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzUyYTQyNzAy/LTIzYWEtNGJjMC04/YmUwLTZlOTYwNjAx/NTc1NA"
@@ -186,12 +189,12 @@ const index = () => {
         </div>
         <div className="text-lg m-2 p-2 justify-center">
         Our organization is deeply committed to enhancing rural livelihoods by promoting sustainable agriculture, community development, and resource management. We work closely with farmers in tribal-dominated and rural areas, equipping them with essential training on crop management, water management, seed treatment, and modern farming techniques to maximize production and income for small and marginal farmers. Over the years, we have conducted awareness camps in Ganjam and Gajapati districts, motivating farmers to form Farmers Interest Groups (FIGs) and adopt diverse crops such as paddy, maize, vegetables, and mushrooms. We actively collaborate with agencies like ATMA (Agricultural Technology Management Agency) to provide technological support and demonstrations, such as Rice Line Transplanting and improved maize cultivation techniques. To promote community self-reliance, we have developed agro farms near Berhampur city, facilitating the cultivation of fruit-bearing plants and other agricultural products in partnership with the horticulture department. Our efforts extend to water resource management under the &quot;National Programme for Repair, Restoration &amp; Renovation of Water Bodies&quot; initiated by the Department of Water Resources. Through baseline surveys and capacity-building activities in Ganjam, Gajapati, and Rayagada districts, we assess the pre-renovation status of water bodies, agricultural productivity, irrigation intensity, and community institutions. By restoring water bodies and empowering communities, we aim to strengthen rural resilience and ensure sustainable agricultural practices for generations to come.
-
         </div>
         </div>
       </div>
-      <div className="p-4 m-4 w-[80%] mx-auto">
-        <h1 className="text-4xl font-serif text-center font-bold border-teal-400 dark:text-gray-200 bg-[#bc9ad2]">Our Aim </h1>
+
+      <div className="p-4 m-2 w-[80%] mx-auto mb-6">
+        <h1 className="text-4xl font-serif text-center font-bold border-teal-400 text-[#964dc7]">Our Aim </h1>
         <div className="text-lg">
         <p>
       At the heart of our mission lies a commitment to transforming rural and tribal lives through sustainable agriculture and empowered communities. We aim to bring lasting change by:
@@ -212,7 +215,7 @@ const index = () => {
       <div>
         <div className="flex flex-col m-2 w-[80%] mx-auto">
           {/* title */}
-          <div className="text-4xl font-serif text-center font-bold border-teal-400 bg-[#97d5a4] dark:text-gray-200">Prolonged approach</div>
+          <div className="text-4xl font-serif text-center font-bold text-[#217b35] dark:text-gray-200">Prolonged approach</div>
           {/* grid */}
           <div className="m-2 grid grid-cols-2">
             {prolonged.map((title, methods, color, index) => (
@@ -232,7 +235,7 @@ const index = () => {
        </div>
 
        <div className=" w-[80%] mx-auto bg-gray-100 p-6">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif bg-[#adc8e6]">
+          <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center font-serif text-[#477fbe]">
             List Of Farmers
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 hover:shadow-2xl ">
@@ -242,7 +245,7 @@ const index = () => {
           </div>
         </div>
 
-      <div className="flex flex-row mx-auto justify-center items-center bg-[#eafcfa] w-[80%]">
+      <div className="flex flex-row mx-auto justify-center items-center text-[#12564e] w-[80%]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
@@ -282,7 +285,7 @@ const index = () => {
 
       {/* Blogs */}
       <div>
-        <div className="p-8">
+        <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
             <Link href={"/blogs"} className="">
@@ -311,12 +314,12 @@ const index = () => {
       </div>
       
       {/* Donate */}
-      <div className="flex flex-row m-4 p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row m-4 p-2 items-center w-[80%] mx-auto bg-[#f9f4e7]">
         {/* left */}
         <div className="m-4 p-4 size-[50%] justify-center">
           <div className="p-2 size-[52%]">
             <Link href={"/fundraising"}>
-            <div className="text-2xl font-bold m-4 P-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center">
+            <div className="text-2xl font-bold m-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center">
               Donate For Agriculture
             </div>
             </Link>
@@ -339,6 +342,7 @@ const index = () => {
       </div>
       
       <ImageCarousel images={images} text={"Agriculture"} />
+      </main>
     </>
   );
 };
