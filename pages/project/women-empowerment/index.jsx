@@ -80,7 +80,8 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 const index = () => {
   return (
     <>
-      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+     <main className="bg-[#fff9e9]">
+     <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -96,13 +97,13 @@ const index = () => {
             Women Empowerment
           </h1>
           <p class="text-lg text-gray-300 mb-8">
-          Strengthen a woman, and you build the foundation of progress.
+            Strengthen a woman, and you build the foundation of progress.
           </p>
         </div>
-        </div>
+      </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-150 text-center bg-[#d4a1a1]">
+        <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-150 text-center text-[#893434]">
           Why Women Empowerment
         </h1>
         <div className="text-lg m-2">
@@ -123,24 +124,24 @@ const index = () => {
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl font-serif text-center bg-[#a1cad4] font-bold border-teal-400  dark:text-gray-150 ">
+        <h1 className="text-4xl font-serif text-center text-[#327485] font-bold border-teal-400  dark:text-gray-150 ">
           What We Do
         </h1>
         <div className="text-lg m-2 p-2 justify-center">
           Our NGO is dedicated to fostering holistic development by addressing
-          critical social issues such as child labor, women&apos;s empowerment, and
-          community upliftment. We provide education to underprivileged children
-          and marginalized women, empowering them with knowledge and skills for
-          a better future. Our vocational training programs equip women and
-          youth with practical skills, enabling economic independence and
-          sustainable livelihoods. Through family counseling, we help families
-          resolve conflicts and rebuild stability, while income generation
-          programs and Self-Help Groups promote entrepreneurship among women.
-          Additionally, our &quot;SWADHARA&quot; shelter home offers safety and
-          rehabilitation for women in distress. By conducting awareness
-          campaigns on education, rights, and social issues, we aim to inspire
-          lasting change and create a society where every individual can thrive
-          with dignity and opportunity.
+          critical social issues such as child labor, women&apos;s empowerment,
+          and community upliftment. We provide education to underprivileged
+          children and marginalized women, empowering them with knowledge and
+          skills for a better future. Our vocational training programs equip
+          women and youth with practical skills, enabling economic independence
+          and sustainable livelihoods. Through family counseling, we help
+          families resolve conflicts and rebuild stability, while income
+          generation programs and Self-Help Groups promote entrepreneurship
+          among women. Additionally, our &quot;SWADHARA&quot; shelter home
+          offers safety and rehabilitation for women in distress. By conducting
+          awareness campaigns on education, rights, and social issues, we aim to
+          inspire lasting change and create a society where every individual can
+          thrive with dignity and opportunity.
         </div>
         <div className="flex flex-col m-2 p-2 ">
           <div className="flex flex-row m-2 p-2 justify-center items-center">
@@ -181,7 +182,7 @@ const index = () => {
       </div>
 
       <div className="flex flex-col mx-auto w-[80%]">
-        <h1 className="text-4xl font-serif text-center bg-[#a1d4ae] font-bold border-teal-400 dark:text-gray-150">
+        <h1 className="text-4xl font-serif text-center text-[#2f8044] font-bold border-teal-400 dark:text-gray-150">
           UN&apos;s Strategic Plan and Vision
         </h1>
         <Image
@@ -194,7 +195,7 @@ const index = () => {
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl font-serif text-center bg-[#afa1d4] font-bold border-teal-400 dark:text-gray-150">
+        <h1 className="text-4xl font-serif text-center text-[#412d77] font-bold border-teal-400 dark:text-gray-150">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -227,8 +228,8 @@ const index = () => {
             </li>
             <li>
               <strong>Providing Shelter and Support</strong> – Operating
-              &quot;SWADHARA,&quot; a shelter home for women in distress, to help them
-              rebuild their lives with dignity and confidence.
+              &quot;SWADHARA,&quot; a shelter home for women in distress, to
+              help them rebuild their lives with dignity and confidence.
             </li>
           </ul>
           <p>
@@ -240,9 +241,9 @@ const index = () => {
       </div>
 
       {/* hover card */}
-      <div className="mx-auto grid grid-cols-3 w-[80%]">
+      <div className="mx-auto grid grid-cols-3 w-[80%] gap-2">
         {/* Card 1 */}
-        <div className="relative mx-auto max-w-md rounded-lg bg-[#e6fcd4] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg hover:bg-[#e0fbe7] border-[#497327] border-2 text-[#497327] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Empower Women</h1>
             <p>
@@ -252,7 +253,7 @@ const index = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="relative mx-auto max-w-md rounded-lg bg-[#ffd5e5] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#f9e0e0] border-[#7a2c4a] text-[#7a2c4a] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Education</h1>
             <p>
@@ -263,7 +264,7 @@ const index = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="relative mx-auto max-w-md rounded-lg bg-[#e0d4fe] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#e0e9f9] border-[#453079] text-[#453079] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Strong Women</h1>
             <p>
@@ -273,7 +274,7 @@ const index = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="relative mx-auto max-w-md rounded-lg bg-[#fbded2] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg hover:bg-[#f9e0e0] text-[#76432d] border-2 border-[#76432d] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Support</h1>
             <p>Support women in need to rebuild lives and find strength.</p>
@@ -281,7 +282,7 @@ const index = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="relative mx-auto max-w-md rounded-lg bg-[#d4e9fc] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#e0e9f9] border-[#2d5377] text-[#2d5377] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Vocational Training</h1>
             <p>
@@ -292,7 +293,7 @@ const index = () => {
         </div>
 
         {/* Card 6 */}
-        <div className="relative mx-auto max-w-md rounded-lg bg-[#d8fee3] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#e0fbe7] border-[#296f3d] text-[#296f3d] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Shelter</h1>
             <p>Shelter gives women hope, dignity, and a second chance.</p>
@@ -369,26 +370,25 @@ const index = () => {
         </div>
       </div>
 
+      <div className="flex m-auto w-[80%] p-4 justify-center">
+        {scrollcard.map((data, index) => (
+          <InfoCard
+            key={index}
+            title={data.title}
+            description={data.description}
+          />
+        ))}
+      </div>
 
       <div className="flex m-auto w-[80%] p-4 justify-center">
-      {scrollcard.map((data, index) => (
-        <InfoCard
-          key={index}
-          title={data.title}
-          description={data.description}
-        />
-      ))}
-    </div>
-    
-    <div className="flex m-auto w-[80%] p-4 justify-center">
-      {scrollcard2.map((data, index) => (
-        <InfoCard
-          key={index}
-          title={data.title}
-          description={data.description}
-        />
-      ))}
-    </div>
+        {scrollcard2.map((data, index) => (
+          <InfoCard
+            key={index}
+            title={data.title}
+            description={data.description}
+          />
+        ))}
+      </div>
 
       <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#ececec] items-center">
         {/* Left Section */}
@@ -415,7 +415,10 @@ const index = () => {
           </div>
         </div>
       </div>
+      <div>
       <ImageCarousel images={images} text={"Memories"} />
+      </div>    
+    </main>
     </>
   );
 };

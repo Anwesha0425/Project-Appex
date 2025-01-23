@@ -128,7 +128,8 @@ const Index = () => {
 
   return (
     <>
-      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <main className='bg-[#fff9e9]'>
+    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -151,7 +152,7 @@ const Index = () => {
       </div>
 
       <section className="w-[80%] p-4 mx-auto">
-        <h2 className="text-4xl font-serif text-center bg-[#d29a9a] font-bold border-teal-400 dark:text-gray-150">
+        <h2 className="text-4xl font-serif text-center text-[#742b2b] font-bold border-teal-400 dark:text-gray-150">
           Why Rural Sanitation
         </h2>
         <p className="text-lg text-gray-700">
@@ -168,7 +169,7 @@ const Index = () => {
       </section>
 
       <div className="w-[80%] mx-auto p-4">
-      <h1 className="text-4xl text-center font-serif bg-[#a1d4ae] font-bold border-teal-400 dark:text-gray-200 mb-6">
+      <h1 className="text-4xl text-center font-serif text-[#266937] font-bold border-teal-400 dark:text-gray-200 mb-6">
         What We Do
       </h1>
       <div className="grid grid-cols-3 gap-6">
@@ -180,7 +181,7 @@ const Index = () => {
 
       <div>
         <div className="w-[80%] p-4 mx-auto">
-          <h1 className="text-4xl font-serif text-center bg-[#989acf] font-bold border-yellow-400 dark:text-gray-200">
+          <h1 className="text-4xl font-serif text-center text-[#282b6f] font-bold border-yellow-400 dark:text-gray-200">
             Our Aim
           </h1>
           <div className="text-lg m-2">
@@ -202,7 +203,7 @@ const Index = () => {
       <div className="flex justify-center items-end m-4">
         <div className="w-[80%]">
           {/* Up */}
-          <div className="text-4xl font-bold text-center bg-[#d8fee3] font-serif py-2 m-auto">
+          <div className="text-4xl font-bold text-center text-[#256838] font-serif py-2 m-auto">
             Focus Areas
           </div>
           {/* Down */}
@@ -241,7 +242,7 @@ const Index = () => {
               </div>
             </div>
             {/* Textbox */}
-            <div className="border-solid border-[1px] border-[#ffd5e5] p-4 bg-[#ffd5e5] flex items-center justify-around">
+            <div className="border-solid border-[1px] border-[black] p-4 bg-[#ffd5e5] flex items-center justify-around">
               <div className="mx-2">
                 <Icon />
               </div>
@@ -313,6 +314,7 @@ const Index = () => {
       <div>
         <ImageCarousel images={images} text={"Memories"} />
       </div>
+    </main>
     </>
   );
 };

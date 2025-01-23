@@ -74,7 +74,8 @@ function Cards({ name }) {
 const Index = () => {
   return (
     <>
-      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <main className="bg-[#fff9e9]">
+    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -96,7 +97,7 @@ const Index = () => {
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif bg-[#d4a1a1] font-bold border-teal-400  dark:text-gray-200">
+        <h1 className="text-4xl text-center font-serif text-[#6f2c2c] font-bold border-teal-400  dark:text-gray-200">
           Why Child Development
         </h1>
         <div className="text-lg m-2">
@@ -113,7 +114,7 @@ const Index = () => {
         </div>
       </div>
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif bg-[#a1d4ae] font-bold border-teal-400  dark:text-gray-200 ">
+        <h1 className="text-4xl text-center font-serif text-[#2c743e] font-bold border-teal-400  dark:text-gray-200 ">
           What we do
         </h1>
         <div className="flex flex-col m-2 p-2 ">
@@ -170,7 +171,7 @@ const Index = () => {
       </div>
       {/* Cards Section */}
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif bg-[#a1b9d4] font-bold border-teal-400 dark:text-gray-200">
+        <h1 className="text-4xl text-center font-serif text-[#2d4f75] font-bold border-teal-400 dark:text-gray-200">
           Their Stories
         </h1>
         <div className="grid grid-cols-2 gap-6 ">
@@ -182,7 +183,7 @@ const Index = () => {
 
       {/* our aim */}
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif bg-[#bca1d4] font-bold border-teal-400 dark:text-gray-200">
+        <h1 className="text-4xl text-center font-serif text-[#522b73] font-bold border-teal-400 dark:text-gray-200">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -258,6 +259,7 @@ const Index = () => {
       <div>
         <ImageCarousel images={Images} text={"Memories"} />
       </div>
+    </main>
     </>
   );
 };

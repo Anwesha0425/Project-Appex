@@ -112,12 +112,12 @@ const index = () => {
     },
     {
       description:
-        "Educating communities on prevention, myths, and safe practices related to HIV/AIDS.",
+        "Educating on prevention, myths, and safe practices related to HIV/AIDS.",
       icon: <FaShieldVirus className="text-red-500 text-4xl" />,
     },
     {
       description:
-        "Promoting family welfare, immunization drives, and pre/postnatal care.",
+        "Promoting family welfare, immunization drives, pre/postnatal care.",
       icon: <FaHeartbeat className="text-green-500 text-4xl" />,
     },
     {
@@ -129,6 +129,7 @@ const index = () => {
 
   return (
     <>
+    <main className="bg-[#fff9e9]">
       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -153,7 +154,7 @@ const index = () => {
       <div className="bg-gray-50 py-10 px-4 w-[80%] mx-auto">
         {/* Why This Topic Section */}
         <section className="mb-4">
-          <h2 className="text-4xl font-serif text-center bg-[#d29a9a] font-bold border-teal-400 dark:text-gray-150">
+          <h2 className="text-4xl font-serif text-center mb-4 text-[#6b2929] font-bold border-teal-400 dark:text-gray-150">
             Why Health
           </h2>
           <p className="text-lg text-gray-700">
@@ -170,7 +171,7 @@ const index = () => {
         {/* What We Do Section */}
         <section className="py-16 bg-gray-100">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold font-serif text-center text-gray-800 mb-8 bg-[#9ad2ae]">
+            <h2 className="text-4xl font-bold font-serif text-center text-gray-800 mb-8 text-[#286b40]">
               What We Do
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
@@ -182,7 +183,7 @@ const index = () => {
                   <h3 className="text-2xl font-semibold text-blue-600 mb-4">
                     {activity.title}
                   </h3>
-                  <p className="text-gray-700 mb-4">{activity.description}</p>
+                  <p className="text-[#286b40] mb-4">{activity.description}</p>
                   <p className="text-sm font-medium text-gray-500">
                     {activity.stats}
                   </p>
@@ -194,7 +195,7 @@ const index = () => {
 
         {/* Our Aim Section */}
         <section>
-          <h2 className="text-4xl font-serif text-center bg-[#9abcd2] font-bold border-teal-400 dark:text-gray-150">
+          <h2 className="text-4xl font-serif text-center mb-4 text-[#28506b] font-bold border-teal-400 dark:text-gray-150">
             Our Aim
           </h2>
           <div className="text-lg text-gray-700">
@@ -231,7 +232,7 @@ const index = () => {
       </div>
 
       <div className="flex flex-col mx-auto w-[80%]">
-              <h1 className="text-4xl font-serif text-center bg-[#b19ad2] font-bold border-teal-400 dark:text-gray-150">
+              <h1 className="text-4xl font-serif text-center mb-4 text-[#3f2663] font-bold border-teal-400 dark:text-gray-150">
                 WHO&apos;s HIV indication for India
               </h1>
               <Image
@@ -245,7 +246,7 @@ const index = () => {
 
             <section className="py-16 bg-gray-50 w-[80%] mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center font-serif bg-[#d29aba] text-gray-800 mb-12">
+        <h2 className="text-4xl font-bold text-center font-serif text-[#712a53] text-gray-800 mb-12">
           Health Activities 
         </h2>
         <div className="flex items-center justify-center space-x-8 overflow-x-auto">
@@ -331,6 +332,7 @@ const index = () => {
       <div>
         <ImageCarousel images={images} text={"Health"} />
       </div>
+      </main>
     </>
   );
 };

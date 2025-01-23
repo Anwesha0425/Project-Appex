@@ -33,6 +33,7 @@ const images = [
 const index = () => {
   return (
     <>
+    <main className="bg-[#fff9e9]">
       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -55,7 +56,7 @@ const index = () => {
         </div>
 
       <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-serif bg-[#a0ddb4] text-center font-bold border-teal-400  dark:text-gray-200">
+        <h1 className="text-4xl font-serif text-[#286e40] text-center font-bold border-teal-400  dark:text-gray-200">
           Why MSME
         </h1>
         <div className="text-lg m-2">
@@ -71,14 +72,14 @@ const index = () => {
       </div>
       <section className="py-8 bg-gray-100 w-[80%] mx-auto">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold font-serif bg-[#a0b1dd] text-center text-gray-800 mb-8">
+          <h2 className="text-4xl font-bold font-serif text-[#283d70] text-center text-gray-800 mb-8">
             What We Do
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
             {activities.map((activity, index) => (
               <div
                 key={index}
-                className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:bg-[#a0b1dd]"
+                className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 bg-[#dee4f9] border-2 border-[#283964]"
               >
                 <h3 className="text-2xl font-semibold text-blue-600 mb-4">
                   {activity.title}
@@ -132,7 +133,7 @@ const index = () => {
       </div>
        {/* our aim */}
       <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-serif text-center bg-[#dda0c7] font-bold border-teal-400 dark:text-gray-150">
+        <h1 className="text-4xl font-serif text-center text-[#6a214f] font-bold border-teal-400 dark:text-gray-150">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -209,6 +210,7 @@ const index = () => {
       <div>
         <ImageCarousel images={images} text={"Memories"} />
       </div>
+      </main>
     </>
   );
 };

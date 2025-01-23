@@ -314,7 +314,7 @@ const index = () => {
       </div>
       
       {/* Donate */}
-      <div className="flex flex-row m-4 p-2 items-center w-[80%] mx-auto bg-[#f9f4e7]">
+      <div className="flex flex-row m-4 p-2 items-center w-[80%] mx-auto bg-[#f5f8fc]">
         {/* left */}
         <div className="m-4 p-4 size-[50%] justify-center">
           <div className="p-2 size-[52%]">
