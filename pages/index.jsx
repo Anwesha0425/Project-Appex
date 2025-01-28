@@ -179,7 +179,7 @@ const projects = [
     titleColor: "text-[green]",
   },
 ];
-export default function Index() {
+export default function Index({theme}) {
   const [data, setData] = React.useState([]);
 
   React.useEffect(() => {
@@ -191,7 +191,7 @@ export default function Index() {
   }, []);
   return (
     <>
-    <main className="bg-[#fff9e9]">
+    <main>
       <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div className="absolute inset-0">
           <img

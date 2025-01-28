@@ -135,7 +135,7 @@ const index = () => {
           <img
             width="auto"
             height="auto"
-            src="https://img.playbook.com/kifisEB1F58N2KHgkzs8DfamtCJ70HPhtwSe7pubn6U/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2FhYTAzNDll/LTA5NjktNDA4Yi1i/MTYyLTg1YzNjMzFk/NGFiNQ"
+            src="https://img.playbook.com/SIn05xC_vp812VGVzk3slDFd_-UM6LnV8Dly-NVHacA/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzljYzYxNWFi/LThlNDEtNDFjZS1i/ZjgxLWRhMmQ4Mjll/YTRmZQ"
             alt="Background Image"
             class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
           />
