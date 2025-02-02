@@ -91,7 +91,7 @@ const SignIn = () => {
           </button>
         </div>
         <p className="text-sm text-gray-600 mt-4 text-center">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <Link href="/sign-up">
             <span className="text-blue-500 hover:underline">Sign Up</span>
           </Link>
