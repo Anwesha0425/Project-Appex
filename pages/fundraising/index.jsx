@@ -35,7 +35,7 @@ export default function FundraisingForm() {
             Fundraising for Our Cause
           </h1>
           <p className="text-center text-gray-600 mb-8">
-            Help us bring change by contributing to our NGO's mission.
+            Help us bring change by contributing to our NGO&apos;s mission.
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Full Name */}
