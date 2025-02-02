@@ -160,7 +160,7 @@ const projects = [
     flowSteps: [FaToilet, FaLeaf, FaShoppingCart, GiCow],
     flowDescription:
       "Sanitation → Environment Protection → Consumer Awareness → Livestock Development",
-    titleColor: "text-[pink]",
+    titleColor: "text-[#8c2e6b]",
   },
   {
     title: "Miscellaneous Works",
@@ -168,7 +168,7 @@ const projects = [
       "Our organization is dedicated to preserving cultural heritage, promoting social harmony, and fostering community development. These efforts are reflected through a variety of initiatives, including library services, manuscript preservation, social cohesion programs, and celebrations of cultural and national importance.",
     flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
     flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
-    titleColor: "text-[skyblue]",
+    titleColor: "text-[#5e2e6c]",
   },
   {
     title: "Community Empowerment",
@@ -192,7 +192,7 @@ export default function Index({theme}) {
   return (
     <>
     <main>
-      <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+      <div className="relative h-screen overflow-hidden">
         <div className="absolute inset-0">
           <img
             width="auto"
@@ -216,7 +216,7 @@ export default function Index({theme}) {
       </div>
       <div>
 
-      <section className="bg-gray-50 py-12 px-6 lg:px-20 w-[80%] mx-auto bg-[#fff9e9]">
+      <section className={"py-12 px-6 lg:px-20 w-[80%] mx-auto " + `${theme ? " bg-[#fff9e9] text-[black]" : " bg-[#000000] text-[white]"}`}>
       <div className="max-w-5xl mx-auto text-center">
         <h1 className="text-5xl font-bold  font-serif text-green-600 mb-6 text-[#ad9c3a]">About</h1>
         <p className="text-lg text-gray-700 leading-7 mb-6">
@@ -231,21 +231,21 @@ export default function Index({theme}) {
         </p>
       </div>
       <div className="grid grid-cols-3 gap-6 mt-12 ">
-        <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
-          <h2 className="text-xl font-semibold text-green-600 mb-4 text-[#dfca55]">Our Vision</h2>
+        <div className={"shadow-md rounded-lg p-6 text-center " + `${theme ? " bg-[#faf9f8] text-[black]" : " bg-[#ad9c3a] text-[white]"}`}>
+          <h2 className={"text-xl font-semibold mb-4 " + `${theme ? " text-[#ad9c3a]" : " text-[black]"}`}>Our Vision</h2>
           <p className="text-gray-700">
             To build a healthy and favorable socio-economic and cultural environment for an egalitarian society.
           </p>
         </div>
-        <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
-          <h2 className="text-xl font-semibold text-green-600 mb-4 text-[#dfca55]">Our Mission</h2>
+        <div className={"shadow-md rounded-lg p-6 text-center " + `${theme ? " bg-[#faf9f8] text-[black]" : " bg-[#ad9c3a] text-[white]"}`}>
+          <h2 className={"text-xl font-semibold mb-4 " + `${theme ? " text-[#ad9c3a]" : " text-[black]"}`}>Our Mission</h2>
           <p className="text-gray-700">
             To bring qualitative change in rural and tribal communities by disseminating knowledge and promoting
             sustainable development.
           </p>
         </div>
-        <div className="bg-white shadow-md rounded-lg p-6 text-center bg-[#f7f7f6]">
-          <h2 className="text-xl font-semibold text-green-600 mb-4 text-[#dfca55]">Our Strategy</h2>
+        <div className={"shadow-md rounded-lg p-6 text-center " + `${theme ? " bg-[#faf9f8] text-[black]" : " bg-[#ad9c3a] text-[white]"}`}>
+          <h2 className={"text-xl font-semibold mb-4 " + `${theme ? " text-[#ad9c3a]" : " text-[black]"}`}>Our Strategy</h2>
           <p className="text-gray-700">
             We follow participatory approaches like PRA and PLA, involving beneficiaries in planning and monitoring to
             ensure sustainable impact.

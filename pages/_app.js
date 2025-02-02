@@ -5,15 +5,12 @@ import { useState } from "react";
 
 export default function App({ Component, pageProps }) {
   const [theme, settheme] = useState(true);
-  const choosetheme = (theme) => {
-    settheme(theme);
-  };
-  let class__to__add = `${theme ? " bg-[#fff9e9] " : " bg-[#000000] "}`;
+  let class__to__add = `${theme ? " bg-[#fff9e9] text-[black]" : " bg-[#000000] text-[white]"}`;
   return (
     
     <div className={"flex flex-col " + class__to__add}>
       {/* Navbar */}
-      <Navbar theme={theme} choosetheme={choosetheme} />
+      <Navbar theme={theme} settheme={settheme} />
       {/* Main Content */}
       <main className={"min-h-screen " + class__to__add}>
         <Component {...pageProps} theme={theme}/>

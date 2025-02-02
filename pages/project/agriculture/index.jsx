@@ -8,7 +8,7 @@ import { GiVillage } from "react-icons/gi";
 import { FaDiagramProject } from "react-icons/fa6";
 import { VscMilestone } from "react-icons/vsc";
 import { RiGovernmentFill } from "react-icons/ri";
-import { card_agriculture } from "../../../components/Data/Blogs_DataBase";
+import { data } from "../../../components/Data/Blogs_DataBase";
 import Link from "next/link";
 import Image from "next/image";
 import AgricultureStats from "@/components/Agriculture_statistics";
@@ -296,7 +296,7 @@ const index = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 w-[100%] p-4">
-            {card_agriculture
+            {data
               .slice(0, 4)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
                 <Child_blog

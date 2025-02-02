@@ -5,22 +5,16 @@ import Image from "next/image";
 import { RiMoonFill } from "react-icons/ri";
 import { BsFillSunFill } from "react-icons/bs";
 
-export default function Navbar() {
+export default function Navbar({ theme, settheme }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState(true); // true: Light Mode, false: Dark Mode
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleTheme = () => {
-    setTheme(!theme);
   };
 
   return (
     <nav
       className={`${
-        theme ? "bg-[#A0D9D6] text-[#160303]" : "bg-[#0c0d3f] text-[white]"
+        theme ? "bg-[#0c0d3f] text-[white]" : "bg-[#A0D9D6] text-[#160303]"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,9 +37,7 @@ export default function Navbar() {
             <Link href="/about">
               <li
                 className={`text-lg font-medium ${
-                  theme
-                    ? "text-[black]"
-                    : "text-[white]"
+                  theme ? "text-[white]" : "text-[black]"
                 } hover:underline transition duration-300`}
               >
                 About Us
@@ -54,9 +46,7 @@ export default function Navbar() {
             <Link href="/project">
               <li
                 className={`text-lg font-medium ${
-                  theme
-                     ? "text-[black]"
-                    : "text-[white]"
+                  theme ? "text-[white]" : "text-[black]"
                 } hover:underline transition duration-300`}
               >
                 Projects
@@ -65,9 +55,7 @@ export default function Navbar() {
             <Link href="/fundraising">
               <li
                 className={`text-lg font-medium ${
-                  theme
-                     ? "text-[black]"
-                    : "text-[white]"
+                  theme ? "text-[white]" : "text-[black]"
                 } hover:underline transition duration-300`}
               >
                 Fundraising
@@ -76,9 +64,7 @@ export default function Navbar() {
             <Link href="/news">
               <li
                 className={`text-lg font-medium ${
-                  theme
-                     ? "text-[black]"
-                    : "text-[white]"
+                  theme ? "text-[white]" : "text-[black]"
                 } hover:underline transition duration-300`}
               >
                 News and Events
@@ -86,27 +72,26 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Theme Toggle */}
-          <button
-            className="ml-4 p-2 rounded-full border-2 focus:outline-none"
-            onClick={toggleTheme}
-            title="Toggle Theme"
-          >
-            {theme ? (
-              <RiMoonFill size={25} className="text-yellow-300" />
-            ) : (
-              <BsFillSunFill size={25} className="text-yellow-500" />
-            )}
-          </button>
-
-          {/* Mobile Hamburger */}
-          <div className="md:hidden">
+          {/* Theme Toggle and Mobile Hamburger */}
+          <div className="flex items-center md:space-x-4">
+            {/* Theme Toggle */}
             <button
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white"
+              className="p-2 rounded-full border-2 focus:outline-none"
+              onClick={() => settheme(!theme)}
+              title="Toggle Theme"
             >
-              <Hamburger toggled={isOpen} toggle={setIsOpen} duration={0.9} />
+              {theme ? <RiMoonFill size={25} /> : <BsFillSunFill size={25} />}
             </button>
+
+            {/* Mobile Hamburger */}
+            <div className="md:hidden">
+              <button
+                onClick={toggleMenu}
+                className="inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white"
+              >
+                <Hamburger toggled={isOpen} toggle={setIsOpen} duration={0.9} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -118,9 +103,7 @@ export default function Navbar() {
             <Link href="/about">
               <li
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  theme
-                    ? "text-white hover:bg-[#00796B] hover:text-white"
-                    : "text-gray-300 hover:bg-gray-800 hover:text-gray-100"
+                  theme ? "hover:bg-[#a9abff]" : "hover:bg-[#00796B]"
                 } transition duration-300`}
               >
                 About Us
@@ -129,9 +112,7 @@ export default function Navbar() {
             <Link href="/project">
               <li
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  theme
-                    ? "text-white hover:bg-[#00796B] hover:text-white"
-                    : "text-gray-300 hover:bg-gray-800 hover:text-gray-100"
+                  theme ? "hover:bg-[#a9abff]" : "hover:bg-[#00796B]"
                 } transition duration-300`}
               >
                 Projects
@@ -140,9 +121,7 @@ export default function Navbar() {
             <Link href="/fundraising">
               <li
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  theme
-                    ? "text-white hover:bg-[#00796B] hover:text-white"
-                    : "text-gray-300 hover:bg-gray-800 hover:text-gray-100"
+                  theme ? "hover:bg-[#a9abff]" : "hover:bg-[#00796B]"
                 } transition duration-300`}
               >
                 Fundraising
@@ -151,9 +130,7 @@ export default function Navbar() {
             <Link href="/news">
               <li
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  theme
-                    ? "text-white hover:bg-[#00796B] hover:text-white"
-                    : "text-gray-300 hover:bg-gray-800 hover:text-gray-100"
+                  theme ? "hover:bg-[#a9abff]" : "hover:bg-[#00796B]"
                 } transition duration-300`}
               >
                 News and Events

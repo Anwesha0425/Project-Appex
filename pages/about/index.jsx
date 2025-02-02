@@ -396,10 +396,10 @@ export default function index() {
         </section>
         {/* Annual Report Documents */}
         <div className="min-h-screen bg-gray-100 p-6">
-          <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif text-[#20436a]">
+          <h1 className="text-3xl font-bold mb-6 text-center font-serif text-[#20436a]">
             Annual Reports
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hover:shadow-2xl ">
+          <div className="grid grid-cols-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hover:shadow-2xl ">
             {pdfData.map((pdf, index) => (
               <PdfViewer key={index} pdfUrl={pdf.fileUrl} title={pdf.title} />
             ))}
@@ -408,7 +408,7 @@ export default function index() {
         {/* Acknowledgment */}
         <div className="bg-gray-50 py-12">
           <div className="max-w-4xl mx-auto px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center font-serif text-[#5b1c1c]">
+            <h2 className="text-3xl font-bold mb-6 text-center font-serif text-[#5b1c1c]">
               Acknowledgment
             </h2>
             <p className="text-gray-700 leading-relaxed mb-8">
@@ -419,8 +419,8 @@ export default function index() {
             </p>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <span className="text-blue-500 font-bold mr-2">1.</span>
-                <p className="text-gray-700 leading-relaxed">
+                <span className="text-[#14144c] font-bold mr-2">1.</span>
+                <p className="leading-relaxed">
                   The donors who extended timely and required support both in
                   terms of funds and kind.
                 </p>

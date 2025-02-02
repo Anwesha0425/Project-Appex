@@ -1,14 +1,14 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaStarOfLife } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaStarOfLife } from "react-icons/fa";
 import Link from "next/link";
 
 
-const Footer = () => {
+const Footer = ({ theme}) => {
   return (
-    <div className="bg-[#A0D9D6] font-medium sm:text-center">
+    <main className={"font-medium sm:text-center " + `${theme ? "bg-[#0c0d3f] text-[white] " : " bg-[#A0D9D6] text-[black]"}`}>
       <div className="flex justify-around sm:flex-wrap sm:gap-6 text-gray-800 pt-16 pb-12">
         {/* About Section */}
         <div>
-          <h4 className="text-xl font-semibold text-[#006B5D]">About Appex Guide Line</h4>
+          <h4 className={"text-xl font-semibold " + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>About Appex Guide Line</h4>
           <div className="pt-2">
             <ul className="flex flex-col gap-1">
               <li>
@@ -18,14 +18,14 @@ const Footer = () => {
               <br />
               <li>
                 Contact: &nbsp;
-                <a href="tel:+91-9861086564" className="text-[#006B5D] hover:underline">
+                <a href="tel:+91-9861086564" className={"hover:underline" + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>
                   +91-9861086564 
                 </a>
               </li>
               <br />
               <li>
                 Email: &nbsp;
-                <a href="mailto:appexfcc@gmail.com" className="text-[#006B5D] hover:underline">
+                <a href="mailto:appexfcc@gmail.com" className={"hover:underline" + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>
                   appex29@yahoo.co.in
                 </a>
               </li>
@@ -36,14 +36,11 @@ const Footer = () => {
           <div className="font-semibold flex justify-start sm:justify-center items-center">
             <span>Follow Us:</span>
             <div className="flex items-center ml-3 space-x-3">
-              <a href="#" className="text-[#006B5D] hover:text-gray-600 transition-all duration-300">
+              <a href="#" className={"transition-all duration-300 " + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>
                 <FaFacebookF size={20} />
               </a>
-              <a href="#" className="text-[#006B5D] hover:text-gray-600 transition-all duration-300">
+              <a href="#" className={"transition-all duration-300 " + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>
                 <FaInstagram size={20} />
-              </a>
-              <a href="#" className="text-[#006B5D] hover:text-gray-600 transition-all duration-300">
-                <FaTwitter size={20} />
               </a>
             </div>
           </div>
@@ -51,31 +48,31 @@ const Footer = () => {
 
         {/* Quick Links Section */}
         <div>
-          <h1 className="text-xl font-semibold text-[#006B5D]">Quick Links</h1>
+          <h1 className={"text-xl font-semibold " + + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>Quick Links</h1>
           <div className="pt-2">
             <ul className="flex flex-col gap-3">
               <li>
-                <Link href="/" className="hover:text-[#004D40] transition-all duration-300">
+                <Link href="/" className={"transition-all duration-300 " + `${theme ? "hover:text-[#adaef9]" : "hover:text-[#006B5D]"}`}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#004D40] transition-all duration-300">
+                <Link href="/about" className={"transition-all duration-300 " + `${theme ? "hover:text-[#adaef9]" : "hover:text-[#006B5D]"}`}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/news" className="hover:text-[#004D40] transition-all duration-300">
+                <Link href="/news" className={"transition-all duration-300 " + `${theme ? "hover:text-[#adaef9]" : "hover:text-[#006B5D]"}`}>
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="/fundraising" className="hover:text-[#004D40] transition-all duration-300">
+                <Link href="/fundraising" className={"transition-all duration-300 " + `${theme ? "hover:text-[#adaef9]" : "hover:text-[#006B5D]"}`}>
                   Join Us
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#004D40] transition-all duration-300">
+                <Link href="/about" className={"transition-all duration-300 " + `${theme ? "hover:text-[#adaef9]" : "hover:text-[#006B5D]"}`}>
                   Contact
                 </Link>
               </li>
@@ -85,7 +82,7 @@ const Footer = () => {
 
         {/* Subscription Section */}
         <div>
-          <h1 className="text-xl font-semibold text-[#006B5D]">Get Subscribed</h1>
+          <h1 className={"text-xl font-semibold " + `${theme ? "text-[#adaef9]" : "text-[#006B5D]"}`}>Get Subscribed</h1>
           <h1 className="pt-2">Don&apos;t miss our latest updates!</h1>
           <br />
           <form className="flex flex-col gap-4">
@@ -96,7 +93,7 @@ const Footer = () => {
               </label>
               <input
                 type="text"
-                className="border-b-2 w-full bg-[#A0D9D6] focus:outline-none border-gray-600 text-gray-800"
+                className={"border-b-2 w-full focus:outline-none " + `${theme ? " bg-[#adaef9] ": " bg-[#A0D9D6] "}`}
               />
             </div>
             <div>
@@ -106,19 +103,19 @@ const Footer = () => {
               </label>
               <input
                 type="email"
-                className="border-b-2 w-full bg-[#A0D9D6] focus:outline-none border-gray-600 text-gray-800"
+                className={"border-b-2 w-full focus:outline-none " + `${theme ? " bg-[#adaef9] ": " bg-[#A0D9D6] "}`}
               />
             </div>
             <button
               type="submit"
-              className="rounded-lg p-2 bg-[#006B5D] text-white hover:bg-[#004D40] transition-all duration-300"
+              className={"rounded-lg p-2 transition-all duration-300 " + `${theme ? " bg-[#adaef9] hover:bg-[#7779f7]": " bg-[#A0D9D6] hover:bg-[#004D40] "}`}
             >
               Submit
             </button>
           </form>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

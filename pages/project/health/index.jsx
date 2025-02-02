@@ -1,6 +1,6 @@
 import React from "react";
 import ImageCarousel from "../../../components/Carousel/Carousel";
-import { card_health } from "../../../components/Data/Blogs_DataBase";
+import { data } from "../../../components/Data/Blogs_DataBase";
 import Link from "next/link";
 import Image from "next/image";
 import { FaHeartbeat, FaUserMd, FaShieldVirus, FaBaby, FaPeopleArrows } from "react-icons/fa";
@@ -287,8 +287,8 @@ const index = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 w-[100%] p-4">
-            {card_health
-              .slice(0, 4)
+            {data
+              .slice(8, 12)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
                 <Child_blog
                   key={i}

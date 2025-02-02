@@ -11,7 +11,7 @@ import { Intervention } from "../../../components/Data/DataBase";
 import ImageCarousel from "./../../../components/Carousel/Carousel";
 import Image from "next/image";
 import Link from "next/link";
-import { card_miscellaneous } from "../../../components/Data/Blogs_DataBase";
+import { data } from "../../../components/Data/Blogs_DataBase";
 import InfoCard from "@/components/SanitationCard";
 
 const images = [
@@ -269,8 +269,8 @@ const Index = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 p-4">
-            {card_miscellaneous
-              .slice(0, 4)
+            {data
+              .slice(12, 16)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
                 <Child_blog
                   key={i}

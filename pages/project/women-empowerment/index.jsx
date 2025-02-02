@@ -2,7 +2,7 @@ import React from "react";
 import ImageCarousel from "./../../../components/Carousel/Carousel";
 import Link from "next/link";
 import Image from "next/image";
-import { card_women } from "../../../components/Data/Blogs_DataBase";
+import { data } from "../../../components/Data/Blogs_DataBase";
 import { TbGenderFemale } from "react-icons/tb";
 import { FaPersonShelter } from "react-icons/fa6";
 import { VscMilestone } from "react-icons/vsc";
@@ -80,7 +80,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 const index = () => {
   return (
     <>
-     <main className="bg-[#fff9e9]">
+     <main >
      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -243,7 +243,7 @@ const index = () => {
       {/* hover card */}
       <div className="mx-auto grid grid-cols-3 w-[80%] gap-2">
         {/* Card 1 */}
-        <div className="relative mx-auto max-w-md rounded-lg hover:bg-[#e0fbe7] border-[#497327] border-2 text-[#497327] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg bg-[#e0fbe7] border-[#497327] border-2 text-[#497327] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Empower Women</h1>
             <p>
@@ -253,7 +253,7 @@ const index = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#f9e0e0] border-[#7a2c4a] text-[#7a2c4a] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 bg-[#f9e0e0] border-[#7a2c4a] text-[#7a2c4a] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Education</h1>
             <p>
@@ -264,7 +264,7 @@ const index = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#e0e9f9] border-[#453079] text-[#453079] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 bg-[#e0e9f9] border-[#453079] text-[#453079] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Strong Women</h1>
             <p>
@@ -274,7 +274,7 @@ const index = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="relative mx-auto max-w-md rounded-lg hover:bg-[#f9e0e0] text-[#76432d] border-2 border-[#76432d] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg bg-[#f9e0e0] text-[#76432d] border-2 border-[#76432d] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Support</h1>
             <p>Support women in need to rebuild lives and find strength.</p>
@@ -282,7 +282,7 @@ const index = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#e0e9f9] border-[#2d5377] text-[#2d5377] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 bg-[#e0e9f9] border-[#2d5377] text-[#2d5377] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Vocational Training</h1>
             <p>
@@ -293,7 +293,7 @@ const index = () => {
         </div>
 
         {/* Card 6 */}
-        <div className="relative mx-auto max-w-md rounded-lg border-2 hover:bg-[#e0fbe7] border-[#296f3d] text-[#296f3d] p-0.5 shadow-lg">
+        <div className="relative mx-auto max-w-md rounded-lg border-2 bg-[#e0fbe7] border-[#296f3d] text-[#296f3d] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
             <h1 className="font-bold text-xl mb-2">Shelter</h1>
             <p>Shelter gives women hope, dignity, and a second chance.</p>
@@ -315,8 +315,8 @@ const index = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 w-[100%] p-4">
-            {card_women
-              .slice(0, 4)
+            {data
+              .slice(4, 8)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
                 <Child_blog
                   key={i}
@@ -332,7 +332,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mx-auto w-[80%] justify-center items-center bg-[#ececec]">
+      <div className="flex flex-row mx-auto w-[80%] justify-center items-center text-[black] bg-[#ececec]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
@@ -370,7 +370,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex m-auto w-[80%] p-4 justify-center">
+      <div className="flex m-auto w-[80%] p-4 justify-center text-[black]">
         {scrollcard.map((data, index) => (
           <InfoCard
             key={index}
@@ -380,7 +380,7 @@ const index = () => {
         ))}
       </div>
 
-      <div className="flex m-auto w-[80%] p-4 justify-center">
+      <div className="flex m-auto w-[80%] p-4 justify-center text-[black]">
         {scrollcard2.map((data, index) => (
           <InfoCard
             key={index}
@@ -403,7 +403,7 @@ const index = () => {
         </div>
         {/* Right Section */}
         <div className="m-4 p-4 flex flex-col justify-start flex-1">
-          <div className="text-4xl font-bold py-2 font-serif">FOR SUPPORT</div>
+          <div className="text-4xl font-bold py-2 font-serif text-[black]">FOR SUPPORT</div>
           <div className="text-xl">email-to</div>
           <div className="text-2xl font-bold font-serif">
             <a

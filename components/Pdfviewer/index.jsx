@@ -2,7 +2,7 @@ import React from "react";
 
 const PdfViewer = ({ pdfUrl, title }) => {
   return (
-    <div className="bg-[#010101] shadow-lg border border-gray-200 rounded p-4 hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-[#010101] shadow-lg rounded p-4 hover:shadow-xl transition-shadow duration-300">
       <h3 className="text-lg font-semibold text-gray-700 mb-4">{title}</h3>
       <div className="relative w-full overflow-hidden">
         <embed
