@@ -26,3 +26,8 @@ const githubProvider = new GithubAuthProvider();
 // Function to check if a userId is already taken
 
 export { app, db, auth, googleProvider, githubProvider };
+export const initFirebase = () => {
+  if (!getApps().length) {
+    initializeApp(firebaseConfig);
+  }
+};
