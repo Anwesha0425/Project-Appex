@@ -8,7 +8,7 @@ function Cards({ name, link, text, ImageURL }) {
   // console.log(name);
   return (
     <>
-      <div className='border-[#A0D9D6] bg-[white] border-4 rounded-md p-4 aspect-video m-4 flex flex-col items-center shadow-2xl'>
+      <div className='border-[#A0D9D6] border-4 rounded-md p-4 m-4 flex flex-col items-center shadow-2xl'>
         <Image
                   src={name.ImageURL}
                   alt={'Image Not Found!'}
@@ -20,7 +20,7 @@ function Cards({ name, link, text, ImageURL }) {
         <div className='text-2xl font-bold'>{name.name}</div>
         <div className=''>{name.text}</div>
         <Link href={name.link}>
-          <div className='max-w-[100%] p-2 border-[#A0D9D6] hover:border-[#00796B] border-4 rounded-md bg-[#A0D9D6] hover:bg-[#00796B]'>Learn More</div>
+          <div className='max-w-[100%] p-2 border-[#7fd6d2] hover:border-[#00796B] border-4 rounded-md bg-[#7fd6d2] hover:bg-[#00796B]'>Learn More</div>
         </Link>
       </div>
     </>
@@ -31,8 +31,8 @@ function Cards({ name, link, text, ImageURL }) {
 
 export default function index() {
   return (
-    <main className='bg-[#fff9e9]'>
-    <div className='grid grid-cols-2 w-[80%] mx-auto'>
+    <main>
+    <div className='grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 w-[80%] mx-auto'>
       {card_data.map((name, link,ImageURL, text, index) => (
         <Cards key={index} name={name} link={link} ImageURL={ImageURL} text={text} />
       ))}

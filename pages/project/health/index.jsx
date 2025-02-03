@@ -50,7 +50,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           </div>
           <div>
             {ID.Text.substring(0, 100)}
-            <span className="hover:font-semibold">...Read more</span>
+            <span className="hover:font-bold text-[blue]">...Read more</span>
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@ const index = () => {
 
   return (
     <>
-    <main className="bg-[#fff9e9]">
+    <main>
       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -180,11 +180,11 @@ const index = () => {
                   key={index}
                   className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:bg-[#9ad2ae] bg-[#f6f2f2]"
                 >
-                  <h3 className="text-2xl font-semibold text-blue-600 mb-4">
+                  <h3 className="text-2xl font-semibold text-[black] mb-4">
                     {activity.title}
                   </h3>
                   <p className="text-[#286b40] mb-4">{activity.description}</p>
-                  <p className="text-sm font-medium text-gray-500">
+                  <p className="text-sm font-medium text-[black]">
                     {activity.stats}
                   </p>
                 </div>
@@ -195,7 +195,7 @@ const index = () => {
 
         {/* Our Aim Section */}
         <section>
-          <h2 className="text-4xl font-serif text-center mb-4 text-[#28506b] font-bold border-teal-400 dark:text-gray-150">
+          <h2 className="text-4xl font-serif text-center mb-4 text-[#1e628f] font-bold border-teal-400 dark:text-gray-150">
             Our Aim
           </h2>
           <div className="text-lg text-gray-700">
@@ -232,7 +232,7 @@ const index = () => {
       </div>
 
       <div className="flex flex-col mx-auto w-[80%]">
-              <h1 className="text-4xl font-serif text-center mb-4 text-[#3f2663] font-bold border-teal-400 dark:text-gray-150">
+              <h1 className="text-4xl font-serif text-center mb-4 text-[#521e9a] font-bold border-teal-400 dark:text-gray-150">
                 WHO&apos;s HIV indication for India
               </h1>
               <Image
@@ -246,7 +246,7 @@ const index = () => {
 
             <section className="py-16 bg-gray-50 w-[80%] mx-auto">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center font-serif text-[#712a53] text-gray-800 mb-12">
+        <h2 className="text-4xl font-bold text-center font-serif text-[#8d1d5e] text-gray-800 mb-12">
           Health Activities 
         </h2>
         <div className="flex items-center justify-center space-x-8 overflow-x-auto">
@@ -256,11 +256,11 @@ const index = () => {
               className="group flex flex-col items-center text-center w-64"
             >
               {/* Icon with Animation */}
-              <div className="hover:bg-[#d29aba] p-6 rounded-full shadow-md transition-transform transform group-hover:scale-110 bg-[#f9f9f9]">
+              <div className="hover:bg-[#d29aba] p-6 text-[black] rounded-full shadow-md transition-transform transform group-hover:scale-110 bg-[#f9f9f9]">
                 {step.icon}
               </div>
 
-              <p className="text-gray-600 mt-2 group-hover:text-gray-800 transition-colors">
+              <p className="text-gray-600 mt-2 transition-colors">
                 {step.description}
               </p>
 
@@ -278,7 +278,7 @@ const index = () => {
       <div>
         <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
+            <h1 className="text-4xl font-serif font-bold ">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
               <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
@@ -316,7 +316,7 @@ const index = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="m-4 p-4 flex flex-col justify-start flex-1">
+        <div className="m-4 p-4 flex flex-col justify-start flex-1 text-[black] ">
           <div className="text-4xl font-bold py-2 font-serif">FOR SUPPORT</div>
           <div className="text-xl">email-to</div>
           <div className="text-2xl font-bold font-serif">

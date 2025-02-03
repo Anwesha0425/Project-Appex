@@ -2,7 +2,7 @@ import React from "react";
 
 const InfoCard = ({ icon, title, description }) => {
   return (
-    <div className="relative w-96 bg-white shadow-sm border border-slate-200 rounded-lg p-3 pb-6 m-2 bg-[#fceaf1]">
+    <div className="relative w-full max-w-sm bg-white shadow-sm border border-slate-200 rounded-lg p-4 sm:p-6 m-2 bg-[#fceaf1]">
       {/* Icon */}
       <div className="flex justify-center mb-4 mt-5">
         {icon ? (
@@ -31,8 +31,10 @@ const InfoCard = ({ icon, title, description }) => {
       </div>
 
       {/* Title */}
-      <div className="flex justify-center mb-3">
-        <h5 className="text-slate-800 text-2xl font-semibold">{title}</h5>
+      <div className="justify-center mb-3">
+        <h5 className="text-slate-800 text-xl sm:text-2xl text-center font-semibold">
+          {title}
+        </h5>
       </div>
 
       {/* Description */}
@@ -40,7 +42,7 @@ const InfoCard = ({ icon, title, description }) => {
         {description.map((paragraph, index) => (
           <p
             key={index}
-            className="block text-slate-600 leading-normal font-light mb-4 max-w-lg"
+            className="block text-slate-600 leading-normal font-light mb-4 max-w-lg text-sm sm:text-base"
           >
             {paragraph}
           </p>

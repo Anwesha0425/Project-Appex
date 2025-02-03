@@ -97,7 +97,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           </div>
           <div>
             {ID.Text.substring(0, 100)}
-            <span className="hover:font-semibold">...Read more</span>
+            <span className="hover:font-bold text-[blue]">...Read more</span>
           </div>
         </div>
       </div>
@@ -128,8 +128,8 @@ const Index = () => {
 
   return (
     <>
-    <main className='bg-[#fff9e9]'>
-    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <main>
+    <div class="relative h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -144,7 +144,7 @@ const Index = () => {
           <h1 class="text-5xl font-bold leading-tight mb-4">
             Sanitation and Environment
           </h1>
-          <p class="text-lg text-gray-300 mb-8">
+          <p class="text-lg mb-8">
             Building Healthier Futures: Promoting Sanitation and Clean Living
             Practices.
           </p>
@@ -152,7 +152,7 @@ const Index = () => {
       </div>
 
       <section className="w-[80%] p-4 mx-auto">
-        <h2 className="text-4xl font-serif text-center text-[#742b2b] font-bold border-teal-400 dark:text-gray-150">
+        <h2 className="text-4xl font-serif text-center text-[#891d64] font-bold ">
           Why Rural Sanitation
         </h2>
         <p className="text-lg text-gray-700">
@@ -169,7 +169,7 @@ const Index = () => {
       </section>
 
       <div className="w-[80%] mx-auto p-4">
-      <h1 className="text-4xl text-center font-serif text-[#266937] font-bold border-teal-400 dark:text-gray-200 mb-6">
+      <h1 className="text-4xl text-center font-serif text-[#22a242] font-bold mb-6">
         What We Do
       </h1>
       <div className="grid grid-cols-3 gap-6">
@@ -181,7 +181,7 @@ const Index = () => {
 
       <div>
         <div className="w-[80%] p-4 mx-auto">
-          <h1 className="text-4xl font-serif text-center text-[#282b6f] font-bold border-yellow-400 dark:text-gray-200">
+          <h1 className="text-4xl font-serif text-center text-[#202698] font-bold ">
             Our Aim
           </h1>
           <div className="text-lg m-2">
@@ -203,13 +203,13 @@ const Index = () => {
       <div className="flex justify-center items-end m-4">
         <div className="w-[80%]">
           {/* Up */}
-          <div className="text-4xl font-bold text-center text-[#256838] font-serif py-2 m-auto">
+          <div className="text-4xl font-bold text-center text-[#1b8138] font-serif py-2 m-auto">
             Focus Areas
           </div>
           {/* Down */}
           <div className="flex flex-col m-4">
             {/* Options */}
-            <div className="flex w-[60%] justify-between font-bold text-lg">
+            <div className="flex w-[60%] justify-between font-bold text-lg text-[black]">
               <div
                 className={option_css + (option == 0 ? red : blue)}
                 onClick={() => setOption(0)}
@@ -242,7 +242,7 @@ const Index = () => {
               </div>
             </div>
             {/* Textbox */}
-            <div className="border-solid border-[1px] border-[black] p-4 bg-[#ffd5e5] flex items-center justify-around">
+            <div className="border-solid border-[1px] border-[black] text-[black] p-4 bg-[#ffd5e5] flex items-center justify-around">
               <div className="mx-2">
                 <Icon />
               </div>
@@ -258,12 +258,12 @@ const Index = () => {
       <div>
         <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-serif font-bold border-teal-400 dark:text-gray-200">
+            <h1 className="text-4xl font-serif font-bold ">
               Latest Stories
             </h1>
             <Link href={"/blogs"} className="">
               {" "}
-              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
+              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:font-bold hover:tracking-normal">
                 Explore
               </div>
             </Link>
@@ -291,14 +291,14 @@ const Index = () => {
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B]">
                 Donate Funds
               </div>
             </Link>
           </div>
         </div>
         {/* Right Section */}
-        <div className="m-4 p-4 flex flex-col justify-start flex-1">
+        <div className="m-4 p-4 flex flex-col justify-start flex-1 text-[black]">
           <div className="text-4xl font-bold py-2 font-serif">FOR SUPPORT</div>
           <div className="text-xl">email-to</div>
           <div className="text-2xl font-bold font-serif">

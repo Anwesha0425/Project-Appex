@@ -16,7 +16,6 @@ const images = [
     src: "https://img.playbook.com/DSGBsy9jY3dS0r5EEmcNxZ10VB7F5zltc9aPprqDkEY/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2U2ZjU5ZWRl/LWYxMzMtNDkxNC05/MWQ4LWM2Yjk2ZGJk/NDgxZQ",
     alt: "image 0",
   },
-
   {
     src: "https://img.playbook.com/L_5NKK2rCsA1tASl63zZ9XGDdRHnpGGWex3ah2EAtH0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzJhNDlhNzIy/LTViMzItNDlkNi1h/YTRiLTU1YjYxMWY3/NWVjOQ",
     alt: "image 1",
@@ -41,10 +40,6 @@ const images = [
     src: "https://img.playbook.com/0XwM9zxuWanOA_Csn0H85agKW3ckqvCywWNIU7l68Z0/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2RjMzU4Y2Yw/LWY1MmEtNDk2OS05/MThkLTY3MWMyNWQz/YjRlMw",
     alt: "image 3",
   },
-  {
-    src: "https://img.playbook.com/9Lh6Bkjt0NYVPWOHPQnqkozXJOBDlA5IlTRC3iyV2Iw/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2ZiNGJlZjE4/LTllODEtNDMzOC05/YmEzLTk3Y2Q0M2E5/NTZhZQ",
-    alt: "image 8",
-  },
 ];
 
 function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
@@ -52,7 +47,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
   // console.log(ID, Title, ImageUrl, Author_name, Date_posted, Text);
   return (
     <Link href={`/blogs/${ID.ID}`} className="mb-12">
-      <div className="flex">
+      <div className="flex sm:flex-col md:flex-col">
         <Image
           src={ID.ImageUrl}
           alt={"Image Not Found!"}
@@ -60,7 +55,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           width={2500}
           data-aos="flip-left"
           data-aos-duration="3000"
-          className="border-1 border-solid border-[black] flex justify-center items-center w-[35%] aspect-auto rounded-md"
+          className="border-1 border-solid border-[black] flex justify-center items-center sm:w-[100%] md:w-[100%] w-[35%] aspect-auto rounded-md"
         />
         <div className="p-2">
           <div className="text-2xl font-bold">{ID.Title}</div>
@@ -69,7 +64,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           </div>
           <div>
             {ID.Text.substring(0, 100)}
-            <span className="hover:font-semibold">...Read more</span>
+            <span className="hover:font-bold text-[blue]">...Read more</span>
           </div>
         </div>
       </div>
@@ -81,7 +76,7 @@ const index = () => {
   return (
     <>
      <main >
-     <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+     <div class="relative h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -96,14 +91,14 @@ const index = () => {
           <h1 class="text-5xl font-bold leading-tight mb-4">
             Women Empowerment
           </h1>
-          <p class="text-lg text-gray-300 mb-8">
+          <p class="text-lg mb-8">
             Strengthen a woman, and you build the foundation of progress.
           </p>
         </div>
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-150 text-center text-[#893434]">
+        <h1 className="text-4xl font-serif font-bold text-center text-[#893434]">
           Why Women Empowerment
         </h1>
         <div className="text-lg m-2">
@@ -124,7 +119,7 @@ const index = () => {
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl font-serif text-center text-[#327485] font-bold border-teal-400  dark:text-gray-150 ">
+        <h1 className="text-4xl font-serif text-center text-[#327485] font-bold">
           What We Do
         </h1>
         <div className="text-lg m-2 p-2 justify-center">
@@ -144,7 +139,7 @@ const index = () => {
           thrive with dignity and opportunity.
         </div>
         <div className="flex flex-col m-2 p-2 ">
-          <div className="flex flex-row m-2 p-2 justify-center items-center">
+          <div className="flex sm:flex-col md:flex-col m-2 p-2 justify-center items-center">
             <Image
               src="https://img.playbook.com/YFqY86_Qw6uUcxlUpev-MsiFomWYYa_WhTMtCVKH8ps/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzUwMTk0MTZi/LWE2OWMtNDQzYS05/ODM5LWYzMGY5ZmE5/ZjA3ZQ"
               alt="Agriculture representation"
@@ -182,7 +177,7 @@ const index = () => {
       </div>
 
       <div className="flex flex-col mx-auto w-[80%]">
-        <h1 className="text-4xl font-serif text-center text-[#2f8044] font-bold border-teal-400 dark:text-gray-150">
+        <h1 className="text-4xl font-serif text-center text-[#2f8044] font-bold">
           UN&apos;s Strategic Plan and Vision
         </h1>
         <Image
@@ -195,7 +190,7 @@ const index = () => {
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl font-serif text-center text-[#412d77] font-bold border-teal-400 dark:text-gray-150">
+        <h1 className="text-4xl font-serif text-center text-[#412d77] font-bold">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -241,7 +236,7 @@ const index = () => {
       </div>
 
       {/* hover card */}
-      <div className="mx-auto grid grid-cols-3 w-[80%] gap-2">
+      <div className="mx-auto grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 w-[80%] gap-2">
         {/* Card 1 */}
         <div className="relative mx-auto max-w-md rounded-lg bg-[#e0fbe7] border-[#497327] border-2 text-[#497327] p-0.5 shadow-lg">
           <div className="bg-white p-7 rounded-md">
@@ -303,7 +298,7 @@ const index = () => {
 
       <div>
         <div className="p-8 w-[80%] mx-auto">
-          <div className="flex items-center justify-between">
+          <div className="flex sm:flex-col md:flex-col items-center justify-between">
             <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">
               Latest Stories
             </h1>
@@ -314,7 +309,7 @@ const index = () => {
               </div>
             </Link>
           </div>
-          <div className="grid grid-cols-2 w-[100%] p-4">
+          <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 w-[100%] p-4">
             {data
               .slice(4, 8)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
@@ -332,12 +327,12 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mx-auto w-[80%] justify-center items-center text-[black] bg-[#ececec]">
+      <div className="flex flex-row sm:flex-col md:flex-col mx-auto w-[80%] justify-center items-center text-[black] bg-[#ececec]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
         </div>
-        <div className="m-4 p-4 flex flex-row">
+        <div className="m-4 p-4 flex flex-row sm:flex-col md:flex-col">
           {/* symbolic representation */}
           <div className="flex flex-col m-2 p-2">
             <div className="border-black rounded-full border-4 p-4">
@@ -370,7 +365,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex m-auto w-[80%] p-4 justify-center text-[black]">
+      <div className="relative flex sm:flex-col md:flex-col w-[80%] p-4 mx-auto max-w-md text-[black]">
         {scrollcard.map((data, index) => (
           <InfoCard
             key={index}
@@ -380,7 +375,7 @@ const index = () => {
         ))}
       </div>
 
-      <div className="flex m-auto w-[80%] p-4 justify-center text-[black]">
+      <div className="relative flex sm:flex-col md:flex-col w-[80%] p-4 mx-auto max-w-md text-[black]">
         {scrollcard2.map((data, index) => (
           <InfoCard
             key={index}
@@ -390,7 +385,7 @@ const index = () => {
         ))}
       </div>
 
-      <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#ececec] items-center">
+      <div className="flex sm:flex-col md:flex-col mx-auto w-[80%] p-2 bg-[#ececec] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
@@ -402,8 +397,8 @@ const index = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="m-4 p-4 flex flex-col justify-start flex-1">
-          <div className="text-4xl font-bold py-2 font-serif text-[black]">FOR SUPPORT</div>
+        <div className="m-4 p-4 flex flex-col justify-start flex-1 text-[black]">
+          <div className="text-4xl font-bold py-2 font-serif">FOR SUPPORT</div>
           <div className="text-xl">email-to</div>
           <div className="text-2xl font-bold font-serif">
             <a

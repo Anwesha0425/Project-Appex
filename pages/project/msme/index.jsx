@@ -33,8 +33,8 @@ const images = [
 const index = () => {
   return (
     <>
-    <main className="bg-[#fff9e9]">
-      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <main>
+      <div class="relative h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -49,14 +49,14 @@ const index = () => {
           <h1 class="text-5xl font-bold leading-tight mb-4">
            MSME
           </h1>
-          <p class="text-lg text-gray-300 mb-8">
+          <p class="text-lg mb-8">
           Empowering rural communities through MSMEs for self-reliance and sustainability.
           </p>
         </div>
         </div>
 
       <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-serif text-[#286e40] text-center font-bold border-teal-400  dark:text-gray-200">
+        <h1 className="text-4xl font-serif text-[#286e40] text-center font-bold ">
           Why MSME
         </h1>
         <div className="text-lg m-2">
@@ -70,18 +70,18 @@ const index = () => {
           can expand these efforts to bring even greater impact.
         </div>
       </div>
-      <section className="py-8 bg-gray-100 w-[80%] mx-auto">
+      <section className="py-8 w-[80%] mx-auto">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold font-serif text-[#283d70] text-center text-gray-800 mb-8">
+          <h2 className="text-4xl font-bold font-serif text-[#1f4396] text-center mb-8">
             What We Do
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-[black]">
             {activities.map((activity, index) => (
               <div
                 key={index}
                 className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 bg-[#dee4f9] border-2 border-[#283964]"
               >
-                <h3 className="text-2xl font-semibold text-blue-600 mb-4">
+                <h3 className="text-2xl font-semibold mb-4">
                   {activity.title}
                 </h3>
                 <p className="text-gray-700 mb-4">{activity.description}</p>
@@ -95,35 +95,35 @@ const index = () => {
       </section>
 
       <div className="flex flex-row mx-auto w-[80%] justify-center items-center bg-[#ececec]">
-        <div className="text-4xl font-bold m-4 P-4 font-serif">
+        <div className="text-4xl font-bold m-4 P-4 font-serif text-[black]">
           {/* reach and presence */}
           REACH AND PRESENCE
         </div>
-        <div className="m-4 p-4 flex flex-row">
+        <div className="m-4 p-4 flex flex-row text-[black]">
           {/* symbolic representation */}
           <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
+            <div className="rounded-full border-4 p-4">
               {" "}
               <MdFamilyRestroom size={80} />
             </div>
             <div className="font-bold m-2">300+ families</div>
           </div>
           <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
+            <div className="rounded-full border-4 p-4">
               {" "}
               <GiPlantSeed size={80} />
             </div>
             <div className="font-bold m-2">2000+ planted</div>
           </div>
           <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
+            <div className="rounded-full border-4 p-4">
               {" "}
               <FaPeopleGroup size={80} />
             </div>
             <div className="font-bold m-2">100+ Benifited</div>
           </div>
           <div className="flex flex-col m-2 p-2">
-            <div className="border-black rounded-full border-4 p-4">
+            <div className="rounded-full border-4 p-4">
               {" "}
               <MdOutlineWorkOutline size={80} />{" "}
             </div>
@@ -133,7 +133,7 @@ const index = () => {
       </div>
        {/* our aim */}
       <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-serif text-center text-[#6a214f] font-bold border-teal-400 dark:text-gray-150">
+        <h1 className="text-4xl font-serif text-center text-[#81195b] font-bold ">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -194,7 +194,7 @@ const index = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="m-4 p-4 flex flex-col justify-start flex-1">
+        <div className="m-4 p-4 flex flex-col justify-start flex-1 text-[black]">
           <div className="text-4xl font-bold py-2 font-serif">FOR SUPPORT</div>
           <div className="text-xl">email-to</div>
           <div className="text-2xl font-bold font-serif">

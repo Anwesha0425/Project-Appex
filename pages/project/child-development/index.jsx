@@ -34,7 +34,7 @@ function Cards({ name }) {
   return (
     //
     <div
-      className={`border border-gray-300 rounded-lg p-6 m-4 bg-white shadow-lg transition-all duration-300 transform hover:shadow-2xl flex flex-col items-center ${
+      className={`rounded-lg p-6 m-4 border-2 shadow-lg transition-all duration-300 transform hover:shadow-2xl flex flex-col items-center ${
         isExpanded ? "h-auto" : "h-[320px]"
       }`}
     >
@@ -46,15 +46,15 @@ function Cards({ name }) {
         width={2500}
         data-aos="flip-left"
         data-aos-duration="3000"
-        className="w-40 h-40 object-cover rounded-full border border-gray-200 mb-4"
+        className="w-40 h-40 object-cover rounded-full mb-4"
       />
       {/* Title */}
-      <div className="text-2xl font-semibold text-gray-800 mb-2">
+      <div className="text-2xl font-semibold mb-2">
         {name.name}
       </div>
       {/* Description */}
       <div
-        className={`text-center text-gray-600 transition-all duration-300 ${
+        className={`text-center transition-all duration-300 ${
           isExpanded ? "line-clamp-none" : "line-clamp-3"
         }`}
       >
@@ -63,7 +63,7 @@ function Cards({ name }) {
       {/* Read More Button */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="mt-4 px-4 py-2 bg-blue-100 text-blue-600 font-bold rounded-md transition-all duration-300 bg-[#A1D9D6] hover:bg-[#00796B] hover:text-white"
+        className="mt-4 px-4 py-2 text-[black] font-bold rounded-md transition-all duration-300 bg-[#A1D9D6] hover:bg-[#00796B] "
       >
         {isExpanded ? "Show Less" : "Read More"}
       </button>
@@ -74,7 +74,7 @@ function Cards({ name }) {
 const Index = () => {
   return (
     <>
-    <main className="bg-[#fff9e9]">
+    <main>
     <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -171,7 +171,7 @@ const Index = () => {
       </div>
       {/* Cards Section */}
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif text-[#2d4f75] font-bold border-teal-400 dark:text-gray-200">
+        <h1 className="text-4xl text-center font-serif text-[#1d5391] font-bold border-teal-400 dark:text-gray-200">
           Their Stories
         </h1>
         <div className="grid grid-cols-2 gap-6 ">
@@ -183,7 +183,7 @@ const Index = () => {
 
       {/* our aim */}
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif text-[#522b73] font-bold border-teal-400 dark:text-gray-200">
+        <h1 className="text-4xl text-center font-serif text-[#5d1e91] font-bold border-teal-400 dark:text-gray-200">
           Our Aim
         </h1>
         <div className="text-lg">
@@ -231,7 +231,7 @@ const Index = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#eafcfa] items-center">
+      <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#f4fefd] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
@@ -243,7 +243,7 @@ const Index = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="m-4 p-4 flex flex-col justify-start flex-1">
+        <div className="m-4 p-4 flex flex-col justify-start flex-1 text-[black]">
           <div className="text-4xl font-bold py-2 font-serif">FOR SUPPORT</div>
           <div className="text-xl">email-to</div>
           <div className="text-2xl font-bold font-serif">

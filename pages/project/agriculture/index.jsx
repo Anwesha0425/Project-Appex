@@ -97,8 +97,6 @@ function Dropdown(props) {
   );
 }
 function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
-  // console.log(ID.Title);
-  // console.log(ID, Title, ImageUrl, Author_name, Date_posted, Text);
   return (
     <Link href={`/blogs/${ID.ID}`} className="mb-12">
       <div className="flex">
@@ -118,7 +116,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           </div>
           <div>
             {ID.Text.substring(0, 100)}
-            <span className="hover:font-semibold">...Read more</span>
+            <span className="hover:font-bold text-[blue]">...Read more</span>
           </div>
         </div>
       </div>
@@ -129,7 +127,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
 const index = () => {
   return (
     <>
-      <main className="bg-[#fff9e9]">
+      <main >
        <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
         <div class="absolute inset-0">
           <img
@@ -163,27 +161,27 @@ const index = () => {
       <div className=" mx-auto w-[80%]">
         <h1 className="text-4xl font-bold border-teal-400 dark:text-gray-200 text-center font-serif text-[#43bdae]">What We Do </h1>
         <div className="flex flex-col m-2 p-2">
-        <div className="flex flex-row m-2 p-2 justify-center items-center">
+        <div className="flex flex-row m-2 p-2 justify-center items-center border-2">
           <Image
           src="https://img.playbook.com/MDKHQXYyS37wex2UtLsVvmtnS_CelJKkgixuFGNmtCk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzUyYTQyNzAy/LTIzYWEtNGJjMC04/YmUwLTZlOTYwNjAx/NTc1NA"
           alt="Agriculture representation"
           height={200}
           width={200}
-          className="border-black border-3 p-2 m-4 rounded-full shadow-md"
+          className=" p-2 m-4 rounded-full shadow-md"
           />
           <Image
           src="https://img.playbook.com/e3g4H0MeLwQLP-Sh4EWAcPUc-4AM7h-f6uo1PQXQQWo/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzZlOTMyNjQw/LWMxODctNGVmZi04/ZjRhLWZiNGY3ZmEz/YjIwMQ"
           alt="Agriculture representation"
           height={200}
           width={200}
-          className="border-black border-3 p-2 m-4 rounded-full shadow-md"
+          className=" p-2 m-4 rounded-full shadow-md"
           />
           <Image
           src="https://img.playbook.com/ZC9VcwIu-GZKqv6AHnZanttEY93louc9wzyx_65olLM/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzA1YmJiMmY0/LWYwNWQtNGE0Zi1i/MjViLTdlYjIzYTM1/N2QzZA"
           alt="Agriculture representation"
           height={200}
           width={200}
-          className="border-black border-3 p-2 m-4 rounded-full shadow-md"
+          className=" p-2 m-4 rounded-full shadow-md"
           />
           <div className="text-2xl font-serif m-4 p-4 justify-center items-center">Save plants save lives.</div>
         </div>
@@ -194,7 +192,7 @@ const index = () => {
       </div>
 
       <div className="p-4 m-2 w-[80%] mx-auto mb-6">
-        <h1 className="text-4xl font-serif text-center font-bold border-teal-400 text-[#964dc7]">Our Aim </h1>
+        <h1 className="text-4xl font-serif text-center font-bold text-[#964dc7]">Our Aim </h1>
         <div className="text-lg">
         <p>
       At the heart of our mission lies a commitment to transforming rural and tribal lives through sustainable agriculture and empowered communities. We aim to bring lasting change by:
@@ -215,7 +213,7 @@ const index = () => {
       <div>
         <div className="flex flex-col m-2 w-[80%] mx-auto">
           {/* title */}
-          <div className="text-4xl font-serif text-center font-bold text-[#217b35] dark:text-gray-200">Prolonged approach</div>
+          <div className="text-4xl font-serif text-center font-bold text-[#217b35] ">Prolonged approach</div>
           {/* grid */}
           <div className="m-2 grid grid-cols-2">
             {prolonged.map((title, methods, color, index) => (
@@ -230,22 +228,22 @@ const index = () => {
         </div>
       </div>
 
-       <div>
+       <div className="text-[black]">
        <AgricultureStats />
        </div>
 
-       <div className=" w-[80%] mx-auto bg-gray-100 p-6">
-          <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center font-serif text-[#477fbe]">
+       <div className=" w-[80%] mx-auto p-6">
+          <h1 className="text-4xl font-bold mb-6 text-center font-serif text-[#477fbe]">
             List Of Farmers
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 hover:shadow-2xl ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 hover:shadow-2xl ">
             {docagriculture.map((pdf, index) => (
               <PdfViewer key={index} pdfUrl={pdf.fileUrl} title={pdf.title} />
             ))}
           </div>
         </div>
 
-      <div className="flex flex-row mx-auto justify-center items-center text-[#12564e] w-[80%]">
+      <div className="flex flex-row mx-auto justify-center items-center text-[#219789] w-[80%]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
@@ -287,10 +285,10 @@ const index = () => {
       <div>
         <div className="p-8 w-[80%] mx-auto">
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-serif font-bold border-teal-400  dark:text-gray-200">Latest Stories</h1>
+            <h1 className="text-4xl font-serif font-bold">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
-              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:text-sky-200 hover:font-bold hover:tracking-normal">
+              <div className="transition-all border-solid border-[#A0D9D6] border-2 text-3xl p-2 px-10 rounded-full hover:bg-[#A0D9D6] hover:font-bold hover:tracking-normal">
                 Explore
               </div>
             </Link>
@@ -326,7 +324,7 @@ const index = () => {
           </div>
         </div>
         {/* right */}
-        <div className="m-4 p-4 flex flex-col justify-start ">   
+        <div className="m-4 p-4 flex flex-col justify-start text-[black]">   
             <div className="text-4xl font-bold py-2 font-serif">
              FOR SUPPORT
             </div>
