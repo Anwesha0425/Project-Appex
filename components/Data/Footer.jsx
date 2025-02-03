@@ -108,7 +108,7 @@ const Footer = ({ theme}) => {
             </div>
             <button
               type="submit"
-              className={"rounded-lg p-2 transition-all duration-300 " + `${theme ? " bg-[#adaef9] hover:bg-[#7779f7]": " bg-[#A0D9D6] hover:bg-[#004D40] "}`}
+              className={"rounded-lg p-2 transition-all duration-300 " + `${theme ? " bg-[#adaef9] hover:bg-[#7779f7]": " bg-[#379e99] hover:bg-[#004D40] "}`}
             >
               Submit
             </button>

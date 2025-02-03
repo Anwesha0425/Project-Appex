@@ -365,7 +365,7 @@ const index = () => {
         </div>
       </div>
 
-      <div className="relative flex sm:flex-col md:flex-col w-[80%] p-4 mx-auto max-w-md text-[black]">
+      <div className="flex sm:flex-col md:flex-col w-[80%] p-4 mx-auto  text-[black]">
         {scrollcard.map((data, index) => (
           <InfoCard
             key={index}
@@ -375,7 +375,7 @@ const index = () => {
         ))}
       </div>
 
-      <div className="relative flex sm:flex-col md:flex-col w-[80%] p-4 mx-auto max-w-md text-[black]">
+      <div className="flex sm:flex-col md:flex-col w-[80%] p-4 mx-auto text-[black]">
         {scrollcard2.map((data, index) => (
           <InfoCard
             key={index}
