@@ -298,7 +298,7 @@ export default function Index({theme}) {
             { icon: FaUsers, label: "Reduced Inequalities", color: "bg-[#BEE3F8]", number: 10 },
             { icon: FaHandshake, label: "Partnerships for the Goals", color: "bg-[#FFF5F5]", number: 17 },
           ].map(({ icon: Icon, label, color, number }, idx) => (
-            <div key={idx} className={`rounded-xl p-4 ${color} flex flex-col items-center shadow-md`}>
+            <div key={idx} className={`rounded-full p-4 ${color} flex flex-col border-2 items-center shadow-md`}>
               <Icon className="text-4xl mb-2 " />
               <p className="text-lg font-semibold ">{label}</p>
               <p className="text-sm font-bold ">#{number}</p>

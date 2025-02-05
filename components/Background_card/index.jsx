@@ -2,7 +2,7 @@ import React from "react";
 
 const DynamicCard = ({ title, description, imageUrl }) => {
   return (
-    <div className="relative rounded-lg mb-6 overflow-hidden bg-cover border-[#4b6db6] border-2 bg-center bg-opacity-70 bg-[#f3f8fe]" style={{ backgroundImage: `url(${imageUrl})` }}>
+    <div className="relative rounded-lg mb-6 overflow-hidden bg-cover border-[#4b6db6] border-2 bg-center bg-opacity-70 bg-[white]" style={{ backgroundImage: `url(${imageUrl})` }}>
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
