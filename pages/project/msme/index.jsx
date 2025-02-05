@@ -71,11 +71,11 @@ const index = () => {
         </div>
       </div>
       <section className="py-8 w-[80%] mx-auto">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4">
           <h2 className="text-4xl font-bold font-serif text-[#1f4396] text-center mb-8">
             What We Do
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-[black]">
+          <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 gap-8 text-[black]">
             {activities.map((activity, index) => (
               <div
                 key={index}
@@ -94,12 +94,12 @@ const index = () => {
         </div>
       </section>
 
-      <div className="flex flex-row mx-auto w-[80%] justify-center items-center bg-[#ececec]">
+      <div className="flex sm:flex-col md:flex-col mx-auto w-[80%] justify-center items-center bg-[#ececec]">
         <div className="text-4xl font-bold m-4 P-4 font-serif text-[black]">
           {/* reach and presence */}
           REACH AND PRESENCE
         </div>
-        <div className="m-4 p-4 flex flex-row text-[black]">
+        <div className="m-4 p-4 text-[black]">
           {/* symbolic representation */}
           <div className="flex flex-col m-2 p-2">
             <div className="rounded-full border-4 p-4">
@@ -182,12 +182,12 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mx-auto p-2 bg-[#ececec] w-[80%] items-center">
+      <div className="flex sm:flex-col md:flex-col mx-auto p-2 bg-[#ececec] w-[80%] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl text-[black] font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
                 Donate For MSME
               </div>
             </Link>

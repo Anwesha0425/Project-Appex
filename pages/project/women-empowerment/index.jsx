@@ -332,7 +332,7 @@ const index = () => {
           {/* reach and presence */}
           REACH AND PRESENCE
         </div>
-        <div className="m-4 p-4 flex flex-row sm:flex-col md:flex-col">
+        <div className="m-4 p-4 ">
           {/* symbolic representation */}
           <div className="flex flex-col m-2 p-2">
             <div className="border-black rounded-full border-4 p-4">

@@ -75,7 +75,7 @@ const Index = () => {
   return (
     <>
     <main>
-    <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+    <div class="relative h-screen overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -97,7 +97,7 @@ const Index = () => {
       </div>
 
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif text-[#6f2c2c] font-bold border-teal-400  dark:text-gray-200">
+        <h1 className="text-4xl text-center font-serif text-[#6f2c2c] font-bold">
           Why Child Development
         </h1>
         <div className="text-lg m-2">
@@ -114,7 +114,7 @@ const Index = () => {
         </div>
       </div>
       <div className="w-[80%] p-4 mx-auto">
-        <h1 className="text-4xl text-center font-serif text-[#2c743e] font-bold border-teal-400  dark:text-gray-200 ">
+        <h1 className="text-4xl text-center font-serif text-[#2c743e] font-bold">
           What we do
         </h1>
         <div className="flex flex-col m-2 p-2 ">
@@ -134,7 +134,7 @@ const Index = () => {
             Gajapati and Ganjam, transforming lives and fostering long-term
             positive change in communities.
           </div>
-          <div className="flex flex-row m-2 p-2 justify-center items-center">
+          <div className="flex sm:flex-col md:flex-col m-2 p-2 justify-center items-center">
             <Image
               src="https://img.playbook.com/GsThB309VcZpkeBBSzwkgoMDB7vXUnXFH70DorK-X7g/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljL2JkODM3ZDI0/LTk4YWYtNGJjYi1h/Mzg3LWIwNzM0ZTEw/ZGJiNw"
               alt="agriculture representation1"
@@ -174,7 +174,7 @@ const Index = () => {
         <h1 className="text-4xl text-center font-serif text-[#1d5391] font-bold border-teal-400 dark:text-gray-200">
           Their Stories
         </h1>
-        <div className="grid grid-cols-2 gap-6 ">
+        <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 gap-6 ">
           {children.map((child, index) => (
             <Cards key={index} name={child} />
           ))}
@@ -231,12 +231,12 @@ const Index = () => {
       </div>
 
       {/* Footer Section */}
-      <div className="flex flex-row mx-auto w-[80%] p-2 bg-[#f4fefd] items-center">
+      <div className="flex sm:flex-col md:flex-col mx-auto w-[80%] p-2 bg-[#f4fefd] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold text-[black] m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B]">
                 Donate For Children
               </div>
             </Link>

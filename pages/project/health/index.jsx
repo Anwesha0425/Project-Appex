@@ -33,7 +33,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
   // console.log(ID, Title, ImageUrl, Author_name, Date_posted, Text);
   return (
     <Link href={`/blogs/${ID.ID}`} className="mb-12">
-      <div className="flex">
+      <div className="flex sm:flex-col md:flex-col">
         <Image
           src={ID.ImageUrl}
           alt={"Image Not Found!"}
@@ -41,7 +41,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           width={2500}
           data-aos="flip-left"
           data-aos-duration="3000"
-          className="border-1 border-solid border-[black] flex justify-center items-center w-[35%] aspect-auto rounded-md"
+          className="border-1 border-solid border-[black] flex justify-center items-center sm:w-[100%] md:w-[100%] w-[35%] aspect-auto rounded-md"
         />
         <div className="p-2">
           <div className="text-2xl font-bold">{ID.Title}</div>
@@ -130,7 +130,7 @@ const index = () => {
   return (
     <>
     <main>
-      <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+      <div class="relative h-screen overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -154,7 +154,7 @@ const index = () => {
       <div className="bg-gray-50 py-10 px-4 w-[80%] mx-auto">
         {/* Why This Topic Section */}
         <section className="mb-4">
-          <h2 className="text-4xl font-serif text-center mb-4 text-[#6b2929] font-bold border-teal-400 dark:text-gray-150">
+          <h2 className="text-4xl font-serif text-center mb-4 text-[#6b2929] font-bold">
             Why Health
           </h2>
           <p className="text-lg text-gray-700">
@@ -169,16 +169,16 @@ const index = () => {
         </section>
 
         {/* What We Do Section */}
-        <section className="py-16 bg-gray-100">
-          <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold font-serif text-center text-gray-800 mb-8 text-[#286b40]">
+        <section className="py-16">
+          <div className="mx-auto px-4">
+            <h2 className="text-4xl font-bold font-serif text-center mb-8 text-[#286b40]">
               What We Do
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-1 sm:grid-cols-1 grid-cols-2 gap-8">
               {activities.map((activity, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:bg-[#9ad2ae] bg-[#f6f2f2]"
+                  className="shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:bg-[#9ad2ae] bg-[#f6f2f2]"
                 >
                   <h3 className="text-2xl font-semibold text-[black] mb-4">
                     {activity.title}
@@ -195,10 +195,10 @@ const index = () => {
 
         {/* Our Aim Section */}
         <section>
-          <h2 className="text-4xl font-serif text-center mb-4 text-[#1e628f] font-bold border-teal-400 dark:text-gray-150">
+          <h2 className="text-4xl font-serif text-center mb-4 text-[#1e628f] font-bold">
             Our Aim
           </h2>
-          <div className="text-lg text-gray-700">
+          <div className="text-lg">
             <p>
               Our mission is to foster health and well-being across communities
               by:
@@ -232,7 +232,7 @@ const index = () => {
       </div>
 
       <div className="flex flex-col mx-auto w-[80%]">
-              <h1 className="text-4xl font-serif text-center mb-4 text-[#521e9a] font-bold border-teal-400 dark:text-gray-150">
+              <h1 className="text-4xl font-serif text-center mb-4 text-[#521e9a] font-bold">
                 WHO&apos;s HIV indication for India
               </h1>
               <Image
@@ -244,12 +244,12 @@ const index = () => {
               />
             </div>
 
-            <section className="py-16 bg-gray-50 w-[80%] mx-auto">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center font-serif text-[#8d1d5e] text-gray-800 mb-12">
+            <section className="py-16 w-[80%] mx-auto">
+      <div className="mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center font-serif text-[#8d1d5e] mb-12">
           Health Activities 
         </h2>
-        <div className="flex items-center justify-center space-x-8 overflow-x-auto">
+        <div className="flex sm:flex-col md:flex-col items-center justify-center space-x-8 overflow-x-auto">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -277,7 +277,7 @@ const index = () => {
       {/* blogs */}
       <div>
         <div className="p-8 w-[80%] mx-auto">
-          <div className="flex items-center justify-between">
+          <div className="flex sm:flex-col md:flex-col items-center justify-between">
             <h1 className="text-4xl font-serif font-bold ">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
@@ -286,7 +286,7 @@ const index = () => {
               </div>
             </Link>
           </div>
-          <div className="grid grid-cols-2 w-[100%] p-4">
+          <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1 w-[100%] p-4">
             {data
               .slice(8, 12)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
@@ -304,12 +304,12 @@ const index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row mx-auto p-2 w-[80%] bg-[#f5f8f7] items-center">
+      <div className="flex sm:flex-col md:flex-col mx-auto p-2 w-[80%] bg-[#f5f8f7] items-center">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A0D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
+              <div className="text-2xl font-bold text-[black] m-4 p-4 font-serif bg-[#A1D9D6] border-[#A0D9D6] border-2 rounded-md text-center hover:bg-[#00796B] hover:text-white">
                 Donate For Health
               </div>
             </Link>

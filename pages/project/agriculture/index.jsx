@@ -99,7 +99,7 @@ function Dropdown(props) {
 function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
   return (
     <Link href={`/blogs/${ID.ID}`} className="mb-12">
-      <div className="flex">
+      <div className="flex sm:flex-col md:flex-col">
         <Image
           src={ID.ImageUrl}
           alt={"Image Not Found!"}
@@ -107,7 +107,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           width={2500}
           data-aos="flip-left"
           data-aos-duration="3000"
-          className="border-1 border-solid border-[black] flex justify-center items-center w-[35%] aspect-auto rounded-md"
+          className="border-1 border-solid border-[black] flex justify-center items-center sm:w-[100%] md:w-[100%] w-[35%] aspect-auto rounded-md"
         />
         <div className="p-2">
           <div className="text-2xl font-bold">{ID.Title}</div>
@@ -128,7 +128,7 @@ const index = () => {
   return (
     <>
       <main >
-       <div class="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+       <div class="relative h-screen overflow-hidden">
         <div class="absolute inset-0">
           <img
             width="auto"
@@ -137,21 +137,20 @@ const index = () => {
             alt="Background Image"
             class="object-cover object-center w-full h-full opacity-70 opacity-bg-[black]"
           />
-          <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
         
         <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
           <h1 class="text-5xl font-bold leading-tight mb-4">
             Agriculture
           </h1>
-          <p class="text-lg text-gray-300 mb-8">
+          <p class="text-lg mb-8">
           Empowering rural farmers with sustainable agriculture, modern techniques, and self-reliance for a prosperous future.
           </p>
         </div>
         </div>
 
       <div className="p-4 mx-auto w-[80%]">
-        <h1 className="text-4xl font-bold border-teal-400  dark:text-gray-200 text-center font-serif text-[#cb5353]">Why Agriculture</h1>
+        <h1 className="text-4xl font-bold text-center font-serif text-[#cb5353]">Why Agriculture</h1>
         <div className="text-lg m-2">
         Agriculture is the backbone of India, employing nearly half of the country&apos;s population and serving as a vital source of livelihood for millions of rural families. With its rich history and diverse landscapes, India has immense potential to be a global leader in sustainable farming practices. However, many smallholder farmers face challenges such as limited access to modern technology, financial resources, and climate-resilient practices. By supporting agriculture, we can empower these farmers, enhance food security, and promote rural development. Our NGO is committed to transforming lives through initiatives that foster innovation, education, and sustainable growth in the agricultural sector, ensuring a brighter future for India&apos;s farmers and their communities.
 
@@ -159,9 +158,9 @@ const index = () => {
       </div>
 
       <div className=" mx-auto w-[80%]">
-        <h1 className="text-4xl font-bold border-teal-400 dark:text-gray-200 text-center font-serif text-[#43bdae]">What We Do </h1>
+        <h1 className="text-4xl font-bold text-center font-serif text-[#43bdae]">What We Do </h1>
         <div className="flex flex-col m-2 p-2">
-        <div className="flex flex-row m-2 p-2 justify-center items-center border-2">
+        <div className="flex sm:flex-col md:flex-col m-2 p-2 justify-center items-center border-2">
           <Image
           src="https://img.playbook.com/MDKHQXYyS37wex2UtLsVvmtnS_CelJKkgixuFGNmtCk/Z3M6Ly9wbGF5Ym9v/ay1hc3NldHMtcHVi/bGljLzUyYTQyNzAy/LTIzYWEtNGJjMC04/YmUwLTZlOTYwNjAx/NTc1NA"
           alt="Agriculture representation"
@@ -215,7 +214,7 @@ const index = () => {
           {/* title */}
           <div className="text-4xl font-serif text-center font-bold text-[#217b35] ">Prolonged approach</div>
           {/* grid */}
-          <div className="m-2 grid grid-cols-2">
+          <div className="m-2 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-1">
             {prolonged.map((title, methods, color, index) => (
               <Dropdown
                 key={index}
@@ -236,19 +235,19 @@ const index = () => {
           <h1 className="text-4xl font-bold mb-6 text-center font-serif text-[#477fbe]">
             List Of Farmers
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 hover:shadow-2xl ">
+          <div className="grid sm:grid-cols-1 md:grid-cols-1 grid-cols-2 gap-6 hover:shadow-2xl ">
             {docagriculture.map((pdf, index) => (
               <PdfViewer key={index} pdfUrl={pdf.fileUrl} title={pdf.title} />
             ))}
           </div>
         </div>
 
-      <div className="flex flex-row mx-auto justify-center items-center text-[#219789] w-[80%]">
+      <div className="flex sm:flex-col md:flex-col mx-auto justify-center items-center text-[#219789] w-[80%]">
         <div className="text-4xl font-bold m-4 P-4 font-serif">
           {/* reach and presence */}
           REACH AND PRESENCE
         </div>
-        <div className="m-4 p-4 flex flex-row">
+        <div className="m-4 p-4 ">
           {/* symbolic representation */}
           <div className="flex flex-col m-2 p-2">
             <div className="border-black rounded-full border-4 p-4">
@@ -284,7 +283,7 @@ const index = () => {
       {/* Blogs */}
       <div>
         <div className="p-8 w-[80%] mx-auto">
-          <div className="flex items-center justify-between">
+          <div className="flex sm:flex-col md:flex-col items-center justify-between">
             <h1 className="text-4xl font-serif font-bold">Latest Stories</h1>
             <Link href={"/blogs"} className="">
               {" "}
@@ -293,7 +292,7 @@ const index = () => {
               </div>
             </Link>
           </div>
-          <div className="grid grid-cols-2 w-[100%] p-4">
+          <div className="grid sm:grid-cols-1 md:grid-cols-1 grid-cols-2 w-[100%] p-4">
             {data
               .slice(0, 4)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
@@ -312,14 +311,14 @@ const index = () => {
       </div>
       
       {/* Donate */}
-      <div className="flex flex-row m-4 p-2 items-center w-[80%] mx-auto bg-[#f5f8fc]">
+      <div className="flex sm:flex-col md:flex-col m-4 p-2 items-center w-[80%] mx-auto bg-[#f5f8fc]">
         {/* left */}
-        <div className="m-4 p-4 size-[50%] justify-center">
-          <div className="p-2 size-[52%]">
+        <div className="m-4 p-4 flex-1 justify-center">
+          <div className="p-2">
             <Link href={"/fundraising"}>
-            <div className="text-2xl font-bold m-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center">
-              Donate For Agriculture
-            </div>
+            <div className="text-2xl font-bold text-[black] m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B]">
+                Donate For Farmers
+              </div>
             </Link>
           </div>
         </div>

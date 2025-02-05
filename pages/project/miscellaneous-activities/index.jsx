@@ -80,7 +80,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
   // console.log(ID, Title, ImageUrl, Author_name, Date_posted, Text);
   return (
     <Link href={`/blogs/${ID.ID}`} className="mb-12">
-      <div className="flex">
+      <div className="flex sm:flex-col md:flex-col">
         <Image
           src={ID.ImageUrl}
           alt={"Image Not Found!"}
@@ -88,7 +88,7 @@ function Child_blog({ ID, Title, ImageUrl, Author_name, Date_posted, Text }) {
           width={2500}
           data-aos="flip-left"
           data-aos-duration="3000"
-          className="border-1 border-solid border-[black] flex justify-center items-center w-[35%] aspect-auto rounded-md"
+          className="border-1 border-solid border-[black] flex justify-center items-center sm:w-[100%] md:w-[100%] w-[35%] aspect-auto rounded-md"
         />
         <div className="p-2">
           <div className="text-2xl font-bold">{ID.Title}</div>
@@ -172,7 +172,7 @@ const Index = () => {
       <h1 className="text-4xl text-center font-serif text-[#22a242] font-bold mb-6">
         What We Do
       </h1>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-6">
         {cards.map((card, index) => (
           <InfoCard key={index} icon={card.icon} title={card.title} description={card.description} />
         ))}
@@ -209,7 +209,7 @@ const Index = () => {
           {/* Down */}
           <div className="flex flex-col m-4">
             {/* Options */}
-            <div className="flex w-[60%] justify-between font-bold text-lg text-[black]">
+            <div className="flex sm:flex-col w-[60%] justify-between font-bold text-lg text-[black]">
               <div
                 className={option_css + (option == 0 ? red : blue)}
                 onClick={() => setOption(0)}
@@ -257,8 +257,8 @@ const Index = () => {
       {/* blog section */}
       <div>
         <div className="p-8 w-[80%] mx-auto">
-          <div className="flex items-center justify-between">
-            <h1 className="text-4xl font-serif font-bold ">
+          <div className="flex sm:flex-col md:flex-col items-center justify-between">
+            <h1 className="text-4xl font-serif font-bold m-2 ">
               Latest Stories
             </h1>
             <Link href={"/blogs"} className="">
@@ -268,7 +268,7 @@ const Index = () => {
               </div>
             </Link>
           </div>
-          <div className="grid grid-cols-2 p-4">
+          <div className="grid sm:grid-cols-1 md:grid-cols-1 grid-cols-2 p-4">
             {data
               .slice(12, 16)
               .map((ID, Title, ImageUrl, Author_name, Date_posted, Text, i) => (
@@ -286,12 +286,12 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="flex flex-row p-2 bg-[#ececec] items-center w-[80%] mx-auto">
+      <div className="flex sm:flex-col md:flex-col p-2 bg-[#ececec] items-center w-[80%] mx-auto">
         {/* Left Section */}
         <div className="m-4 p-4 flex-1 justify-center">
           <div className="p-2">
             <Link href="/fundraising">
-              <div className="text-2xl font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B]">
+              <div className="text-2xl text-[black] font-bold m-4 p-4 font-serif bg-[#A1D9D6] border-[#A1D9D6] border-2 rounded-md text-center hover:bg-[#00796B]">
                 Donate Funds
               </div>
             </Link>
