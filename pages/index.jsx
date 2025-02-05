@@ -1,27 +1,5 @@
 import React from "react";
-import {
-  FaChild,
-  FaChalkboardTeacher,
-  FaHandsHelping,
-  FaPaintBrush,
-  FaFemale,
-  FaSeedling,
-  FaTractor,
-  FaWater,
-  FaToilet,
-  FaLeaf,
-  FaShoppingCart,
-  FaBook,
-  FaScroll,
-  FaHandshake,
-  FaCalendarAlt,
-  FaToiletPaper,
-  FaTree,
-  FaUsers,
-  FaHandHoldingUsd,
-} from "react-icons/fa";
-import { RiSeedlingFill } from "react-icons/ri";
-import { GiCow } from "react-icons/gi";
+import {FaHandshake,FaUsers,FaHeartbeat,FaBalanceScale,FaGraduationCap,FaChartLine,} from "react-icons/fa";
 import ProjectCard from "@/components/Project_cad";
 import DynamicCard from "@/components/Background_card";
 import Image from "next/image";
@@ -131,7 +109,6 @@ const projects = [
     title: "Women Empowerment",
     description:
       "Empowering women is essential for achieving sustainable development and equality in society. Our organization has dedicated itself to uplifting women through education, skill development, and creating awareness about their rights and opportunities. By providing them with resources and support, we strive to help women become self-reliant and confident contributors to society.",
-    flowSteps: [FaFemale, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
     flowDescription: "Awareness → Skill Development → Support → Empowerment",
     titleColor: "text-[purple]",
   },
@@ -139,7 +116,6 @@ const projects = [
     title: "Child Support",
     description:
       "With India lagging behind in efforts to abolish child labour, it is crucial to supplement eradication efforts with comprehensive socio-economic programmes and educational upliftment of underprivileged sections. Child Support services have been one of the most successful social initiatives, passionately focusing on the education and welfare of child labourers.",
-    flowSteps: [FaChild, FaChalkboardTeacher, FaHandsHelping, FaPaintBrush],
     flowDescription:
       "Child Welfare → Awareness → Support → Skill Development → Empowerment",
     titleColor: "text-[maroon]",
@@ -148,7 +124,6 @@ const projects = [
     title: "Agricultural Promotion",
     description:
       "Agriculture is the backbone of rural livelihoods, especially in tribal-dominated areas. With proper training in production processes, crop management, water management, and seed treatment, small and marginal farmers can achieve optimal production and increase their incomes. Our organization has been actively working to empower farmers through awareness programs, demonstrations, and technical support.",
-    flowSteps: [FaSeedling, FaTractor, RiSeedlingFill, FaWater],
     flowDescription:
       "Awareness → Demonstration → Seed Treatment → Water Management",
     titleColor: "text-[navy]",
@@ -157,7 +132,6 @@ const projects = [
     title: "Health Activities",
     description:
       "Ensuring a healthy body and mind requires a healthy environment. Our organization emphasizes community-based health management and focuses on child health, family welfare programs, immunization (Pulse Polio), and pre/postnatal care for women and children. We also promote health awareness through workshops, camps, and initiatives aimed at fostering long-term well-being in underserved communities.",
-    flowSteps: [FaToilet, FaLeaf, FaShoppingCart, GiCow],
     flowDescription:
       "Sanitation → Environment Protection → Consumer Awareness → Livestock Development",
     titleColor: "text-[#8c2e6b]",
@@ -166,7 +140,6 @@ const projects = [
     title: "Miscellaneous Works",
     description:
       "Our organization is dedicated to preserving cultural heritage, promoting social harmony, and fostering community development. These efforts are reflected through a variety of initiatives, including library services, manuscript preservation, social cohesion programs, and celebrations of cultural and national importance.",
-    flowSteps: [FaBook, FaScroll, FaHandshake, FaCalendarAlt],
     flowDescription: "Library → Manuscripts → Social Cohesion → Celebrations",
     titleColor: "text-[#5e2e6c]",
   },
@@ -174,7 +147,6 @@ const projects = [
     title: "Community Empowerment",
     description:
       "We focus on driving impactful change in rural and underprivileged communities by addressing critical challenges and promoting holistic development through various initiatives. These include improving sanitation, protecting the environment, empowering consumers, promoting livelihoods, and uplifting families.",
-    flowSteps: [FaToiletPaper, FaTree, FaUsers, FaHandHoldingUsd],
     flowDescription: "Sanitation → Environment → Empowerment → Livelihood ",
     titleColor: "text-[green]",
   },
@@ -230,7 +202,7 @@ export default function Index({theme}) {
           while staying true to our mission of creating a healthier and more egalitarian society.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-6 mt-12 ">
+      <div className="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-1 gap-6 mt-12 ">
         <div className={"shadow-md rounded-lg p-6 text-center " + `${theme ? " bg-[#faf9f8] text-[black]" : " bg-[#ad9c3a] text-[white]"}`}>
           <h2 className={"text-xl font-semibold mb-4 " + `${theme ? " text-[#ad9c3a]" : " text-[black]"}`}>Our Vision</h2>
           <p className="text-gray-700">
@@ -261,7 +233,7 @@ export default function Index({theme}) {
         <div className="text-xl text-center font-semibold font-mono leading-7 w-[80%] mx-auto mb-6">At Appex Guide Line, we turn challenges into opportunities, fostering hope and change for a brighter, sustainable future. Together, we celebrate every step toward empowering communities.</div>
         <div className="mx-auto p-4 w-[80%] flex justify-between">
           {/* left */}
-          <div className="m-2 size-[50%]">
+          <div className="m-auto size-[50%] sm:size-[90%]">
             <Image
               width="1200"
               height="1200"
@@ -272,16 +244,16 @@ export default function Index({theme}) {
           </div>
           {/* right */}
           <div className="m-2 size-[50%] text-center justify-center ">
-          <div className="text-lg justify-center font-semibold font-mono leading-7 mt-[25%] items-center ">&quot;Every small step towards change creates ripples of transformation.&quot;</div>
+          <div className="text-lg sm:text-sm justify-center font-semibold font-mono leading-7 mt-[25%] items-center ">&quot;Every small step towards change creates ripples of transformation.&quot;</div>
           </div>
         </div>
         <div className="mx-auto p-4 w-[80%] flex justify-between">
           {/* left */}
           <div className="m-2 size-[50%]">
-          <div className="text-lg justify-center font-semibold font-mono leading-7 mt-[25%] items-center ">&quot;Building stronger communities today for a resilient tomorrow.&quot;</div>
+          <div className="text-lg sm:text-sm justify-center font-semibold font-mono leading-7 mt-[25%] items-center ">&quot;Building stronger communities today for a resilient tomorrow.&quot;</div>
           </div>
           {/* right */}
-          <div className="m-2 size-[50%]">
+          <div className="m-auto size-[50%] sm:size-[90%] items-center justify-center">
             <Image
               width="1200"
               height="1200"
@@ -297,13 +269,12 @@ export default function Index({theme}) {
           Projects
         </div>
         <div className="text-sm font-semibold text-center w-[80%] m-auto ">
-          <div className="grid grid-cols-2 items-center gap-4 justify-center overflow-hidden bg-gray-100 p-2 ">
+          <div className="grid grid-cols-2 sm:grid-cols-1 md:gris-cols-1 items-center gap-4 justify-center overflow-hidden p-2 ">
             {projects.map((project, index) => (
               <div className="mb-2" key={index}>
                 <ProjectCard
                   title={project.title}
                   description={project.description}
-                  flowSteps={project.flowSteps}
                   flowDescription={project.flowDescription}
                   titleColor={project.titleColor}
                 />
@@ -311,6 +282,30 @@ export default function Index({theme}) {
             ))}
           </div>
         </div>
+      </div>
+
+      <div>
+      {/* Hero Section */}
+      <section className="text-center py-10 text-[black]">
+        <h1 className="text-4xl font-serif font-bold text-[#1a898f]">Towards Achieving</h1>
+        <h2 className="text-3xl font-serif text-[#1a898f] font-extrabold mt-2">Sustainable Development Goals</h2>
+        <div className="grid grid-cols-6 md:grid-cols-3 sm:grid-cols-2 gap-4 mt-8 px-10">
+          {[
+            { icon: FaHeartbeat, label: "Good Health & Well Being", color: "bg-[#E9D8FD]", number: 3 },
+            { icon: FaBalanceScale, label: "Gender Equality", color: "bg-[#FBB6CE]", number: 5 },
+            { icon: FaGraduationCap, label: "Quality Education", color: "bg-[#FEFCBF]", number: 4 },
+            { icon: FaChartLine, label: "Decent Work & Economic Growth", color: "bg-[#C6F6D5]", number: 8 },
+            { icon: FaUsers, label: "Reduced Inequalities", color: "bg-[#BEE3F8]", number: 10 },
+            { icon: FaHandshake, label: "Partnerships for the Goals", color: "bg-[#FFF5F5]", number: 17 },
+          ].map(({ icon: Icon, label, color, number }, idx) => (
+            <div key={idx} className={`rounded-xl p-4 ${color} flex flex-col items-center shadow-md`}>
+              <Icon className="text-4xl mb-2 " />
+              <p className="text-lg font-semibold ">{label}</p>
+              <p className="text-sm font-bold ">#{number}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       </div>
 
       <div className="justify-between items-center w-[80%] px-auto m-auto">

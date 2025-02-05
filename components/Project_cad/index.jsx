@@ -7,16 +7,6 @@ function ProjectCard({ title, description, flowSteps, flowDescription, titleColo
       <p className="text-justify mb-4">{description}</p>
       {/* <h2 className="text-xl font-bold text-center text-gray-800 mb-4">Flow Diagram</h2> */}
       <div className="flex flex-col items-center">
-        <div className="flex items-center">
-          {flowSteps.map((StepIcon, index) => (
-            <React.Fragment key={index}>
-              <StepIcon className={`text-3xl ${index === 0 ? "" : "mx-2"}`} />
-              {index < flowSteps.length - 1 && (
-                <div className="h-1 w-12 mx-2"></div>
-              )}
-            </React.Fragment>
-          ))}
-        </div>
         <p className="text-center mt-4">{flowDescription}</p>
       </div>
     </div>
