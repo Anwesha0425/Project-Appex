@@ -36,7 +36,7 @@ export default function Navbar({ theme, settheme }) {
               { href: "/about", label: "About Us" },
               { href: "/project", label: "Projects" },
               { href: "/fundraising", label: "Fundraising" },
-              { href: "/news", label: "Gallary" },
+              { href: "/news", label: "Gallery" },
             ].map(({ href, label }) => (
               <Link key={href} href={href} className="cursor-pointer">
                 <li
