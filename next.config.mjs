@@ -1,7 +1,6 @@
 export default {
     reactStrictMode: true,
     images: {
-        
         remotePatterns: [
             {
               protocol: "https",
@@ -15,10 +14,7 @@ export default {
               protocol: "https",
               hostname:  "images.pexels.com",
             },
-          ],
+        ],
     },
-    experimental: {
-      appDir: true,
-  },
 };
 
